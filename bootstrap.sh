@@ -10,7 +10,8 @@ echo "=== Initialisation de l'environnement Ubuntu Live ==="
 
 # Identification de l'utilisateur
 echo ""
-read -p "Veuillez entrer votre pseudo (pour l'historique git) : " USER_NAME
+printf "Veuillez entrer votre pseudo (pour l'historique git) : "
+read USER_NAME < /dev/tty
 
 # Applique un nom par défaut si l'utilisateur appuie sur Entrée sans rien écrire
 if [ -z "$USER_NAME" ]; then
