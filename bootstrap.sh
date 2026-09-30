@@ -80,6 +80,7 @@ else
     echo "==> AVERTISSEMENT : Aucun fichier install.sh trouvé à la racine du dépôt."
 fi
 
+echo ""
 echo "=== Environnement prêt ==="
 
 # Pour installer l'environnement :
