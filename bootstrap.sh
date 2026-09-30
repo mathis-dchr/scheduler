@@ -8,6 +8,17 @@ BRANCH="main"
 
 echo "=== Initialisation de l'environnement Ubuntu Live ==="
 
+# Identification de l'utilisateur
+echo ""
+read -p "Veuillez entrer votre pseudo (pour l'historique git) : " USER_NAME
+
+# Applique un nom par défaut si l'utilisateur appuie sur Entrée sans rien écrire
+if [ -z "$USER_NAME" ]; then
+    USER_NAME="anonym"
+fi
+echo "-> Identité git enregistrée : $USER_NAME"
+echo ""
+
 # Vérification et installation de Git
 if ! command -v git &> /dev/null; then
     echo "-> Git n'est pas installé. Installation en cours..."
@@ -16,6 +27,10 @@ if ! command -v git &> /dev/null; then
 else
     echo "-> Git est déjà installé."
 fi
+
+# Configuration de l'identité dans git
+git config --global user.name "$USER_NAME"
+git config --global user.email "user@projet.local" # l'email est généré automatiquement avec un faux domaine car seul le nom importe ici
 
 # Configuration de la clé SSH de déploiement
 echo "-> Configuration de l'accès SSH..."
@@ -61,4 +76,9 @@ else
     echo "-> AVERTISSEMENT : Aucun fichier install.sh trouvé à la racine du dépôt."
 fi
 
-echo "=== Environnement installé ==="
+echo "=== Environnement prêt ==="
+
+# Pour installer l'environnement :
+    # sudo apt update && sudo apt install curl
+    # curl -sL https://raw.githubusercontent.com/mathis-dchr/scheduler/refs/heads/main/bootstrap.sh | bash
+    # ou alors : curl -sL https://tinyurl.com/mr3hm539 | bash
