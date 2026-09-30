@@ -10,7 +10,7 @@ echo "=== Initialisation de l'environnement Ubuntu Live ==="
 
 # Identification de l'utilisateur
 echo ""
-read -p "Veuillez entrer votre pseudo (pour l'historique git) : " USER_NAME 2>/dev/null
+read -p "Veuillez entrer votre pseudo (pour l'historique git) : " USER_NAME
 
 # Applique un nom par défaut si l'utilisateur appuie sur Entrée sans rien écrire
 if [ -z "$USER_NAME" ]; then
@@ -80,5 +80,5 @@ echo "=== Environnement prêt ==="
 
 # Pour installer l'environnement :
     # sudo apt update && sudo apt install curl
-    # curl -sL https://raw.githubusercontent.com/mathis-dchr/scheduler/refs/heads/main/bootstrap.sh | bash
-    # ou alors : curl -sL https://tinyurl.com/mr3hm539 | bash
+    # bash -c "$(curl -sL https://raw.githubusercontent.com/mathis-dchr/scheduler/refs/heads/main/bootstrap.sh)"
+    # ou alors : bash -c "$(curl -sL https://tinyurl.com/mr3hm539)"
