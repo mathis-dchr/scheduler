@@ -44,9 +44,11 @@ echo "=== Toutes les dépendances ont été installées avec succès ==="
 
 echo ""
 echo "==> Ouverture de Visual Studio Code..."
-if [ -d "./scheduler" ]; then # vérifie si le dossier existe avant d'y entrer
-    cd ./scheduler
-    code . & # le '&' à la fin lance l'application en arrière-plan et libère le terminal
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)" # le script détecte le chemin exact du dossier dans lequel il se trouve
+
+if [ -d "$REPO_DIR/scheduler" ]; then # vérifie l'existence du dossier avec ce chemin absolu
+    cd "$REPO_DIR/scheduler"
+    code . & # lancement de VS Code en arrière-plan
 else
-    echo "-> AVERTISSEMENT : Le dossier ./scheduler est introuvable."
+    echo "-> AVERTISSEMENT : Le dossier 'scheduler' est introuvable dans $REPO_DIR."
 fi
