@@ -16,7 +16,7 @@ wget -qO /tmp/vscode.deb "https://code.visualstudio.com/sha/download?build=stabl
 
 echo ""
 echo "==> Installation de VS Code..."
-sudo apt install -y /tmp/vscode.deb
+sudo DEBIAN_FRONTEND=noninteractive apt install -y /tmp/vscode.deb
 
 # Nettoyage du fichier d'installation
 rm /tmp/vscode.deb
@@ -33,7 +33,7 @@ sudo apt update
 
 echo ""
 echo "==> Installation de srsRAN..."
-sudo apt install -y srsran
+sudo DEBIAN_FRONTEND=noninteractive apt install -y srsran
 
 echo ""
 echo "=== Toutes les dépendances ont été installées avec succès ==="
