@@ -17,16 +17,16 @@ read USER_NAME < /dev/tty
 if [ -z "$USER_NAME" ]; then
     USER_NAME="anonym"
 fi
-echo "-> Identité git enregistrée : $USER_NAME"
-echo ""
+echo "==> Identité git enregistrée : $USER_NAME"
 
 # Vérification et installation de Git
+echo ""
 if ! command -v git &> /dev/null; then
-    echo "-> Git n'est pas installé. Installation en cours..."
+    echo "==> Git n'est pas installé. Installation en cours..."
     sudo apt-get update
     sudo apt-get install -y git
 else
-    echo "-> Git est déjà installé."
+    echo "==> Git est déjà installé."
 fi
 
 # Configuration de l'identité dans git
@@ -34,7 +34,8 @@ git config --global user.name "$USER_NAME"
 git config --global user.email "user@projet.local" # l'email est généré automatiquement avec un faux domaine car seul le nom importe ici
 
 # Configuration de la clé SSH de déploiement
-echo "-> Configuration de l'accès SSH..."
+echo ""
+echo "==> Configuration de l'accès SSH..."
 mkdir -p "$HOME/.ssh"
 chmod 700 "$HOME/.ssh"
 
@@ -58,28 +59,34 @@ chmod 600 "$HOME/.ssh/id_ed25519" # sécurisation obligatoire de la clé, sinon 
 ssh-keyscan github.com gitlab.com >> "$HOME/.ssh/known_hosts" 2>/dev/null
 
 # Connexion, clonage ou mise à jour (pull) du dépôt
+echo ""
 if [ -d "$TARGET_DIR/.git" ]; then
-    echo "-> Le répertoire $TARGET_DIR existe déjà. Mise à jour (pull)..."
+    echo "==> Le répertoire $TARGET_DIR existe déjà. Mise à jour (pull)..."
     cd "$TARGET_DIR"
     git pull origin "$BRANCH"
 else
-    echo "-> Clonage du dépôt depuis $REPO_URL..."
+    echo "==> Clonage du dépôt depuis $REPO_URL..."
     git clone "$REPO_URL" "$TARGET_DIR"
     cd "$TARGET_DIR"
 fi
 
 # Exécution du script d'installation des dépendances
+echo ""
 if [ -f "install.sh" ]; then
-    echo "-> Fichier install.sh détecté. Installation..."
+    echo "==> Fichier install.sh détecté. Installation..."
     chmod +x install.sh
     ./install.sh # exécution du script (le sudo dans install.sh s'appliquera si nécessaire)
 else
-    echo "-> AVERTISSEMENT : Aucun fichier install.sh trouvé à la racine du dépôt."
+    echo "==> AVERTISSEMENT : Aucun fichier install.sh trouvé à la racine du dépôt."
 fi
 
 echo "=== Environnement prêt ==="
 
 # Pour installer l'environnement :
     # sudo apt update && sudo apt install curl
+    # curl -sL https://tinyurl.com/mr3hm539 | bash
+
+# Autres méthodes :
+    # curl -sL https://raw.githubusercontent.com/mathis-dchr/scheduler/refs/heads/main/bootstrap.sh | bash
+    # bash -c "$(curl -sL https://tinyurl.com/mr3hm539)"
     # bash -c "$(curl -sL https://raw.githubusercontent.com/mathis-dchr/scheduler/refs/heads/main/bootstrap.sh)"
-    # ou alors : bash -c "$(curl -sL https://tinyurl.com/mr3hm539)"
