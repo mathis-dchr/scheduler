@@ -27,6 +27,10 @@ echo "==> Préparation des dépôts logiciels..."
 sudo apt install -y software-properties-common # pour s'assurer de sudo add-apt-repository
 
 echo ""
+echo "==> Activation du dépôt 'universe' pour les dépendances radio..."
+sudo add-apt-repository -y universe
+
+echo ""
 echo "==> Ajout du dépôt officiel srsRAN (PPA)..."
 sudo add-apt-repository -y ppa:softwareradiosystems/srsran
 sudo apt update
@@ -37,3 +41,12 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y srsran
 
 echo ""
 echo "=== Toutes les dépendances ont été installées avec succès ==="
+
+echo ""
+echo "==> Ouverture de Visual Studio Code..."
+if [ -d "./scheduler" ]; then # vérifie si le dossier existe avant d'y entrer
+    cd ./scheduler
+    code . & # le '&' à la fin lance l'application en arrière-plan et libère le terminal
+else
+    echo "-> AVERTISSEMENT : Le dossier ./scheduler est introuvable."
+fi
