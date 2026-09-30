@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -e # arrêter le script en cas d'erreur
 
 REPO_URL="git@github.com:mathis-dchr/scheduler.git" # utiliser l'adresse SSH (git@...) et non l'adresse HTTPS
@@ -74,6 +73,7 @@ fi
 echo ""
 if [ -f "install.sh" ]; then
     echo "==> Fichier install.sh détecté. Installation..."
+    sed -i 's/\r$//' install.sh # conversion des retours à la ligne Windows (CRLF) vers Linux (LF)
     chmod +x install.sh
     ./install.sh # exécution du script (le sudo dans install.sh s'appliquera si nécessaire)
 else
@@ -84,7 +84,7 @@ echo ""
 echo "=== Environnement prêt ==="
 
 # Pour installer l'environnement :
-    # sudo apt update && sudo apt install curl
+    # sudo apt update && sudo apt install curl -y
     # curl -sL https://tinyurl.com/mr3hm539 | bash
 
 # Autres méthodes :
