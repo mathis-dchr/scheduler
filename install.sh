@@ -35,9 +35,17 @@ echo "==> Ajout du dépôt officiel srsRAN (PPA)..."
 sudo add-apt-repository -y ppa:softwareradiosystems/srsran
 sudo apt update
 
-echo ""
-echo "==> Installation de srsRAN..."
-sudo DEBIAN_FRONTEND=noninteractive apt install -y srsran
+# Installation de srsRAN avec apt en version 22.10
+#echo ""
+#echo "==> Installation de srsRAN..."
+#sudo DEBIAN_FRONTEND=noninteractive apt install -y srsran=22.10-0ubuntu1~srsran1~22.04
+#sudo apt-mark hold srsran # pour figer la version 22.10
+
+# Compilation de srsRAN (dernière version)
+sudo apt install -y cmake build-essential pkg-config libfftw3-dev libmbedtls-dev libboost-all-dev libsctp-dev lksctp-tools libconfig++-dev
+mkdir build
+cmake -S srsRAN_4G -B build
+cmake --build build -j"$(nproc)"
 
 echo ""
 echo "=== Toutes les dépendances ont été installées avec succès ==="
