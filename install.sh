@@ -42,7 +42,7 @@ sudo apt update
 #sudo apt-mark hold srsran # pour figer la version 22.10
 
 # Compilation de srsRAN (dernière version)
-sudo apt install -y cmake build-essential pkg-config libfftw3-dev libmbedtls-dev libboost-all-dev libsctp-dev lksctp-tools libconfig++-dev
+sudo apt install -y cmake build-essential pkg-config libfftw3-dev libmbedtls-dev libboost-all-dev libsctp-dev lksctp-tools libconfig++-dev libzmq3-dev libuhd-dev uhd-host
 mkdir build
 cmake -S srsRAN_4G -B build
 cmake --build build -j"$(nproc)"
