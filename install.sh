@@ -52,6 +52,15 @@ cd build
 sudo make install
 sudo srsran_install_configs.sh user
 
+# === GESTION CENTRALISÉE DE LA CONFIGURATION ===
+CONFIG_DIR="$PWD/config"
+echo ""
+echo "==> Mise en place de la configuration partagée srsRAN..."
+
+# Création du lien symbolique vers le dossier cloné depuis git
+sudo ln -s "$CONFIG_DIR" /root/.config/srsran
+echo "Lien symbolique créé : /root/.config/srsran -> $CONFIG_DIR"
+
 echo ""
 echo "=== Toutes les dépendances ont été installées avec succès ==="
 
