@@ -47,6 +47,11 @@ mkdir build
 cmake -S srsRAN_4G -B build
 cmake --build build -j"$(nproc)"
 
+# Installation de srsRAN
+cd build
+sudo make install
+sudo srsran_install_configs.sh user
+
 echo ""
 echo "=== Toutes les dépendances ont été installées avec succès ==="
 
