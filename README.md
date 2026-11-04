@@ -19,14 +19,14 @@ sudo srsepc ~/scheduler/config/epc.conf
 
 ### Lancer l'ENB
 ```bash
-sudo srsepc ~/scheduler/config/enb.conf \
+sudo srsenb ~/scheduler/config/enb.conf \
   --rf.device_name=zmq \
   --rf.device_args="fail_on_disconnect=true,tx_port=tcp://*:2000,rx_port=tcp://localhost:2001,id=enb,base_srate=23.04e6"
 ```
 
 Avec plus du détails :
 ```bash
-sudo srsepc ~/scheduler/config/enb.conf \
+sudo srsenb ~/scheduler/config/enb.conf \
   --rf.device_name=zmq \
   --rf.device_args="fail_on_disconnect=true,tx_port=tcp://*:2000,rx_port=tcp://localhost:2001,id=enb,base_srate=23.04e6" \
   --log.all_level=warning --log.mac_level=info --log.filename=/tmp/enb.log \
