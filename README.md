@@ -54,12 +54,17 @@ ping 172.16.0.2
 ```
 
 ### Mesurer le débit avec Iperf
-Côté l'EPC :
-```bash
-iperf3 -s -i 1
-```
-
 Côté l'UE :
 ```bash
-sudo ip netns exec ue1 iperf3 -c 192.16.0.1 -i 1 -t 30
+sudo ip netns exec ue1 iperf3 -s
+```
+
+Côté l'EPC en uplink :
+```bash
+iperf3 -c 172.16.0.2 -t 30
+```
+
+Côté l'EPC en downlink :
+```bash
+iperf3 -c 172.16.0.2 -t 30 -R
 ```
