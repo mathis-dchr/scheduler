@@ -50,9 +50,15 @@ cmake --build build -j"$(nproc)"
 # Installation de srsRAN
 cd build
 sudo make install
-sudo srsran_install_configs.sh user
 sudo ldconfig
+sudo srsran_install_configs.sh user
 cd ..
+
+# Installation de Iperf
+sudo apt install -y iperf3
+
+# Installation de Wireshark
+sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark
 
 echo ""
 echo "=== Toutes les dépendances ont été installées avec succès ==="
