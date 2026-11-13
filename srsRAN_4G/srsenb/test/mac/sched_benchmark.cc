@@ -40,7 +40,7 @@ struct run_params_range {
   std::vector<uint32_t>    nof_ues      = {1, 2, 5, 32};
   uint32_t                 nof_ttis     = 10000;
   std::vector<uint32_t>    cqi          = {5, 10, 15};
-  std::vector<const char*> sched_policy = {"time_rr", "time_pf"};
+  std::vector<const char*> sched_policy = {"time_rr", "time_pf", "time_max_cqi"};
 
   size_t     nof_runs() const { return nof_prbs.size() * nof_ues.size() * cqi.size() * sched_policy.size(); }
   run_params get_params(size_t idx) const

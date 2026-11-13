@@ -23,6 +23,7 @@
 #include "srsenb/hdr/stack/mac/sched_helpers.h"
 #include "srsenb/hdr/stack/mac/schedulers/sched_time_pf.h"
 #include "srsenb/hdr/stack/mac/schedulers/sched_time_rr.h"
+#include "srsenb/hdr/stack/mac/schedulers/sched_time_max_cqi.h"
 #include "srsran/common/standard_streams.h"
 #include "srsran/common/string_helpers.h"
 #include "srsran/interfaces/enb_rrc_interface_mac.h"
@@ -377,9 +378,15 @@ void sched::carrier_sched::carrier_cfg(const sched_cell_params_t& cell_params_)
   if (cell_params_.sched_cfg->sched_policy == "time_rr") {
     sched_algo.reset(new sched_time_rr{*cc_cfg, *cell_params_.sched_cfg});
     logger.info("Using time-domain RR scheduling policy for cc=%d", cc_cfg->enb_cc_idx);
-  } else {
+  } else if (cell_params_.sched_cfg->sched_policy == "time_pf") {
     sched_algo.reset(new sched_time_pf{*cc_cfg, *cell_params_.sched_cfg});
     logger.info("Using time-domain PF scheduling policy for cc=%d", cc_cfg->enb_cc_idx);
+  } else if (cell_params_.sched_cfg->sched_policy == "time_max_cqi") {
+    sched_algo.reset(new sched_time_max_cqi{*cc_cfg, *cell_params_.sched_cfg});
+    logger.info("Using time-domain Max-CQI scheduling policy for cc=%d", cc_cfg->enb_cc_idx);
+  } else {
+    logger.error("Unknown scheduling policy: %s", cell_params_.sched_cfg->sched_policy.c_str());
+    return;
   }
 
   // Initiate the tti_scheduler for each TTI

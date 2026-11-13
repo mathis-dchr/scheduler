@@ -5,7 +5,7 @@
 - `sudo srsenb ~/scheduler/config/enb.conf`
 - `sudo srsue ~/scheduler/config/ue.conf`
 
-## Tester avec ZMQ
+## Tester avec ZMQ pour 1 UE
 
 ### Configurer le namespace réseau de l'UE
 ```bash
@@ -74,6 +74,8 @@ Ajouter UE2 dans `user_db.csv` **avec l'EPC arrêté** (sinon l'EPC écrase le f
 sed -i -e '$a\' ~/scheduler/config/user_db.csv
 echo "ue3,mil,001010123456781,00112233445566778899aabbccddeeff,opc,63bfa50ee6523365ff14c1f45f88737d,8000,000000001234,7,dynamic" >> ~/scheduler/config/user_db.csv
 ```
+
+## Tester avec ZMQ avec plusieurs UEs
 
 ### Tout arrêter
 À faire avant chaque relance, y compris le broker :
