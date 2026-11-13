@@ -62,7 +62,7 @@ void sched_time_max_cqi::new_tti(sched_ue_list& ue_db, sf_sched* tti_sched)
   for (auto& u : ue_db) {
     auto it = ue_history_db.find(u.first);
     if (it == ue_history_db.end()) {
-      it = ue_history_db.insert(u.first,ue_ctxt{u.first}).value();
+      it = ue_history_db.insert(u.first, ue_ctxt{u.first, fairness_coeff}).value();
     }
     it->second.new_tti(*cc_cfg, *u.second, tti_sched);
     if (it->second.dl_newtx_h != nullptr or it->second.dl_retx_h != nullptr) {
