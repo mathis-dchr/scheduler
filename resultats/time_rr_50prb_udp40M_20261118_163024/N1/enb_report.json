@@ -1,0 +1,2409 @@
+{
+  "type": "event",
+  "timestamp": 1795019429.852,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "sector_start",
+  "event_data": {
+    "pci": 1,
+    "cell_identity": "1",
+    "sib9_home_enb_name": ""
+  }
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019430.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 0,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019431.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 0,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019432.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 0,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019433.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 0,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "event",
+  "timestamp": 1795019433.882,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "rrc_log",
+  "event_data": {
+    "rnti": 70,
+    "asn1_length": 206,
+    "asn1_message": "{\n\"criticalExtensions\":{\n\"rrcConnectionRequest-r8\":{\n\"ue-Identity\":{\n\"randomValue\":\"0111010011101010011010011101010010100101\"\n},\n\"establishmentCause\":\"mo-Data\",\n\"spare\":\"0\"\n}\n}\n}",
+    "asn1_type": 0,
+    "additional": 0
+  }
+}
+{
+  "type": "event",
+  "timestamp": 1795019433.8830001,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "rrc_log",
+  "event_data": {
+    "rnti": 70,
+    "asn1_length": 1627,
+    "asn1_message": "[\n{\n\"DL-CCCH-Message\":{\n\"message\":{\n\"c1\":{\n\"rrcConnectionSetup\":{\n\"rrc-TransactionIdentifier\":0,\n\"criticalExtensions\":{\n\"c1\":{\n\"rrcConnectionSetup-r8\":{\n\"radioResourceConfigDedicated\":{\n\"srb-ToAddModList\":[\n{\n\"srb-Identity\":1,\n\"rlc-Config\":{\n},\n\"logicalChannelConfig\":{\n}\n}\n],\n\"mac-MainConfig\":{\n\"explicitValue\":{\n\"ul-SCH-Config\":{\n\"maxHARQ-Tx\":\"n4\",\n\"periodicBSR-Timer\":\"sf20\",\n\"retxBSR-Timer\":\"sf320\",\n\"ttiBundling\":false\n},\n\"timeAlignmentTimerDedicated\":\"infinity\",\n\"phr-Config\":{\n\"setup\":{\n\"periodicPHR-Timer\":\"sf50\",\n\"prohibitPHR-Timer\":\"sf0\",\n\"dl-PathlossChange\":\"dB3\"\n}\n}\n}\n},\n\"physicalConfigDedicated\":{\n\"pdsch-ConfigDedicated\":{\n\"p-a\":\"dB0\"\n},\n\"pucch-ConfigDedicated\":{\n\"ackNackRepetition\":{\n}\n},\n\"pusch-ConfigDedicated\":{\n\"betaOffset-ACK-Index\":6,\n\"betaOffset-RI-Index\":6,\n\"betaOffset-CQI-Index\":6\n},\n\"uplinkPowerControlDedicated\":{\n\"p0-UE-PUSCH\":0,\n\"deltaMCS-Enabled\":\"en0\",\n\"accumulationEnabled\":true,\n\"p0-UE-PUCCH\":0,\n\"pSRS-Offset\":3\n},\n\"cqi-ReportConfig\":{\n\"nomPDSCH-RS-EPRE-Offset\":0,\n\"cqi-ReportPeriodic\":{\n\"setup\":{\n\"cqi-PUCCH-ResourceIndex\":0,\n\"cqi-pmi-ConfigIndex\":38,\n\"cqi-FormatIndicatorPeriodic\":{\n},\n\"simultaneousAckNackAndCQI\":true\n}\n}\n},\n\"antennaInfo\":{\n\"explicitValue\":{\n\"transmissionMode\":\"tm1\",\n\"ue-TransmitAntennaSelection\":{\n}\n}\n},\n\"schedulingRequestConfig\":{\n\"setup\":{\n\"sr-PUCCH-ResourceIndex\":0,\n\"sr-ConfigIndex\":15,\n\"dsr-TransMax\":\"n64\"\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n]",
+    "asn1_type": 1,
+    "additional": 0
+  }
+}
+{
+  "type": "event",
+  "timestamp": 1795019433.9190001,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "rrc_log",
+  "event_data": {
+    "rnti": 70,
+    "asn1_length": 219,
+    "asn1_message": "{\n\"rrc-TransactionIdentifier\":0,\n\"criticalExtensions\":{\n\"c1\":{\n\"rrcConnectionSetupComplete-r8\":{\n\"selectedPLMN-Identity\":1,\n\"dedicatedInfoNAS\":\"07417108091010103254760802f07000040201d011\"\n}\n}\n}\n}",
+    "asn1_type": 2,
+    "additional": 0
+  }
+}
+{
+  "type": "event",
+  "timestamp": 1795019434.002,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "rrc_log",
+  "event_data": {
+    "rnti": 70,
+    "asn1_length": 2381,
+    "asn1_message": "[\n{\n\"DL-DCCH-Message\":{\n\"message\":{\n\"c1\":{\n\"rrcConnectionReconfiguration\":{\n\"rrc-TransactionIdentifier\":0,\n\"criticalExtensions\":{\n\"c1\":{\n\"rrcConnectionReconfiguration-r8\":{\n\"measConfig\":{\n\"measObjectToAddModList\":[\n{\n\"measObjectId\":1,\n\"measObject\":{\n\"measObjectEUTRA\":{\n\"carrierFreq\":3350,\n\"allowedMeasBandwidth\":\"mbw6\",\n\"presenceAntennaPort1\":false,\n\"neighCellConfig\":\"01\"\n}\n}\n}\n],\n\"quantityConfig\":{\n\"quantityConfigEUTRA\":{\n}\n}\n},\n\"dedicatedInfoNASList\":[\n\"2767386340010742013e060000f1100007001d5201c10107070673727361706e0501ac100002270880000d0408080808500bf600f11000011a4cd7e8361300f11000062305f44cd7e836\"\n],\n\"radioResourceConfigDedicated\":{\n\"srb-ToAddModList\":[\n{\n\"srb-Identity\":2,\n\"rlc-Config\":{\n},\n\"logicalChannelConfig\":{\n}\n}\n],\n\"drb-ToAddModList\":[\n{\n\"eps-BearerIdentity\":5,\n\"drb-Identity\":1,\n\"pdcp-Config\":{\n\"discardTimer\":\"infinity\",\n\"rlc-UM\":{\n\"pdcp-SN-Size\":\"len12bits\"\n},\n\"headerCompression\":{\n}\n},\n\"rlc-Config\":{\n\"um-Bi-Directional\":{\n\"ul-UM-RLC\":{\n\"sn-FieldLength\":\"size10\"\n},\n\"dl-UM-RLC\":{\n\"sn-FieldLength\":\"size10\",\n\"t-Reordering\":\"ms45\"\n}\n}\n},\n\"logicalChannelIdentity\":3,\n\"logicalChannelConfig\":{\n\"ul-SpecificParameters\":{\n\"priority\":13,\n\"prioritisedBitRate\":\"infinity\",\n\"bucketSizeDuration\":\"ms100\",\n\"logicalChannelGroup\":2\n}\n}\n}\n],\n\"physicalConfigDedicated\":{\n\"pdsch-ConfigDedicated\":{\n\"p-a\":\"dB0\"\n},\n\"pucch-ConfigDedicated\":{\n\"ackNackRepetition\":{\n}\n},\n\"pusch-ConfigDedicated\":{\n\"betaOffset-ACK-Index\":6,\n\"betaOffset-RI-Index\":6,\n\"betaOffset-CQI-Index\":6\n},\n\"uplinkPowerControlDedicated\":{\n\"p0-UE-PUSCH\":0,\n\"deltaMCS-Enabled\":\"en0\",\n\"accumulationEnabled\":true,\n\"p0-UE-PUCCH\":0,\n\"pSRS-Offset\":3\n},\n\"cqi-ReportConfig\":{\n\"nomPDSCH-RS-EPRE-Offset\":0,\n\"cqi-ReportPeriodic\":{\n\"setup\":{\n\"cqi-PUCCH-ResourceIndex\":0,\n\"cqi-pmi-ConfigIndex\":38,\n\"cqi-FormatIndicatorPeriodic\":{\n},\n\"simultaneousAckNackAndCQI\":true\n}\n}\n},\n\"antennaInfo\":{\n\"explicitValue\":{\n\"transmissionMode\":\"tm1\",\n\"ue-TransmitAntennaSelection\":{\n}\n}\n},\n\"schedulingRequestConfig\":{\n\"setup\":{\n\"sr-PUCCH-ResourceIndex\":0,\n\"sr-ConfigIndex\":15,\n\"dsr-TransMax\":\"n64\"\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n]",
+    "asn1_type": 3,
+    "additional": 0
+  }
+}
+{
+  "type": "event",
+  "timestamp": 1795019434.043,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "rrc_log",
+  "event_data": {
+    "rnti": 70,
+    "asn1_length": 117,
+    "asn1_message": "{\n\"rrc-TransactionIdentifier\":0,\n\"criticalExtensions\":{\n\"rrcConnectionReconfigurationComplete-r8\":{\n}\n}\n}",
+    "asn1_type": 4,
+    "additional": 0
+  }
+}
+{
+  "type": "event",
+  "timestamp": 1795019434.043,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "s1_context_create",
+  "event_data": {
+    "mme_ue_s1ap_id": 1,
+    "enb_ue_s1ap_id": 1,
+    "rnti": 70
+  }
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019434.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 3.857143,
+              "ul_pusch_rssi": 80.5557,
+              "ul_pucch_rssi": 82.28374,
+              "ul_pucch_ni": 124.51978,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 3308.5896,
+              "dl_bler": 0.0,
+              "ul_snr": 111.940346,
+              "ul_mcs": 16.5,
+              "ul_bitrate": 27707.316,
+              "ul_bler": 0.0,
+              "ul_phr": 30.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019435.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3949.9058,
+              "ul_pucch_ni": 5977.415,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019436.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3785.3264,
+              "ul_pucch_ni": 5728.357,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019437.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3785.3264,
+              "ul_pucch_ni": 5728.357,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019438.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3785.3264,
+              "ul_pucch_ni": 5728.357,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019439.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3949.9058,
+              "ul_pucch_ni": 5977.416,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019440.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3785.3264,
+              "ul_pucch_ni": 5728.3564,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019441.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3949.9058,
+              "ul_pucch_ni": 5977.4146,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019442.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3949.9058,
+              "ul_pucch_ni": 5977.416,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019443.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3949.9058,
+              "ul_pucch_ni": 5977.4155,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.014000001,
+              "ul_snr_offset": 0.008,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 0,
+                    "ul_total_bytes": 0,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019444.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 27.803509,
+              "ul_pusch_rssi": 87.0569,
+              "ul_pucch_rssi": 82.2796,
+              "ul_pucch_ni": 124.5177,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 16040167.0,
+              "dl_bler": 0.0,
+              "ul_snr": 116.34085,
+              "ul_mcs": 14.870369,
+              "ul_bitrate": 26772.773,
+              "ul_bler": 0.0,
+              "ul_phr": 30.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 2288686,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019445.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 196236.61,
+              "ul_pucch_ni": 296976.28,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36601004.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 6681302,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019446.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 196072.05,
+              "ul_pucch_ni": 296727.2,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600904.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 11031056,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019447.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 193932.73,
+              "ul_pucch_ni": 293489.06,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599896.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 15332036,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019448.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 187432.61,
+              "ul_pucch_ni": 283653.16,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36598204.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 19489650,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019449.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 194755.56,
+              "ul_pucch_ni": 294735.47,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36638992.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 23812800,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019450.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195825.16,
+              "ul_pucch_ni": 296354.44,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36560788.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 28164032,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019451.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195413.78,
+              "ul_pucch_ni": 295731.75,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600604.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 32499006,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019452.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195413.78,
+              "ul_pucch_ni": 295730.8,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36598988.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 36836936,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019453.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195002.4,
+              "ul_pucch_ni": 295107.94,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600404.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 41164520,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019454.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195249.22,
+              "ul_pucch_ni": 295482.03,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36598884.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 45496538,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019455.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195578.33,
+              "ul_pucch_ni": 295980.625,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600704.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 49837424,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019456.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195249.23,
+              "ul_pucch_ni": 295482.3,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36602124.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 54169442,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019457.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195166.97,
+              "ul_pucch_ni": 295357.75,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600504.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 58501460,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019458.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 196072.0,
+              "ul_pucch_ni": 296727.44,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599292.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 62848258,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019459.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195166.95,
+              "ul_pucch_ni": 295358.03,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600504.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 67180276,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019460.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 194837.81,
+              "ul_pucch_ni": 294859.7,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36598680.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 71506382,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019461.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 194590.98,
+              "ul_pucch_ni": 294485.66,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600200.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 75825098,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019462.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195413.78,
+              "ul_pucch_ni": 295731.75,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600604.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 80157116,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019463.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 183894.58,
+              "ul_pucch_ni": 278298.16,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36598064.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 84242308,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019464.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195989.73,
+              "ul_pucch_ni": 296603.25,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599292.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 88593540,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019465.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195413.78,
+              "ul_pucch_ni": 295732.25,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600604.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 92929992,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019466.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 190888.375,
+              "ul_pucch_ni": 288882.0,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36601652.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 97161506,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019467.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 190065.56,
+              "ul_pucch_ni": 287636.34,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599584.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 101384152,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019468.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 193603.64,
+              "ul_pucch_ni": 292992.4,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599692.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 105680698,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019469.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 196401.17,
+              "ul_pucch_ni": 297225.875,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599496.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 110036364,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019470.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 196647.98,
+              "ul_pucch_ni": 297599.16,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36601204.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 114403854,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019471.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 196483.44,
+              "ul_pucch_ni": 297349.66,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599496.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 118762476,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019472.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195578.33,
+              "ul_pucch_ni": 295979.5,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36599092.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 123104840,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019473.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 28.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 195825.17,
+              "ul_pucch_ni": 296354.03,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.022000002,
+              "ul_snr_offset": 0.029000003,
+              "dl_bitrate": 36600804.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 127445726,
+                    "ul_total_bytes": 510,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019474.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 27.89522,
+              "ul_pusch_rssi": 84.29005,
+              "ul_pucch_rssi": 82.27941,
+              "ul_pucch_ni": 124.51804,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.028000003,
+              "ul_snr_offset": 0.046999976,
+              "dl_bitrate": 23522958.0,
+              "dl_bler": 0.0,
+              "ul_snr": 114.49338,
+              "ul_mcs": 17.73913,
+              "ul_bitrate": 77685.53,
+              "ul_bler": 0.0,
+              "ul_phr": 30.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 129833401,
+                    "ul_total_bytes": 4242,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019475.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+          {
+            "ue_container": {
+              "ue_rnti": 70,
+              "dl_cqi": 15.0,
+              "dl_mcs": 0.0,
+              "ul_pusch_rssi": 0.0,
+              "ul_pucch_rssi": 3949.9058,
+              "ul_pucch_ni": 5977.416,
+              "ul_pusch_tpc": 0,
+              "ul_pucch_tpc": 0,
+              "dl_cqi_offset": 0.028000003,
+              "ul_snr_offset": 0.046999976,
+              "dl_bitrate": 0.0,
+              "dl_bler": 0.0,
+              "ul_snr": 0.0,
+              "ul_mcs": 0.0,
+              "ul_bitrate": 0.0,
+              "ul_bler": 0.0,
+              "ul_phr": 0.0,
+              "ul_bsr": 0,
+              "bearer_list": [
+                {
+                  "bearer_container": {
+                    "bearer_id": 3,
+                    "qci": 7,
+                    "dl_total_bytes": 129833401,
+                    "ul_total_bytes": 4242,
+                    "dl_latency": 0.0,
+                    "ul_latency": 0.0,
+                    "dl_buffered_bytes": 0,
+                    "ul_buffered_bytes": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "event",
+  "timestamp": 1795019476.175,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "s1_context_delete",
+  "event_data": {
+    "mme_ue_s1ap_id": 1,
+    "enb_ue_s1ap_id": 1,
+    "rnti": 70
+  }
+}
+{
+  "type": "event",
+  "timestamp": 1795019476.176,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "rrc_log",
+  "event_data": {
+    "rnti": 70,
+    "asn1_length": 236,
+    "asn1_message": "[\n{\n\"DL-DCCH-Message\":{\n\"message\":{\n\"c1\":{\n\"rrcConnectionRelease\":{\n\"rrc-TransactionIdentifier\":0,\n\"criticalExtensions\":{\n\"c1\":{\n\"rrcConnectionRelease-r8\":{\n\"releaseCause\":\"other\"\n}\n}\n}\n}\n}\n}\n}\n}\n]",
+    "asn1_type": 10,
+    "additional": 0
+  }
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019476.854,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019477.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019478.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019479.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "metrics",
+  "timestamp": 1795019480.855,
+  "cell_list": [
+    {
+      "cell_container": {
+        "carrier_id": 0,
+        "pci": 1,
+        "nof_rach": 1,
+        "ue_list": [
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "event",
+  "timestamp": 1795019483.926,
+  "carrier_id": 0,
+  "cell_id": 1,
+  "event_name": "sector_stop",
+  "event_data": {
+    "pci": 1,
+    "cell_identity": "1",
+    "sib9_home_enb_name": ""
+  }
+}

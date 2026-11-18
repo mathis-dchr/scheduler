@@ -1,0 +1,584 @@
+2026-11-18T16:33:37.258882 [EPC    ] [I] 
+
+Built in Release mode using commit eb66a95 on branch main.
+
+---  Software Radio Systems EPC log ---
+
+
+2026-11-18T16:33:37.258885 [EPC    ] [I] Using binary srsepc with arguments: /home/ubuntu/scheduler/config/epc.conf --hss.db_file=/home/ubuntu/scheduler/resultats/time_rr_50prb_udp40M_20261118_163024/N4/user_db.csv --log.filename=/home/ubuntu/scheduler/resultats/time_rr_50prb_udp40M_20261118_163024/N4/epc.log 
+2026-11-18T16:33:37.258948 [HSS    ] [I] Opened DB file: /home/ubuntu/scheduler/resultats/time_rr_50prb_udp40M_20261118_163024/N4/user_db.csv
+2026-11-18T16:33:37.258973 [HSS    ] [I] static ip addr 172.16.0.2
+2026-11-18T16:33:37.258979 [HSS    ] [I] static ip addr 172.16.0.3
+2026-11-18T16:33:37.258999 [HSS    ] [I] static ip addr 172.16.0.4
+2026-11-18T16:33:37.259013 [HSS    ] [I] static ip addr 172.16.0.5
+2026-11-18T16:33:37.259023 [HSS    ] [I] HSS Initialized. DB file /home/ubuntu/scheduler/resultats/time_rr_50prb_udp40M_20261118_163024/N4/user_db.csv, MCC: 61441, MNC: 65281
+2026-11-18T16:33:37.259069 [S1AP   ] [I] S1-MME Initializing
+2026-11-18T16:33:37.259111 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.100:36412
+2026-11-18T16:33:37.259123 [S1AP   ] [I] S1AP Initialized
+2026-11-18T16:33:37.259124 [MME GTPC] [I] Initializing MME S11 interface.
+2026-11-18T16:33:37.259132 [MME GTPC] [I] MME S11 Initialized
+2026-11-18T16:33:37.259138 [MME GTPC] [I] MME GTP-C Initialized
+2026-11-18T16:33:37.259141 [S1AP   ] [I] MME Initialized. MCC: 0xf001, MNC: 0xff01
+2026-11-18T16:33:37.259162 [GTPU   ] [I] TUN file descriptor = 6
+2026-11-18T16:33:37.259930 [GTPU   ] [I] Initialized SGi interface
+2026-11-18T16:33:37.259945 [GTPU   ] [I] S1-U socket = 7
+2026-11-18T16:33:37.259948 [GTPU   ] [I] S1-U IP = 127.0.1.100, Port = 2152 
+2026-11-18T16:33:37.259949 [GTPU   ] [I] Initialized S1-U interface
+2026-11-18T16:33:37.259949 [GTPU   ] [I] SPGW GTP-U Initialized.
+2026-11-18T16:33:37.259966 [SPGW GTPC] [I] Initializing SPGW S11 interface.
+2026-11-18T16:33:37.260273 [SPGW GTPC] [I] SPGW S11 Initialized.
+2026-11-18T16:33:37.260287 [SPGW   ] [I] SP-GW Initialized.
+2026-11-18T16:33:37.308811 [GTPU   ] [I] IPv6 not supported yet.
+2026-11-18T16:33:40.356392 [S1AP   ] [I] Received S1AP msg. Size: 49
+2026-11-18T16:33:40.356484 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:40.356485 [S1AP   ] [I] Received S1 Setup Request.
+2026-11-18T16:33:40.356502 [S1AP   ] [I] Received S1 Setup Request.
+2026-11-18T16:33:40.356520 [S1AP   ] [I] S1 Setup Request - eNB Name: srsenb01, eNB id: 0x19b
+2026-11-18T16:33:40.356521 [S1AP   ] [I] S1 Setup Request - MCC:001, MNC:01, PLMN: 61712
+2026-11-18T16:33:40.356524 [S1AP   ] [I] S1 Setup Request - TAC 7, B-PLMN 0xf110
+2026-11-18T16:33:40.356530 [S1AP   ] [I] Adding new eNB context. eNB ID 411
+2026-11-18T16:33:40.356597 [S1AP   ] [I] Sending S1 Setup Response
+2026-11-18T16:33:41.568088 [GTPU   ] [I] IPv6 not supported yet.
+2026-11-18T16:33:48.317059 [S1AP   ] [I] Received S1AP msg. Size: 66
+2026-11-18T16:33:48.317086 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.317088 [S1AP   ] [I] Received Initial UE Message.
+2026-11-18T16:33:48.317116 [S1AP   ] [I] Initial UE message: LIBLTE_MME_MSG_TYPE_ATTACH_REQUEST
+2026-11-18T16:33:48.317122 [S1AP   ] [I] Received Initial UE message -- Attach Request
+2026-11-18T16:33:48.317154 [NAS    ] [I] Attach request -- IMSI: 001010123456780
+2026-11-18T16:33:48.317158 [NAS    ] [I] Attach request -- eNB-UE S1AP Id: 1
+2026-11-18T16:33:48.317162 [NAS    ] [I] Attach request -- Attach type: 1
+2026-11-18T16:33:48.317167 [NAS    ] [I] Attach Request -- UE Network Capabilities EEA: 11110000
+2026-11-18T16:33:48.317172 [NAS    ] [I] Attach Request -- UE Network Capabilities EIA: 01110000
+2026-11-18T16:33:48.317176 [NAS    ] [I] Attach Request -- MS Network Capabilities Present: false
+2026-11-18T16:33:48.317179 [NAS    ] [I] PDN Connectivity Request -- EPS Bearer Identity requested: 0
+2026-11-18T16:33:48.317232 [NAS    ] [I] PDN Connectivity Request -- Procedure Transaction Id: 1
+2026-11-18T16:33:48.317243 [NAS    ] [I] PDN Connectivity Request -- ESM Information Transfer requested: false
+2026-11-18T16:33:48.317323 [NAS    ] [I] Packing Authentication Request
+2026-11-18T16:33:48.317401 [NAS    ] [I] Downlink NAS: Sending Authentication Request
+2026-11-18T16:33:48.319274 [S1AP   ] [I] Received S1AP msg. Size: 66
+2026-11-18T16:33:48.319294 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.319296 [S1AP   ] [I] Received Initial UE Message.
+2026-11-18T16:33:48.319610 [S1AP   ] [I] Initial UE message: LIBLTE_MME_MSG_TYPE_ATTACH_REQUEST
+2026-11-18T16:33:48.319620 [S1AP   ] [I] Received Initial UE message -- Attach Request
+2026-11-18T16:33:48.319633 [NAS    ] [I] Attach request -- IMSI: 001010123456783
+2026-11-18T16:33:48.319859 [NAS    ] [I] Attach request -- eNB-UE S1AP Id: 2
+2026-11-18T16:33:48.319873 [NAS    ] [I] Attach request -- Attach type: 1
+2026-11-18T16:33:48.319879 [NAS    ] [I] Attach Request -- UE Network Capabilities EEA: 11110000
+2026-11-18T16:33:48.319883 [NAS    ] [I] Attach Request -- UE Network Capabilities EIA: 01110000
+2026-11-18T16:33:48.319887 [NAS    ] [I] Attach Request -- MS Network Capabilities Present: false
+2026-11-18T16:33:48.319890 [NAS    ] [I] PDN Connectivity Request -- EPS Bearer Identity requested: 0
+2026-11-18T16:33:48.319894 [NAS    ] [I] PDN Connectivity Request -- Procedure Transaction Id: 1
+2026-11-18T16:33:48.319897 [NAS    ] [I] PDN Connectivity Request -- ESM Information Transfer requested: false
+2026-11-18T16:33:48.319918 [NAS    ] [I] Packing Authentication Request
+2026-11-18T16:33:48.319980 [NAS    ] [I] Downlink NAS: Sending Authentication Request
+2026-11-18T16:33:48.321287 [S1AP   ] [I] Received S1AP msg. Size: 66
+2026-11-18T16:33:48.321304 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.321306 [S1AP   ] [I] Received Initial UE Message.
+2026-11-18T16:33:48.321332 [S1AP   ] [I] Initial UE message: LIBLTE_MME_MSG_TYPE_ATTACH_REQUEST
+2026-11-18T16:33:48.321338 [S1AP   ] [I] Received Initial UE message -- Attach Request
+2026-11-18T16:33:48.321353 [NAS    ] [I] Attach request -- IMSI: 001010123456781
+2026-11-18T16:33:48.321370 [NAS    ] [I] Attach request -- eNB-UE S1AP Id: 3
+2026-11-18T16:33:48.321376 [NAS    ] [I] Attach request -- Attach type: 1
+2026-11-18T16:33:48.321382 [NAS    ] [I] Attach Request -- UE Network Capabilities EEA: 11110000
+2026-11-18T16:33:48.321387 [NAS    ] [I] Attach Request -- UE Network Capabilities EIA: 01110000
+2026-11-18T16:33:48.321391 [NAS    ] [I] Attach Request -- MS Network Capabilities Present: false
+2026-11-18T16:33:48.321395 [NAS    ] [I] PDN Connectivity Request -- EPS Bearer Identity requested: 0
+2026-11-18T16:33:48.321399 [NAS    ] [I] PDN Connectivity Request -- Procedure Transaction Id: 1
+2026-11-18T16:33:48.321416 [NAS    ] [I] PDN Connectivity Request -- ESM Information Transfer requested: false
+2026-11-18T16:33:48.321597 [NAS    ] [I] Packing Authentication Request
+2026-11-18T16:33:48.321657 [NAS    ] [I] Downlink NAS: Sending Authentication Request
+2026-11-18T16:33:48.323372 [S1AP   ] [I] Received S1AP msg. Size: 66
+2026-11-18T16:33:48.323388 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.323389 [S1AP   ] [I] Received Initial UE Message.
+2026-11-18T16:33:48.323415 [S1AP   ] [I] Initial UE message: LIBLTE_MME_MSG_TYPE_ATTACH_REQUEST
+2026-11-18T16:33:48.323420 [S1AP   ] [I] Received Initial UE message -- Attach Request
+2026-11-18T16:33:48.323432 [NAS    ] [I] Attach request -- IMSI: 001010123456782
+2026-11-18T16:33:48.323436 [NAS    ] [I] Attach request -- eNB-UE S1AP Id: 4
+2026-11-18T16:33:48.323439 [NAS    ] [I] Attach request -- Attach type: 1
+2026-11-18T16:33:48.323444 [NAS    ] [I] Attach Request -- UE Network Capabilities EEA: 11110000
+2026-11-18T16:33:48.323447 [NAS    ] [I] Attach Request -- UE Network Capabilities EIA: 01110000
+2026-11-18T16:33:48.323451 [NAS    ] [I] Attach Request -- MS Network Capabilities Present: false
+2026-11-18T16:33:48.323454 [NAS    ] [I] PDN Connectivity Request -- EPS Bearer Identity requested: 0
+2026-11-18T16:33:48.323457 [NAS    ] [I] PDN Connectivity Request -- Procedure Transaction Id: 1
+2026-11-18T16:33:48.323584 [NAS    ] [I] PDN Connectivity Request -- ESM Information Transfer requested: false
+2026-11-18T16:33:48.323615 [NAS    ] [I] Packing Authentication Request
+2026-11-18T16:33:48.323662 [NAS    ] [I] Downlink NAS: Sending Authentication Request
+2026-11-18T16:33:48.339641 [S1AP   ] [I] Received S1AP msg. Size: 57
+2026-11-18T16:33:48.339657 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.339659 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.339665 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_PLAIN_NAS, mac_vaild: no, msg_encrypted: no
+2026-11-18T16:33:48.339678 [S1AP   ] [I] UL NAS: Received Authentication Response
+2026-11-18T16:33:48.339707 [NAS    ] [I] Authentication Response -- IMSI 001010123456780
+2026-11-18T16:33:48.339707 [NAS    ] [I] Authentication response -- RES
+    0000: 5e 62 10 00 79 b1 aa 0a
+2026-11-18T16:33:48.339708 [NAS    ] [I] Authentication response -- XRES
+    0000: 5e 62 10 00 79 b1 aa 0a
+2026-11-18T16:33:48.339711 [NAS    ] [I] UE Authentication Accepted.
+2026-11-18T16:33:48.339711 [NAS    ] [I] Packing Security Mode Command
+2026-11-18T16:33:48.339883 [NAS    ] [I] Key NAS Encryption (k_nas_enc)
+    0000: 2f 58 86 13 5a 9a 4e 52 90 be 9d 9d c4 c4 a9 41
+    0010: bc 97 6b bb f8 b9 4b 23 48 d2 6a 0f 7e 9d 5b b0
+2026-11-18T16:33:48.339891 [NAS    ] [I] Key NAS Integrity (k_nas_int)
+    0000: e1 97 5b 6b 0f 50 32 85 a2 c3 51 b4 ab 12 33 73
+    0010: cc c9 51 96 7c 81 36 a6 0b ae b2 88 28 12 36 37
+2026-11-18T16:33:48.339895 [NAS    ] [I] Generating KeNB with UL NAS COUNT: 0
+2026-11-18T16:33:48.339904 [NAS    ] [I] Key eNodeB (k_enb)
+    0000: b6 47 ac b8 d7 a1 19 ee 02 df 3b 48 3e 2a 9b 55
+    0010: 69 87 87 ec 39 53 d8 8e 65 2e 76 33 cb ff fb 9a
+2026-11-18T16:33:48.341743 [S1AP   ] [I] Received S1AP msg. Size: 57
+2026-11-18T16:33:48.341761 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.341762 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.341766 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_PLAIN_NAS, mac_vaild: no, msg_encrypted: no
+2026-11-18T16:33:48.341767 [S1AP   ] [I] UL NAS: Received Authentication Response
+2026-11-18T16:33:48.341793 [NAS    ] [I] Authentication Response -- IMSI 001010123456783
+2026-11-18T16:33:48.341794 [NAS    ] [I] Authentication response -- RES
+    0000: a7 21 ee 71 08 8f 65 a8
+2026-11-18T16:33:48.341795 [NAS    ] [I] Authentication response -- XRES
+    0000: a7 21 ee 71 08 8f 65 a8
+2026-11-18T16:33:48.341799 [NAS    ] [I] UE Authentication Accepted.
+2026-11-18T16:33:48.341799 [NAS    ] [I] Packing Security Mode Command
+2026-11-18T16:33:48.341811 [NAS    ] [I] Key NAS Encryption (k_nas_enc)
+    0000: 9b 0a 36 d6 73 66 55 39 e2 4d 9a d0 7b 73 ab 66
+    0010: 09 22 10 1c 3c 10 e6 0e 15 31 81 3f eb 93 51 17
+2026-11-18T16:33:48.341811 [NAS    ] [I] Key NAS Integrity (k_nas_int)
+    0000: 90 c0 6d e8 85 2a e3 63 bc 92 84 9b 4e f6 4d 4e
+    0010: f2 18 b9 68 e7 12 12 b6 25 ea 15 85 60 b3 6b c2
+2026-11-18T16:33:48.341819 [NAS    ] [I] Generating KeNB with UL NAS COUNT: 0
+2026-11-18T16:33:48.341823 [NAS    ] [I] Key eNodeB (k_enb)
+    0000: fe 70 f3 70 16 1b ab 8d 23 0e 38 76 5d 1b b1 d5
+    0010: 0c 53 14 56 6b 73 b2 40 5e fc ea 59 2f c8 df 06
+2026-11-18T16:33:48.343913 [S1AP   ] [I] Received S1AP msg. Size: 57
+2026-11-18T16:33:48.344117 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.344119 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.344125 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_PLAIN_NAS, mac_vaild: no, msg_encrypted: no
+2026-11-18T16:33:48.344126 [S1AP   ] [I] UL NAS: Received Authentication Response
+2026-11-18T16:33:48.344159 [NAS    ] [I] Authentication Response -- IMSI 001010123456781
+2026-11-18T16:33:48.344160 [NAS    ] [I] Authentication response -- RES
+    0000: 9b 6d b8 a7 21 e2 af d1
+2026-11-18T16:33:48.344161 [NAS    ] [I] Authentication response -- XRES
+    0000: 9b 6d b8 a7 21 e2 af d1
+2026-11-18T16:33:48.344166 [NAS    ] [I] UE Authentication Accepted.
+2026-11-18T16:33:48.344166 [NAS    ] [I] Packing Security Mode Command
+2026-11-18T16:33:48.344180 [NAS    ] [I] Key NAS Encryption (k_nas_enc)
+    0000: 07 95 2e 76 37 97 85 b6 28 0d 4f 4a 3e 60 27 26
+    0010: e5 01 27 21 fb 75 e1 e2 2e d9 e1 fa 06 48 05 5a
+2026-11-18T16:33:48.344180 [NAS    ] [I] Key NAS Integrity (k_nas_int)
+    0000: bd 8c 9b 0c 4e 5a c9 ba db 7e de 84 0c b9 1f 81
+    0010: 42 57 7c 5e 19 cd c6 5b 6a ba e6 34 6e 29 be a4
+2026-11-18T16:33:48.344185 [NAS    ] [I] Generating KeNB with UL NAS COUNT: 0
+2026-11-18T16:33:48.344189 [NAS    ] [I] Key eNodeB (k_enb)
+    0000: 51 02 67 91 95 87 8c ec ab 70 9c 5d d5 da a4 f2
+    0010: 97 db 84 4d b9 7b 7e 07 35 7e fe 77 b2 14 d1 58
+2026-11-18T16:33:48.346814 [S1AP   ] [I] Received S1AP msg. Size: 57
+2026-11-18T16:33:48.346830 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.346831 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.346834 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_PLAIN_NAS, mac_vaild: no, msg_encrypted: no
+2026-11-18T16:33:48.346835 [S1AP   ] [I] UL NAS: Received Authentication Response
+2026-11-18T16:33:48.346867 [NAS    ] [I] Authentication Response -- IMSI 001010123456782
+2026-11-18T16:33:48.346868 [NAS    ] [I] Authentication response -- RES
+    0000: 00 b1 9e 4f 4c 62 8d f1
+2026-11-18T16:33:48.346868 [NAS    ] [I] Authentication response -- XRES
+    0000: 00 b1 9e 4f 4c 62 8d f1
+2026-11-18T16:33:48.346873 [NAS    ] [I] UE Authentication Accepted.
+2026-11-18T16:33:48.346873 [NAS    ] [I] Packing Security Mode Command
+2026-11-18T16:33:48.346883 [NAS    ] [I] Key NAS Encryption (k_nas_enc)
+    0000: 56 20 09 72 23 dd b6 f4 62 6e ca 24 69 4d ed f7
+    0010: e0 8b 00 33 e5 14 14 31 56 d3 2c ff c9 0b 4a ec
+2026-11-18T16:33:48.346884 [NAS    ] [I] Key NAS Integrity (k_nas_int)
+    0000: 1d 63 b1 47 30 9f d1 a7 e5 01 11 7e 08 47 a4 1a
+    0010: 60 2b 07 22 14 6b f0 90 cb 9c 32 21 b6 1e f6 8c
+2026-11-18T16:33:48.346887 [NAS    ] [I] Generating KeNB with UL NAS COUNT: 0
+2026-11-18T16:33:48.347019 [NAS    ] [I] Key eNodeB (k_enb)
+    0000: 9d 9c 8d d1 2c d8 e9 dc f2 e1 3a 5c 28 75 d6 59
+    0010: 2d 93 44 a4 bb 01 f6 2f 5f 81 89 8e 67 14 35 c2
+2026-11-18T16:33:48.361602 [S1AP   ] [I] Received S1AP msg. Size: 54
+2026-11-18T16:33:48.361636 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.361637 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.361965 [NAS    ] [I] Integrity check ok. Local: count=0, Received: count=0
+2026-11-18T16:33:48.361990 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED_WITH_NEW_EPS_SECURITY_CONTEXT, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:48.361991 [S1AP   ] [I] UL NAS: Received Security Mode Complete
+2026-11-18T16:33:48.362084 [NAS    ] [I] Security Mode Command Complete -- IMSI: 001010123456780
+2026-11-18T16:33:48.362107 [HSS    ] [I] Found User 001010123456780
+2026-11-18T16:33:48.362112 [MME GTPC] [I] Sending Create Session Request.
+2026-11-18T16:33:48.362116 [MME GTPC] [I] Next MME control TEID: 2
+2026-11-18T16:33:48.362116 [MME GTPC] [I] Allocated MME control TEID: 1
+2026-11-18T16:33:48.362549 [SPGW GTPC] [I] SPGW Received Create Session Request
+2026-11-18T16:33:48.362549 [SPGW GTPC] [I] Creating new GTP-C context
+2026-11-18T16:33:48.362552 [SPGW GTPC] [I] SPGW: get_new_ue_ipv4 static ip addr 172.16.0.2
+2026-11-18T16:33:48.362588 [SPGW GTPC] [I] Sending Create Session Response
+2026-11-18T16:33:48.362607 [MME GTPC] [I] Received Create Session Response
+2026-11-18T16:33:48.362617 [MME GTPC] [I] MME GTPC Ctrl TEID 1, IMSI 1010123456780
+2026-11-18T16:33:48.362622 [MME GTPC] [I] Create Session Response -- SPGW control TEID 1
+2026-11-18T16:33:48.362656 [MME GTPC] [I] Create Session Response -- SPGW S1-U Address: 127.0.1.100
+2026-11-18T16:33:48.362664 [S1AP   ] [I] Preparing to send Initial Context Setup request
+2026-11-18T16:33:48.362920 [S1AP   ] [I] Initial Context Setup Request -- Key eNB (k_enb)
+    0000: b6 47 ac b8 d7 a1 19 ee 02 df 3b 48 3e 2a 9b 55
+    0010: 69 87 87 ec 39 53 d8 8e 65 2e 76 33 cb ff fb 9a
+2026-11-18T16:33:48.363048 [S1AP   ] [I] Adding attach accept to Initial Context Setup Request
+2026-11-18T16:33:48.363050 [NAS    ] [I] Packing Attach Accept
+2026-11-18T16:33:48.363050 [NAS    ] [I] Attach Accept -- MCC 0xf001, MNC 0xff01
+2026-11-18T16:33:48.363244 [NAS    ] [I] Packed Attach Accept
+2026-11-18T16:33:48.363480 [S1AP   ] [I] Initial Context -- S1-U TEID 0x1. IP 127.0.1.100 
+2026-11-18T16:33:48.363481 [S1AP   ] [I] Initial Context Setup Request -- eNB UE S1AP Id 1, MME UE S1AP Id 1
+2026-11-18T16:33:48.363481 [S1AP   ] [I] Initial Context Setup Request -- E-RAB id 5
+2026-11-18T16:33:48.363482 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x1. IP 127.0.1.100 
+2026-11-18T16:33:48.363482 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x1. IP 127.0.1.100 
+2026-11-18T16:33:48.363483 [S1AP   ] [I] Initial Context Setup Request -- QCI 7
+2026-11-18T16:33:48.363687 [S1AP   ] [I] Received S1AP msg. Size: 54
+2026-11-18T16:33:48.363708 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.363709 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.363924 [NAS    ] [I] Integrity check ok. Local: count=0, Received: count=0
+2026-11-18T16:33:48.363927 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED_WITH_NEW_EPS_SECURITY_CONTEXT, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:48.363927 [S1AP   ] [I] UL NAS: Received Security Mode Complete
+2026-11-18T16:33:48.364084 [NAS    ] [I] Security Mode Command Complete -- IMSI: 001010123456783
+2026-11-18T16:33:48.364235 [HSS    ] [I] Found User 001010123456783
+2026-11-18T16:33:48.364243 [MME GTPC] [I] Sending Create Session Request.
+2026-11-18T16:33:48.364248 [MME GTPC] [I] Next MME control TEID: 3
+2026-11-18T16:33:48.364248 [MME GTPC] [I] Allocated MME control TEID: 2
+2026-11-18T16:33:48.364309 [SPGW GTPC] [I] SPGW Received Create Session Request
+2026-11-18T16:33:48.364403 [SPGW GTPC] [I] Creating new GTP-C context
+2026-11-18T16:33:48.364406 [SPGW GTPC] [I] SPGW: get_new_ue_ipv4 static ip addr 172.16.0.5
+2026-11-18T16:33:48.364455 [SPGW GTPC] [I] Sending Create Session Response
+2026-11-18T16:33:48.364476 [MME GTPC] [I] Received Create Session Response
+2026-11-18T16:33:48.364576 [MME GTPC] [I] MME GTPC Ctrl TEID 2, IMSI 1010123456783
+2026-11-18T16:33:48.364585 [MME GTPC] [I] Create Session Response -- SPGW control TEID 2
+2026-11-18T16:33:48.364625 [MME GTPC] [I] Create Session Response -- SPGW S1-U Address: 127.0.1.100
+2026-11-18T16:33:48.364630 [S1AP   ] [I] Preparing to send Initial Context Setup request
+2026-11-18T16:33:48.364655 [S1AP   ] [I] Initial Context Setup Request -- Key eNB (k_enb)
+    0000: fe 70 f3 70 16 1b ab 8d 23 0e 38 76 5d 1b b1 d5
+    0010: 0c 53 14 56 6b 73 b2 40 5e fc ea 59 2f c8 df 06
+2026-11-18T16:33:48.364660 [S1AP   ] [I] Adding attach accept to Initial Context Setup Request
+2026-11-18T16:33:48.364661 [NAS    ] [I] Packing Attach Accept
+2026-11-18T16:33:48.364661 [NAS    ] [I] Attach Accept -- MCC 0xf001, MNC 0xff01
+2026-11-18T16:33:48.365045 [NAS    ] [I] Packed Attach Accept
+2026-11-18T16:33:48.365125 [S1AP   ] [I] Initial Context -- S1-U TEID 0x2. IP 127.0.1.100 
+2026-11-18T16:33:48.365125 [S1AP   ] [I] Initial Context Setup Request -- eNB UE S1AP Id 2, MME UE S1AP Id 2
+2026-11-18T16:33:48.365126 [S1AP   ] [I] Initial Context Setup Request -- E-RAB id 5
+2026-11-18T16:33:48.365127 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x2. IP 127.0.1.100 
+2026-11-18T16:33:48.365128 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x2. IP 127.0.1.100 
+2026-11-18T16:33:48.365150 [S1AP   ] [I] Initial Context Setup Request -- QCI 7
+2026-11-18T16:33:48.365774 [S1AP   ] [I] Received S1AP msg. Size: 54
+2026-11-18T16:33:48.365801 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.365802 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.365979 [NAS    ] [I] Integrity check ok. Local: count=0, Received: count=0
+2026-11-18T16:33:48.365990 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED_WITH_NEW_EPS_SECURITY_CONTEXT, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:48.365991 [S1AP   ] [I] UL NAS: Received Security Mode Complete
+2026-11-18T16:33:48.366017 [NAS    ] [I] Security Mode Command Complete -- IMSI: 001010123456781
+2026-11-18T16:33:48.366067 [HSS    ] [I] Found User 001010123456781
+2026-11-18T16:33:48.366074 [MME GTPC] [I] Sending Create Session Request.
+2026-11-18T16:33:48.366078 [MME GTPC] [I] Next MME control TEID: 4
+2026-11-18T16:33:48.366079 [MME GTPC] [I] Allocated MME control TEID: 3
+2026-11-18T16:33:48.366166 [SPGW GTPC] [I] SPGW Received Create Session Request
+2026-11-18T16:33:48.366167 [SPGW GTPC] [I] Creating new GTP-C context
+2026-11-18T16:33:48.366170 [SPGW GTPC] [I] SPGW: get_new_ue_ipv4 static ip addr 172.16.0.3
+2026-11-18T16:33:48.366183 [SPGW GTPC] [I] Sending Create Session Response
+2026-11-18T16:33:48.366203 [MME GTPC] [I] Received Create Session Response
+2026-11-18T16:33:48.366210 [MME GTPC] [I] MME GTPC Ctrl TEID 3, IMSI 1010123456781
+2026-11-18T16:33:48.366214 [MME GTPC] [I] Create Session Response -- SPGW control TEID 3
+2026-11-18T16:33:48.366220 [MME GTPC] [I] Create Session Response -- SPGW S1-U Address: 127.0.1.100
+2026-11-18T16:33:48.366227 [S1AP   ] [I] Preparing to send Initial Context Setup request
+2026-11-18T16:33:48.366242 [S1AP   ] [I] Initial Context Setup Request -- Key eNB (k_enb)
+    0000: 51 02 67 91 95 87 8c ec ab 70 9c 5d d5 da a4 f2
+    0010: 97 db 84 4d b9 7b 7e 07 35 7e fe 77 b2 14 d1 58
+2026-11-18T16:33:48.366311 [S1AP   ] [I] Adding attach accept to Initial Context Setup Request
+2026-11-18T16:33:48.366311 [NAS    ] [I] Packing Attach Accept
+2026-11-18T16:33:48.366312 [NAS    ] [I] Attach Accept -- MCC 0xf001, MNC 0xff01
+2026-11-18T16:33:48.366482 [NAS    ] [I] Packed Attach Accept
+2026-11-18T16:33:48.366559 [S1AP   ] [I] Initial Context -- S1-U TEID 0x3. IP 127.0.1.100 
+2026-11-18T16:33:48.366560 [S1AP   ] [I] Initial Context Setup Request -- eNB UE S1AP Id 3, MME UE S1AP Id 3
+2026-11-18T16:33:48.366561 [S1AP   ] [I] Initial Context Setup Request -- E-RAB id 5
+2026-11-18T16:33:48.366561 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x3. IP 127.0.1.100 
+2026-11-18T16:33:48.366566 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x3. IP 127.0.1.100 
+2026-11-18T16:33:48.366566 [S1AP   ] [I] Initial Context Setup Request -- QCI 7
+2026-11-18T16:33:48.367823 [S1AP   ] [I] Received S1AP msg. Size: 54
+2026-11-18T16:33:48.367839 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.367840 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.367918 [NAS    ] [I] Integrity check ok. Local: count=0, Received: count=0
+2026-11-18T16:33:48.367921 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED_WITH_NEW_EPS_SECURITY_CONTEXT, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:48.367922 [S1AP   ] [I] UL NAS: Received Security Mode Complete
+2026-11-18T16:33:48.367940 [NAS    ] [I] Security Mode Command Complete -- IMSI: 001010123456782
+2026-11-18T16:33:48.367948 [HSS    ] [I] Found User 001010123456782
+2026-11-18T16:33:48.367953 [MME GTPC] [I] Sending Create Session Request.
+2026-11-18T16:33:48.367956 [MME GTPC] [I] Next MME control TEID: 5
+2026-11-18T16:33:48.367956 [MME GTPC] [I] Allocated MME control TEID: 4
+2026-11-18T16:33:48.368023 [SPGW GTPC] [I] SPGW Received Create Session Request
+2026-11-18T16:33:48.368024 [SPGW GTPC] [I] Creating new GTP-C context
+2026-11-18T16:33:48.368027 [SPGW GTPC] [I] SPGW: get_new_ue_ipv4 static ip addr 172.16.0.4
+2026-11-18T16:33:48.368041 [SPGW GTPC] [I] Sending Create Session Response
+2026-11-18T16:33:48.368110 [MME GTPC] [I] Received Create Session Response
+2026-11-18T16:33:48.368118 [MME GTPC] [I] MME GTPC Ctrl TEID 4, IMSI 1010123456782
+2026-11-18T16:33:48.368123 [MME GTPC] [I] Create Session Response -- SPGW control TEID 4
+2026-11-18T16:33:48.368128 [MME GTPC] [I] Create Session Response -- SPGW S1-U Address: 127.0.1.100
+2026-11-18T16:33:48.368141 [S1AP   ] [I] Preparing to send Initial Context Setup request
+2026-11-18T16:33:48.368166 [S1AP   ] [I] Initial Context Setup Request -- Key eNB (k_enb)
+    0000: 9d 9c 8d d1 2c d8 e9 dc f2 e1 3a 5c 28 75 d6 59
+    0010: 2d 93 44 a4 bb 01 f6 2f 5f 81 89 8e 67 14 35 c2
+2026-11-18T16:33:48.368171 [S1AP   ] [I] Adding attach accept to Initial Context Setup Request
+2026-11-18T16:33:48.368172 [NAS    ] [I] Packing Attach Accept
+2026-11-18T16:33:48.368172 [NAS    ] [I] Attach Accept -- MCC 0xf001, MNC 0xff01
+2026-11-18T16:33:48.368340 [NAS    ] [I] Packed Attach Accept
+2026-11-18T16:33:48.368510 [S1AP   ] [I] Initial Context -- S1-U TEID 0x4. IP 127.0.1.100 
+2026-11-18T16:33:48.368510 [S1AP   ] [I] Initial Context Setup Request -- eNB UE S1AP Id 4, MME UE S1AP Id 4
+2026-11-18T16:33:48.368511 [S1AP   ] [I] Initial Context Setup Request -- E-RAB id 5
+2026-11-18T16:33:48.368512 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x4. IP 127.0.1.100 
+2026-11-18T16:33:48.368512 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x4. IP 127.0.1.100 
+2026-11-18T16:33:48.368512 [S1AP   ] [I] Initial Context Setup Request -- QCI 7
+2026-11-18T16:33:48.403537 [S1AP   ] [I] Received S1AP msg. Size: 40
+2026-11-18T16:33:48.403551 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.403552 [S1AP   ] [I] Ignoring UE capability Info Indication.
+2026-11-18T16:33:48.609052 [S1AP   ] [I] Received S1AP msg. Size: 40
+2026-11-18T16:33:48.609065 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.609066 [S1AP   ] [I] Ignoring UE capability Info Indication.
+2026-11-18T16:33:48.609076 [S1AP   ] [I] Received S1AP msg. Size: 40
+2026-11-18T16:33:48.609079 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.609080 [S1AP   ] [I] Ignoring UE capability Info Indication.
+2026-11-18T16:33:48.609085 [S1AP   ] [I] Received S1AP msg. Size: 40
+2026-11-18T16:33:48.609087 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.609088 [S1AP   ] [I] Ignoring UE capability Info Indication.
+2026-11-18T16:33:48.609137 [S1AP   ] [I] Received S1AP msg. Size: 38
+2026-11-18T16:33:48.609174 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:33:48.609175 [S1AP   ] [I] Received Initial Context Setup Response.
+2026-11-18T16:33:48.609220 [S1AP   ] [I] E-RAB Context Setup. E-RAB id 5
+2026-11-18T16:33:48.609221 [S1AP   ] [I] E-RAB Context -- eNB TEID 0x2, eNB Address 127.0.1.1
+2026-11-18T16:33:48.609241 [S1AP   ] [I] Received S1AP msg. Size: 59
+2026-11-18T16:33:48.609250 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.609250 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.609363 [NAS    ] [I] Integrity check ok. Local: count=1, Received: count=1
+2026-11-18T16:33:48.609366 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:48.609366 [S1AP   ] [I] UL NAS: Received Attach Complete
+2026-11-18T16:33:48.609449 [MME GTPC] [I] Sending GTP-C Modify bearer request
+2026-11-18T16:33:48.609450 [MME GTPC] [I] GTP-C Modify bearer request -- S-GW Control TEID 2
+2026-11-18T16:33:48.609452 [MME GTPC] [I] GTP-C Modify bearer request -- S1-U TEID 0x2, IP 127.0.1.1
+2026-11-18T16:33:48.609702 [SPGW GTPC] [I] Received Modified Bearer Request
+2026-11-18T16:33:48.609703 [SPGW GTPC] [I] Setting Up GTP-U tunnel. Tunnel info: 
+2026-11-18T16:33:48.609705 [SPGW GTPC] [I] IMSI: 001010123456783, UE IP: 172.16.0.5 
+2026-11-18T16:33:48.609706 [SPGW GTPC] [I] S-GW Rx Ctrl TEID 0x2, MME Rx Ctrl TEID 0x2
+2026-11-18T16:33:48.609706 [SPGW GTPC] [I] S-GW Rx Ctrl IP (NA), MME Rx Ctrl IP (NA)
+2026-11-18T16:33:48.609707 [SPGW GTPC] [I] S-GW Rx User TEID 0x2, S-GW Rx User IP 127.0.1.100
+2026-11-18T16:33:48.609707 [SPGW GTPC] [I] eNB Rx User TEID 0x2, eNB Rx User IP 127.0.1.1
+2026-11-18T16:33:48.609708 [GTPU   ] [I] Modifying GTP-U Tunnel.
+2026-11-18T16:33:48.609710 [GTPU   ] [I] UE IP 172.16.0.5
+2026-11-18T16:33:48.609711 [GTPU   ] [I] Downlink eNB addr 127.0.1.1, U-TEID 0x2
+2026-11-18T16:33:48.609711 [GTPU   ] [I] Uplink C-TEID: 0x2
+2026-11-18T16:33:48.609743 [NAS    ] [I] Packing EMM Information
+2026-11-18T16:33:48.609836 [NAS    ] [I] Packed UE EMM information
+2026-11-18T16:33:48.610136 [NAS    ] [I] Sending EMM Information
+2026-11-18T16:33:48.610150 [S1AP   ] [I] Received S1AP msg. Size: 38
+2026-11-18T16:33:48.610163 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:33:48.610164 [S1AP   ] [I] Received Initial Context Setup Response.
+2026-11-18T16:33:48.610176 [S1AP   ] [I] E-RAB Context Setup. E-RAB id 5
+2026-11-18T16:33:48.610177 [S1AP   ] [I] E-RAB Context -- eNB TEID 0x4, eNB Address 127.0.1.1
+2026-11-18T16:33:48.610194 [S1AP   ] [I] Activated EPS Bearer: Bearer id 5
+2026-11-18T16:33:48.610201 [S1AP   ] [I] Received S1AP msg. Size: 59
+2026-11-18T16:33:48.610208 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.610209 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.610273 [NAS    ] [I] Integrity check ok. Local: count=1, Received: count=1
+2026-11-18T16:33:48.610275 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:48.610275 [S1AP   ] [I] UL NAS: Received Attach Complete
+2026-11-18T16:33:48.610440 [MME GTPC] [I] Sending GTP-C Modify bearer request
+2026-11-18T16:33:48.610441 [MME GTPC] [I] GTP-C Modify bearer request -- S-GW Control TEID 4
+2026-11-18T16:33:48.610443 [MME GTPC] [I] GTP-C Modify bearer request -- S1-U TEID 0x4, IP 127.0.1.1
+2026-11-18T16:33:48.610468 [SPGW GTPC] [I] Received Modified Bearer Request
+2026-11-18T16:33:48.610469 [SPGW GTPC] [I] Setting Up GTP-U tunnel. Tunnel info: 
+2026-11-18T16:33:48.610470 [SPGW GTPC] [I] IMSI: 001010123456782, UE IP: 172.16.0.4 
+2026-11-18T16:33:48.610470 [SPGW GTPC] [I] S-GW Rx Ctrl TEID 0x4, MME Rx Ctrl TEID 0x4
+2026-11-18T16:33:48.610470 [SPGW GTPC] [I] S-GW Rx Ctrl IP (NA), MME Rx Ctrl IP (NA)
+2026-11-18T16:33:48.610471 [SPGW GTPC] [I] S-GW Rx User TEID 0x4, S-GW Rx User IP 127.0.1.100
+2026-11-18T16:33:48.610472 [SPGW GTPC] [I] eNB Rx User TEID 0x4, eNB Rx User IP 127.0.1.1
+2026-11-18T16:33:48.610472 [GTPU   ] [I] Modifying GTP-U Tunnel.
+2026-11-18T16:33:48.610474 [GTPU   ] [I] UE IP 172.16.0.4
+2026-11-18T16:33:48.610475 [GTPU   ] [I] Downlink eNB addr 127.0.1.1, U-TEID 0x4
+2026-11-18T16:33:48.610475 [GTPU   ] [I] Uplink C-TEID: 0x4
+2026-11-18T16:33:48.610487 [NAS    ] [I] Packing EMM Information
+2026-11-18T16:33:48.610557 [NAS    ] [I] Packed UE EMM information
+2026-11-18T16:33:48.610660 [NAS    ] [I] Sending EMM Information
+2026-11-18T16:33:48.610671 [S1AP   ] [I] Received S1AP msg. Size: 38
+2026-11-18T16:33:48.610678 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:33:48.610678 [S1AP   ] [I] Received Initial Context Setup Response.
+2026-11-18T16:33:48.610745 [S1AP   ] [I] E-RAB Context Setup. E-RAB id 5
+2026-11-18T16:33:48.610746 [S1AP   ] [I] E-RAB Context -- eNB TEID 0x3, eNB Address 127.0.1.1
+2026-11-18T16:33:48.610890 [S1AP   ] [I] Activated EPS Bearer: Bearer id 5
+2026-11-18T16:33:48.610897 [S1AP   ] [I] Received S1AP msg. Size: 59
+2026-11-18T16:33:48.610904 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:48.610905 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:48.610995 [NAS    ] [I] Integrity check ok. Local: count=1, Received: count=1
+2026-11-18T16:33:48.610997 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:48.610998 [S1AP   ] [I] UL NAS: Received Attach Complete
+2026-11-18T16:33:48.611069 [MME GTPC] [I] Sending GTP-C Modify bearer request
+2026-11-18T16:33:48.611070 [MME GTPC] [I] GTP-C Modify bearer request -- S-GW Control TEID 3
+2026-11-18T16:33:48.611071 [MME GTPC] [I] GTP-C Modify bearer request -- S1-U TEID 0x3, IP 127.0.1.1
+2026-11-18T16:33:48.611082 [NAS    ] [I] Packing EMM Information
+2026-11-18T16:33:48.611251 [SPGW GTPC] [I] Received Modified Bearer Request
+2026-11-18T16:33:48.611259 [SPGW GTPC] [I] Setting Up GTP-U tunnel. Tunnel info: 
+2026-11-18T16:33:48.611261 [SPGW GTPC] [I] IMSI: 001010123456781, UE IP: 172.16.0.3 
+2026-11-18T16:33:48.611261 [SPGW GTPC] [I] S-GW Rx Ctrl TEID 0x3, MME Rx Ctrl TEID 0x3
+2026-11-18T16:33:48.611262 [SPGW GTPC] [I] S-GW Rx Ctrl IP (NA), MME Rx Ctrl IP (NA)
+2026-11-18T16:33:48.611263 [SPGW GTPC] [I] S-GW Rx User TEID 0x3, S-GW Rx User IP 127.0.1.100
+2026-11-18T16:33:48.611264 [SPGW GTPC] [I] eNB Rx User TEID 0x3, eNB Rx User IP 127.0.1.1
+2026-11-18T16:33:48.611265 [GTPU   ] [I] Modifying GTP-U Tunnel.
+2026-11-18T16:33:48.611268 [GTPU   ] [I] UE IP 172.16.0.3
+2026-11-18T16:33:48.611269 [GTPU   ] [I] Downlink eNB addr 127.0.1.1, U-TEID 0x3
+2026-11-18T16:33:48.611270 [GTPU   ] [I] Uplink C-TEID: 0x3
+2026-11-18T16:33:48.611378 [NAS    ] [I] Packed UE EMM information
+2026-11-18T16:33:48.611484 [NAS    ] [I] Sending EMM Information
+2026-11-18T16:33:48.611495 [S1AP   ] [I] Activated EPS Bearer: Bearer id 5
+2026-11-18T16:33:49.856056 [S1AP   ] [I] Received S1AP msg. Size: 38
+2026-11-18T16:33:49.856075 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:33:49.856076 [S1AP   ] [I] Received Initial Context Setup Response.
+2026-11-18T16:33:49.856143 [S1AP   ] [I] E-RAB Context Setup. E-RAB id 5
+2026-11-18T16:33:49.856145 [S1AP   ] [I] E-RAB Context -- eNB TEID 0x1, eNB Address 127.0.1.1
+2026-11-18T16:33:50.065036 [S1AP   ] [I] Received S1AP msg. Size: 59
+2026-11-18T16:33:50.065052 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:50.065054 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:33:50.065153 [NAS    ] [I] Integrity check ok. Local: count=1, Received: count=1
+2026-11-18T16:33:50.065156 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY_AND_CIPHERED, mac_vaild: yes, msg_encrypted: yes
+2026-11-18T16:33:50.065157 [S1AP   ] [I] UL NAS: Received Attach Complete
+2026-11-18T16:33:50.065187 [MME GTPC] [I] Sending GTP-C Modify bearer request
+2026-11-18T16:33:50.065188 [MME GTPC] [I] GTP-C Modify bearer request -- S-GW Control TEID 1
+2026-11-18T16:33:50.065190 [MME GTPC] [I] GTP-C Modify bearer request -- S1-U TEID 0x1, IP 127.0.1.1
+2026-11-18T16:33:50.065199 [NAS    ] [I] Packing EMM Information
+2026-11-18T16:33:50.065323 [SPGW GTPC] [I] Received Modified Bearer Request
+2026-11-18T16:33:50.065324 [SPGW GTPC] [I] Setting Up GTP-U tunnel. Tunnel info: 
+2026-11-18T16:33:50.065326 [SPGW GTPC] [I] IMSI: 001010123456780, UE IP: 172.16.0.2 
+2026-11-18T16:33:50.065326 [SPGW GTPC] [I] S-GW Rx Ctrl TEID 0x1, MME Rx Ctrl TEID 0x1
+2026-11-18T16:33:50.065326 [SPGW GTPC] [I] S-GW Rx Ctrl IP (NA), MME Rx Ctrl IP (NA)
+2026-11-18T16:33:50.065327 [SPGW GTPC] [I] S-GW Rx User TEID 0x1, S-GW Rx User IP 127.0.1.100
+2026-11-18T16:33:50.065328 [SPGW GTPC] [I] eNB Rx User TEID 0x1, eNB Rx User IP 127.0.1.1
+2026-11-18T16:33:50.065329 [GTPU   ] [I] Modifying GTP-U Tunnel.
+2026-11-18T16:33:50.065332 [GTPU   ] [I] UE IP 172.16.0.2
+2026-11-18T16:33:50.065333 [GTPU   ] [I] Downlink eNB addr 127.0.1.1, U-TEID 0x1
+2026-11-18T16:33:50.065334 [GTPU   ] [I] Uplink C-TEID: 0x1
+2026-11-18T16:33:50.065354 [NAS    ] [I] Packed UE EMM information
+2026-11-18T16:33:50.065413 [NAS    ] [I] Sending EMM Information
+2026-11-18T16:33:50.065422 [S1AP   ] [I] Activated EPS Bearer: Bearer id 5
+2026-11-18T16:33:50.784045 [GTPU   ] [I] IPv6 not supported yet.
+2026-11-18T16:33:52.888642 [S1AP   ] [I] Received S1AP msg. Size: 25
+2026-11-18T16:33:52.888651 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:52.888652 [S1AP   ] [I] Received UE Context Release Request Message.
+2026-11-18T16:33:52.888653 [S1AP   ] [I] Received UE Context Release Request. MME-UE S1AP Id: 1
+2026-11-18T16:33:52.888695 [S1AP   ] [I] There are active E-RABs, send release access bearers request
+2026-11-18T16:33:52.888697 [MME GTPC] [I] Sending GTP-C Release Access Bearers Request
+2026-11-18T16:33:52.888698 [MME GTPC] [I] GTP-C Release Access Berarers Request -- S-GW Control TEID 1
+2026-11-18T16:33:52.888933 [S1AP   ] [I] Received S1AP msg. Size: 19
+2026-11-18T16:33:52.888943 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:33:52.888944 [S1AP   ] [I] Received UE Context Release Complete
+2026-11-18T16:33:52.888945 [S1AP   ] [I] Received UE Context Release Complete. MME-UE S1AP Id: 1
+2026-11-18T16:33:52.888963 [S1AP   ] [I] Released UE ECM Context.
+2026-11-18T16:33:52.888964 [S1AP   ] [I] UE Context Release Completed.
+2026-11-18T16:33:59.526488 [S1AP   ] [I] Preparing to Page UE -- IMSI 001010123456780
+2026-11-18T16:33:59.526507 [NAS    ] [I] Starting T3413 Timer: Timeout value 2
+2026-11-18T16:33:59.897917 [S1AP   ] [I] Received S1AP msg. Size: 59
+2026-11-18T16:33:59.897932 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:59.897934 [S1AP   ] [I] Received Initial UE Message.
+2026-11-18T16:33:59.897949 [S1AP   ] [I] Initial UE message: NAS Message Type Unknown
+2026-11-18T16:33:59.897953 [S1AP   ] [I] Received Initial UE message -- Service Request
+2026-11-18T16:33:59.897956 [NAS    ] [I] Service request -- S-TMSI 0x9704b406
+2026-11-18T16:33:59.897960 [NAS    ] [I] Service request -- eNB UE S1AP Id 5
+2026-11-18T16:33:59.898059 [NAS    ] [I] Integrity check ok. Local: count=2, Received: count=2
+2026-11-18T16:33:59.898064 [NAS    ] [I] Service Request -- Short MAC valid
+2026-11-18T16:33:59.898069 [NAS    ] [I] Service Request -- User is ECM DISCONNECTED
+2026-11-18T16:33:59.898080 [NAS    ] [I] Generating KeNB with UL NAS COUNT: 2
+2026-11-18T16:33:59.898083 [NAS    ] [I] Key eNodeB (k_enb)
+    0000: 31 24 db c3 5a 21 c7 27 5f 26 4f 63 1a ea 4d c7
+    0010: 48 9e 75 fb 08 65 24 8f 59 07 d5 83 d1 3e 14 d6
+2026-11-18T16:33:59.898094 [S1AP   ] [I] Preparing to send Initial Context Setup request
+2026-11-18T16:33:59.898103 [S1AP   ] [I] Initial Context Setup Request -- Key eNB (k_enb)
+    0000: 31 24 db c3 5a 21 c7 27 5f 26 4f 63 1a ea 4d c7
+    0010: 48 9e 75 fb 08 65 24 8f 59 07 d5 83 d1 3e 14 d6
+2026-11-18T16:33:59.898168 [S1AP   ] [I] Initial Context -- S1-U TEID 0x1. IP 127.0.1.100 
+2026-11-18T16:33:59.898168 [S1AP   ] [I] Initial Context Setup Request -- eNB UE S1AP Id 5, MME UE S1AP Id 5
+2026-11-18T16:33:59.898169 [S1AP   ] [I] Initial Context Setup Request -- E-RAB id 5
+2026-11-18T16:33:59.898170 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x1. IP 127.0.1.100 
+2026-11-18T16:33:59.898171 [S1AP   ] [I] Initial Context Setup Request -- S1-U TEID 0x1. IP 127.0.1.100 
+2026-11-18T16:33:59.898171 [S1AP   ] [I] Initial Context Setup Request -- QCI 7
+2026-11-18T16:33:59.940717 [S1AP   ] [I] Received S1AP msg. Size: 40
+2026-11-18T16:33:59.940729 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:33:59.940731 [S1AP   ] [I] Ignoring UE capability Info Indication.
+2026-11-18T16:34:00.145055 [S1AP   ] [I] Received S1AP msg. Size: 38
+2026-11-18T16:34:00.145075 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:34:00.145076 [S1AP   ] [I] Received Initial Context Setup Response.
+2026-11-18T16:34:00.145111 [S1AP   ] [I] E-RAB Context Setup. E-RAB id 5
+2026-11-18T16:34:00.145113 [S1AP   ] [I] E-RAB Context -- eNB TEID 0x5, eNB Address 127.0.1.1
+2026-11-18T16:34:00.145131 [MME GTPC] [I] Sending GTP-C Modify bearer request
+2026-11-18T16:34:00.145133 [MME GTPC] [I] GTP-C Modify bearer request -- S-GW Control TEID 1
+2026-11-18T16:34:00.145135 [MME GTPC] [I] GTP-C Modify bearer request -- S1-U TEID 0x5, IP 127.0.1.1
+2026-11-18T16:34:00.145244 [SPGW GTPC] [I] Received Modified Bearer Request
+2026-11-18T16:34:00.145245 [SPGW GTPC] [I] Setting Up GTP-U tunnel. Tunnel info: 
+2026-11-18T16:34:00.145247 [SPGW GTPC] [I] IMSI: 001010123456780, UE IP: 172.16.0.2 
+2026-11-18T16:34:00.145248 [SPGW GTPC] [I] S-GW Rx Ctrl TEID 0x1, MME Rx Ctrl TEID 0x1
+2026-11-18T16:34:00.145248 [SPGW GTPC] [I] S-GW Rx Ctrl IP (NA), MME Rx Ctrl IP (NA)
+2026-11-18T16:34:00.145249 [SPGW GTPC] [I] S-GW Rx User TEID 0x1, S-GW Rx User IP 127.0.1.100
+2026-11-18T16:34:00.145251 [SPGW GTPC] [I] eNB Rx User TEID 0x5, eNB Rx User IP 127.0.1.1
+2026-11-18T16:34:00.145251 [GTPU   ] [I] Modifying GTP-U Tunnel.
+2026-11-18T16:34:00.145254 [GTPU   ] [I] UE IP 172.16.0.2
+2026-11-18T16:34:00.145255 [GTPU   ] [I] Downlink eNB addr 127.0.1.1, U-TEID 0x5
+2026-11-18T16:34:00.145255 [GTPU   ] [I] Uplink C-TEID: 0x1
+2026-11-18T16:34:00.145416 [S1AP   ] [I] Activated EPS Bearer: Bearer id 5
+2026-11-18T16:34:08.704743 [GTPU   ] [I] IPv6 not supported yet.
+2026-11-18T16:34:32.477177 [S1AP   ] [I] Received S1AP msg. Size: 67
+2026-11-18T16:34:32.477192 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:34:32.477193 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:34:32.477280 [NAS    ] [I] Integrity check ok. Local: count=3, Received: count=3
+2026-11-18T16:34:32.477282 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY, mac_vaild: yes, msg_encrypted: no
+2026-11-18T16:34:32.477282 [S1AP   ] [I] UL NAS: Detach Request
+2026-11-18T16:34:32.477303 [NAS    ] [I] Detach request -- IMSI 001010123456780
+2026-11-18T16:34:32.477304 [MME GTPC] [I] Sending GTP-C Delete Session Request request. IMSI 1010123456780
+2026-11-18T16:34:32.477305 [MME GTPC] [I] GTP-C Delete Session Request -- S-GW Control TEID 1
+2026-11-18T16:34:32.477581 [S1AP   ] [I] Received S1AP msg. Size: 19
+2026-11-18T16:34:32.477608 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:34:32.477609 [S1AP   ] [I] Received UE Context Release Complete
+2026-11-18T16:34:32.477610 [S1AP   ] [I] Received UE Context Release Complete. MME-UE S1AP Id: 5
+2026-11-18T16:34:32.477627 [S1AP   ] [I] Released UE ECM Context.
+2026-11-18T16:34:32.477627 [S1AP   ] [I] UE Context Release Completed.
+2026-11-18T16:34:32.681037 [S1AP   ] [I] Received S1AP msg. Size: 67
+2026-11-18T16:34:32.681051 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:34:32.681052 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:34:32.681151 [NAS    ] [I] Integrity check ok. Local: count=2, Received: count=2
+2026-11-18T16:34:32.681153 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY, mac_vaild: yes, msg_encrypted: no
+2026-11-18T16:34:32.681154 [S1AP   ] [I] UL NAS: Detach Request
+2026-11-18T16:34:32.681190 [NAS    ] [I] Detach request -- IMSI 001010123456783
+2026-11-18T16:34:32.681191 [MME GTPC] [I] Sending GTP-C Delete Session Request request. IMSI 1010123456783
+2026-11-18T16:34:32.681192 [MME GTPC] [I] GTP-C Delete Session Request -- S-GW Control TEID 2
+2026-11-18T16:34:32.681321 [S1AP   ] [I] Received S1AP msg. Size: 67
+2026-11-18T16:34:32.681328 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:34:32.681329 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:34:32.681396 [NAS    ] [I] Integrity check ok. Local: count=2, Received: count=2
+2026-11-18T16:34:32.681397 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY, mac_vaild: yes, msg_encrypted: no
+2026-11-18T16:34:32.681397 [S1AP   ] [I] UL NAS: Detach Request
+2026-11-18T16:34:32.681411 [NAS    ] [I] Detach request -- IMSI 001010123456781
+2026-11-18T16:34:32.681412 [MME GTPC] [I] Sending GTP-C Delete Session Request request. IMSI 1010123456781
+2026-11-18T16:34:32.681412 [MME GTPC] [I] GTP-C Delete Session Request -- S-GW Control TEID 3
+2026-11-18T16:34:32.681453 [S1AP   ] [I] Received S1AP msg. Size: 67
+2026-11-18T16:34:32.681458 [S1AP   ] [I] Received Initiating PDU
+2026-11-18T16:34:32.681459 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-11-18T16:34:32.681516 [NAS    ] [I] Integrity check ok. Local: count=2, Received: count=2
+2026-11-18T16:34:32.681517 [S1AP   ] [I] UL NAS: sec_hdr_type: LIBLTE_MME_SECURITY_HDR_TYPE_INTEGRITY, mac_vaild: yes, msg_encrypted: no
+2026-11-18T16:34:32.681517 [S1AP   ] [I] UL NAS: Detach Request
+2026-11-18T16:34:32.681532 [NAS    ] [I] Detach request -- IMSI 001010123456782
+2026-11-18T16:34:32.681532 [MME GTPC] [I] Sending GTP-C Delete Session Request request. IMSI 1010123456782
+2026-11-18T16:34:32.681533 [MME GTPC] [I] GTP-C Delete Session Request -- S-GW Control TEID 4
+2026-11-18T16:34:32.681556 [S1AP   ] [I] Received S1AP msg. Size: 19
+2026-11-18T16:34:32.681564 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:34:32.681565 [S1AP   ] [I] Received UE Context Release Complete
+2026-11-18T16:34:32.681566 [S1AP   ] [I] Received UE Context Release Complete. MME-UE S1AP Id: 2
+2026-11-18T16:34:32.681575 [S1AP   ] [I] Released UE ECM Context.
+2026-11-18T16:34:32.681575 [S1AP   ] [I] UE Context Release Completed.
+2026-11-18T16:34:32.681598 [S1AP   ] [I] Received S1AP msg. Size: 19
+2026-11-18T16:34:32.681606 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:34:32.681606 [S1AP   ] [I] Received UE Context Release Complete
+2026-11-18T16:34:32.681607 [S1AP   ] [I] Received UE Context Release Complete. MME-UE S1AP Id: 3
+2026-11-18T16:34:32.681623 [S1AP   ] [I] Released UE ECM Context.
+2026-11-18T16:34:32.681624 [S1AP   ] [I] UE Context Release Completed.
+2026-11-18T16:34:32.681834 [S1AP   ] [I] Received S1AP msg. Size: 19
+2026-11-18T16:34:32.681841 [S1AP   ] [I] Received Succeseful Outcome PDU
+2026-11-18T16:34:32.681842 [S1AP   ] [I] Received UE Context Release Complete
+2026-11-18T16:34:32.681842 [S1AP   ] [I] Received UE Context Release Complete. MME-UE S1AP Id: 4
+2026-11-18T16:34:32.681852 [S1AP   ] [I] Released UE ECM Context.
+2026-11-18T16:34:32.681852 [S1AP   ] [I] UE Context Release Completed.
+2026-11-18T16:34:40.049833 [S1AP   ] [I] SCTP Association Shutdown. Association: 82
+2026-11-18T16:34:40.049854 [S1AP   ] [I] Deleting eNB context. eNB Id: 0x19b
+2026-11-18T16:34:40.784854 [S1AP   ] [I] Deleting UE EMM context. IMSI: 001010123456780
+2026-11-18T16:34:40.784882 [S1AP   ] [I] Deleting UE EMM context. IMSI: 001010123456781
+2026-11-18T16:34:40.784886 [S1AP   ] [I] Deleting UE EMM context. IMSI: 001010123456782
+2026-11-18T16:34:40.784889 [S1AP   ] [I] Deleting UE EMM context. IMSI: 001010123456783
+2026-11-18T16:34:40.796089 [HSS    ] [I] Opened DB file: /home/ubuntu/scheduler/resultats/time_rr_50prb_udp40M_20261118_163024/N4/user_db.csv

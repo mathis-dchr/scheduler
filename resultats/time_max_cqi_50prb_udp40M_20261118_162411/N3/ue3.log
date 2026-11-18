@@ -1,0 +1,3 @@
+2026-11-18T16:26:25.746826 [UE     ] [I] Using binary srsue with arguments: /home/ubuntu/scheduler/config/ue.conf --rf.device_name=zmq --rf.device_args=tx_port=tcp://*:2301,rx_port=tcp://localhost:2300,id=ue3,base_srate=11.52e6 --usim.imsi=001010123456782 --gw.netns=ue3 --log.filename=/home/ubuntu/scheduler/resultats/time_max_cqi_50prb_udp40M_20261118_162411/N3/ue3.log --phy.nof_phy_threads=3 --nas.force_imsi_attach=true 
+2026-11-18T16:26:25.780965 [UE     ] [I] Built in Release mode using commit eb66a95 on branch main.
+2026-11-18T16:26:27.645939 [MAC    ] [W] [  382] RA:    ConRes:  Contention Resolution is considered not successful. Stopping PDCCH Search and going to Response Error

@@ -1,0 +1,32 @@
+Active RF plugins: libsrsran_rf_uhd.so libsrsran_rf_zmq.so
+Inactive RF plugins: 
+Reading configuration file /home/ubuntu/scheduler/config/ue.conf...
+
+Built in Release mode using commit eb66a95 on branch main.
+
+Opening 1 channels in RF device=zmq with args=tx_port=tcp://*:2201,rx_port=tcp://localhost:2200,id=ue2,base_srate=11.52e6
+Supported RF device list: UHD zmq file
+CHx base_srate=11.52e6
+CHx id=ue2
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+CH0 rx_port=tcp://localhost:2200
+CH0 tx_port=tcp://*:2201
+Waiting PHY to initialize ... done!
+Attaching UE...
+Closing stdin thread.
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+.
+Found Cell:  Mode=FDD, PCI=1, PRB=50, Ports=1, CP=Normal, CFO=-0.2 KHz
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Found PLMN:  Id=00101, TAC=7
+Random Access Transmission: seq=10, tti=341, ra-rnti=0x2
+RRC Connected
+Random Access Complete.     c-rnti=0x46, ta=0
+Network attach successful. IP: 172.16.0.3
+Software Radio Systems RAN (srsRAN) 18/11/2026 16:26:27 TZ:0
+Stopping ..
+Received RRC Connection Release (releaseCause: other)
+RRC IDLE
+Couldn't stop after 5s. Forcing exit.

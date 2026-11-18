@@ -1,0 +1,2 @@
+2026-11-18T16:39:13.119778 [UE     ] [I] Using binary srsue with arguments: /home/ubuntu/scheduler/config/ue.conf --rf.device_name=zmq --rf.device_args=tx_port=tcp://*:2401,rx_port=tcp://localhost:2400,id=ue4,base_srate=11.52e6 --usim.imsi=001010123456783 --gw.netns=ue4 --log.filename=/home/ubuntu/scheduler/resultats/time_pf_50prb_udp40M_20261118_163551/N4/ue4.log --phy.nof_phy_threads=3 --nas.force_imsi_attach=true 
+2026-11-18T16:39:13.157474 [UE     ] [I] Built in Release mode using commit eb66a95 on branch main.

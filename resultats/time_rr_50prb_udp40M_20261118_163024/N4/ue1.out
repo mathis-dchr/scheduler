@@ -1,0 +1,45 @@
+Active RF plugins: libsrsran_rf_uhd.so libsrsran_rf_zmq.so
+Inactive RF plugins: 
+Reading configuration file /home/ubuntu/scheduler/config/ue.conf...
+
+Built in Release mode using commit eb66a95 on branch main.
+
+Opening 1 channels in RF device=zmq with args=tx_port=tcp://*:2101,rx_port=tcp://localhost:2100,id=ue1,base_srate=11.52e6
+Supported RF device list: UHD zmq file
+CHx base_srate=11.52e6
+CHx id=ue1
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+CH0 rx_port=tcp://localhost:2100
+CH0 tx_port=tcp://*:2101
+Waiting PHY to initialize ... done!
+Attaching UE...
+Closing stdin thread.
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+.
+Found Cell:  Mode=FDD, PCI=1, PRB=50, Ports=1, CP=Normal, CFO=-0.2 KHz
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Found PLMN:  Id=00101, TAC=7
+Random Access Transmission: seq=18, tti=341, ra-rnti=0x2
+RRC Connected
+Random Access Complete.     c-rnti=0x46, ta=0
+Network attach successful. IP: 172.16.0.2
+Scheduling request failed: releasing RRC connection...
+Random Access Transmission: seq=2, tti=1781, ra-rnti=0x2
+Random Access Complete.     c-rnti=0x46, ta=0
+Software Radio Systems RAN (srsRAN) 18/11/2026 16:33:50 TZ:0
+Random Access Transmission: seq=33, tti=2031, ra-rnti=0x2
+Random Access Complete.     c-rnti=0x46, ta=0
+Received RRC Connection Release (releaseCause: other)
+RRC IDLE
+S-TMSI match in paging message
+Service Request with cause mt-Access.
+Random Access Transmission: seq=21, tti=781, ra-rnti=0x2
+RRC Connected
+Random Access Complete.     c-rnti=0x4c, ta=0
+Service Request successful.
+Stopping ..
+Received RRC Connection Release (releaseCause: other)
+RRC IDLE
+Couldn't stop after 5s. Forcing exit.

@@ -1,0 +1,3 @@
+UE1: rx_port=tcp://localhost:2100, tx_port=tcp://*:2101
+UE2: rx_port=tcp://localhost:2200, tx_port=tcp://*:2201
+Broker démarré. Entrée pour arrêter.
