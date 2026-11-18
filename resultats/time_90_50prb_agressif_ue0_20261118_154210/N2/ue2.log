@@ -1,0 +1,2 @@
+2026-11-18T15:43:12.087464 [UE     ] [I] Using binary srsue with arguments: /home/ubuntu/scheduler/config/ue.conf --rf.device_name=zmq --rf.device_args=tx_port=tcp://*:2201,rx_port=tcp://localhost:2200,id=ue2,base_srate=11.52e6 --usim.imsi=001010123456781 --gw.netns=ue2 --log.filename=/home/ubuntu/scheduler/resultats/time_90_50prb_agressif_ue0_20261118_154210/N2/ue2.log --phy.nof_phy_threads=1 
+2026-11-18T15:43:12.121506 [UE     ] [I] Built in Release mode using commit eb66a95 on branch main.

@@ -1,0 +1,793 @@
+2026-11-18T16:04:44.600940 [ENB    ] [I] Using binary srsenb with arguments: /home/ubuntu/scheduler/config/enb.conf --enb.n_prb=50 --scheduler.policy=time_90 --rf.device_name=zmq --rf.device_args=fail_on_disconnect=true,tx_port=tcp://*:2000,rx_port=tcp://localhost:2001,id=enb,base_srate=11.52e6 --log.all_level=warning --log.mac_level=info --log.filename=/home/ubuntu/scheduler/resultats/time_90_50prb_udp40M_20261118_160139/N2/enb.log --expert.report_json_enable=true --expert.report_json_filename=/home/ubuntu/scheduler/resultats/time_90_50prb_udp40M_20261118_160139/N2/enb_report.json --expert.metrics_csv_enable=true --expert.metrics_csv_filename=/home/ubuntu/scheduler/resultats/time_90_50prb_udp40M_20261118_160139/N2/enb_metrics.csv --expert.metrics_period_secs=1 --expert.rrc_inactivity_timer=3600000 
+2026-11-18T16:04:44.635700 [ENB    ] [I] Built in Release mode using commit eb66a95 on branch main.
+2026-11-18T16:04:44.636653 [ENB    ] [I] Using sync queue size of one for ZMQ based radio.
+2026-11-18T16:04:44.684907 [MAC    ] [I] [    0] SCHED90: le dernier UE arrive recoit 90% des ressources
+2026-11-18T16:04:44.684907 [MAC    ] [I] [    0] Using 90/10 (dernier UE arrive) scheduling policy for cc=0
+2026-11-18T16:04:44.684991 [COMN   ] [D] [    0] Opened SCTP socket=7
+2026-11-18T16:04:44.684999 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2026-11-18T16:04:44.685003 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:2152
+2026-11-18T16:04:44.685004 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2026-11-18T16:04:44.685011 [COMN   ] [D] [    0] RxSockets: socket fd=6 has been registered.
+2026-11-18T16:04:44.685031 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:0
+2026-11-18T16:04:44.687189 [COMN   ] [D] [    0] RxSockets: socket fd=7 has been registered.
+2026-11-18T16:04:50.444087 [MAC    ] [I] [  341] SCHED: Added user rnti=0x46
+2026-11-18T16:04:50.444091 [MAC    ] [I] [  341] SCHED: rnti=0x46, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:50.444092 [MAC    ] [I] [  341] SCHED: Resetting rnti=0x46, cc=0 HARQs and feedback state
+2026-11-18T16:04:50.444092 [MAC    ] [I] [  341] SCHED: rnti=0x46 PCell is now enb_cc_idx=0
+2026-11-18T16:04:50.444131 [MAC    ] [I] [  341] SCHED: New PRACH tti=341, preamble=27, temp_crnti=0x46, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:50.444132 [MAC    ] [I] [  341] RACH:  tti=341, cc=0, pci=1, preamble=27, offset=0, temp_crnti=0x46
+2026-11-18T16:04:50.444154 [MAC    ] [I] [  341] rach_tprof: {mean, max, min}={293.8, 293, 293} usec, nof_samples=1
+2026-11-18T16:04:50.444786 [MAC    ] [I] [  342] SCHED90: nouvel UE rnti=0x46, il devient prioritaire
+2026-11-18T16:04:50.444793 [MAC    ] [I] [  342] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x46, rba=102, mcs=0}]
+2026-11-18T16:04:50.459419 [MAC    ] [I] [  343] SCHED: Added user rnti=0x47
+2026-11-18T16:04:50.459423 [MAC    ] [I] [  343] SCHED: rnti=0x47, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:50.459424 [MAC    ] [I] [  343] SCHED: Resetting rnti=0x47, cc=0 HARQs and feedback state
+2026-11-18T16:04:50.459425 [MAC    ] [I] [  343] SCHED: rnti=0x47 PCell is now enb_cc_idx=0
+2026-11-18T16:04:50.459455 [MAC    ] [I] [  343] SCHED: New PRACH tti=341, preamble=39, temp_crnti=0x47, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:50.459456 [MAC    ] [I] [  343] RACH:  tti=341, cc=0, pci=1, preamble=39, offset=0, temp_crnti=0x47
+2026-11-18T16:04:50.459478 [MAC    ] [I] [  343] rach_tprof: {mean, max, min}={7955.6, 15617, 293} usec, nof_samples=2
+2026-11-18T16:04:50.460589 [MAC    ] [I] [  344] SCHED90: nouvel UE rnti=0x47, il devient prioritaire
+2026-11-18T16:04:50.460597 [MAC    ] [I] [  344] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x47, rba=102, mcs=0}]
+2026-11-18T16:04:50.460601 [MAC    ] [I] [  344] SCHED: Msg3 tx rnti=0x46, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=352
+2026-11-18T16:04:50.462663 [MAC    ] [I] [  346] SCHED: Msg3 tx rnti=0x47, cc=0, pid=2, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=354
+2026-11-18T16:04:50.468809 [MAC    ] [I] [  352] SCHED: UL adaptive link: rnti=0x46, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:50.468810 [MAC    ] [I] [  352] Pushing PDU rnti=0x46, tti_rx=352, nof_bytes=7
+2026-11-18T16:04:50.468843 [MAC    ] [I] [  352] 0x46 UL LCID=0 len=6
+2026-11-18T16:04:50.469848 [MAC    ] [I] [  353] SCHED: UE Contention Resolution Identity for rnti=0x46 needs to be scheduled
+2026-11-18T16:04:50.469851 [MAC    ] [I] [  353] SCHED: rnti=0x46, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}, {lcid=1, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:50.470872 [MAC    ] [I] [  354] SCHED: UL adaptive link: rnti=0x47, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:50.470873 [MAC    ] [I] [  354] Pushing PDU rnti=0x47, tti_rx=354, nof_bytes=7
+2026-11-18T16:04:50.470901 [MAC    ] [I] [  354] SCHED: DL tx rnti=0x46, cc=0, pid=0, mask=0x1fffe, dci=(3, 0), n_rtx=0, cfi=1, tbs=165, buffer=29/0, tti_tx_dl=358
+2026-11-18T16:04:50.470903 [MAC    ] [I] [  354] SCHED: DL MAC CEs cc=0: rnti=0x46: [CE "ConResId"]
+2026-11-18T16:04:50.470909 [MAC    ] [I] [  354] 0x47 UL LCID=0 len=6
+2026-11-18T16:04:50.470911 [MAC    ] [I] [  354] 0x46 DL CON_RES: id=0x41a1acf20a48 LCID=0 len=20
+2026-11-18T16:04:50.471920 [S1AP   ] [W] Released UE with rnti=0x46 not found
+2026-11-18T16:04:50.471931 [MAC    ] [I] [  355] SCHED: UE Contention Resolution Identity for rnti=0x47 needs to be scheduled
+2026-11-18T16:04:50.471936 [MAC    ] [I] [  355] SCHED: rnti=0x47, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}, {lcid=1, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:50.472973 [MAC    ] [I] [  356] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1e000, dci=(3, 0), n_rtx=0, cfi=1, tbs=41, buffer=29/0, tti_tx_dl=360
+2026-11-18T16:04:50.472975 [MAC    ] [I] [  356] SCHED: DL MAC CEs cc=0: rnti=0x47: [CE "ConResId"]
+2026-11-18T16:04:50.472992 [MAC    ] [I] [  356] 0x47 DL CON_RES: id=0x41a1acf20a48 LCID=0 len=20
+2026-11-18T16:04:50.481213 [MAC    ] [I] [  364] SCHED: DL adaptive link: rnti=0x47, cqi=5, last_mcs=0, cqi_offset=0.001000
+2026-11-18T16:04:50.482500 [MAC    ] [I] [  365] User rnti=0x46 removed from MAC/PHY
+2026-11-18T16:04:50.500088 [MAC    ] [I] [  382] SCHED: UL tx rnti=0x47, cc=0, pid=6, dci=(3,0), prb=[2, 47), n_rtx=0, cfi=1, tbs=157, bsr=0 (512-157), tti_tx_ul=390
+2026-11-18T16:04:50.508370 [MAC    ] [I] [  390] SCHED: UL adaptive link: rnti=0x47, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:50.508372 [MAC    ] [I] [  390] Pushing PDU rnti=0x47, tti_rx=390, nof_bytes=157
+2026-11-18T16:04:50.508447 [MAC    ] [I] [  390] 0x47 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=1 len=42 PAD: len=106
+2026-11-18T16:04:50.509278 [MAC    ] [I] [  391] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(3, 0), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=395
+2026-11-18T16:04:50.509293 [MAC    ] [I] [  391] 0x47 DL LCID=1 len=2
+2026-11-18T16:04:50.510303 [MAC    ] [I] [  392] SCHED: DL tx rnti=0x47, cc=0, pid=1, mask=0x1c000, dci=(3, 0), n_rtx=0, cfi=1, tbs=28, buffer=18/0, tti_tx_dl=396
+2026-11-18T16:04:50.510311 [MAC    ] [I] [  392] 0x47 DL LCID=1 len=13
+2026-11-18T16:04:50.517544 [MAC    ] [I] [  399] SCHED: DL adaptive link: rnti=0x47, cqi=5, last_mcs=0, cqi_offset=0.002000
+2026-11-18T16:04:50.518553 [MAC    ] [I] [  400] SCHED: DL adaptive link: rnti=0x47, cqi=5, last_mcs=0, cqi_offset=0.003000
+2026-11-18T16:04:50.520619 [MAC    ] [I] [  402] SCHED: UL tx rnti=0x47, cc=0, pid=2, dci=(3,0), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=410
+2026-11-18T16:04:50.528803 [MAC    ] [I] [  410] SCHED: UL adaptive link: rnti=0x47, snr_estim=99.68, last_mcs=22, snr_offset=0.003000
+2026-11-18T16:04:50.528805 [MAC    ] [I] [  410] Pushing PDU rnti=0x47, tti_rx=410, nof_bytes=517
+2026-11-18T16:04:50.528824 [MAC    ] [I] [  410] 0x47 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=21 PAD: len=485
+2026-11-18T16:04:50.529780 [MAC    ] [I] [  411] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 5), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=415
+2026-11-18T16:04:50.529793 [MAC    ] [I] [  411] 0x47 DL LCID=1 len=2
+2026-11-18T16:04:50.530790 [MAC    ] [I] [  412] SCHED: DL tx rnti=0x47, cc=0, pid=1, mask=0x1c000, dci=(0, 7), n_rtx=0, cfi=1, tbs=63, buffer=51/0, tti_tx_dl=416
+2026-11-18T16:04:50.530800 [MAC    ] [I] [  412] 0x47 DL LCID=1 len=46
+2026-11-18T16:04:50.538019 [MAC    ] [I] [  419] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.004000
+2026-11-18T16:04:50.539053 [MAC    ] [I] [  420] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=3, cqi_offset=0.005000
+2026-11-18T16:04:50.539055 [MAC    ] [I] [  420] Added TA CMD: rnti=0x47, ta=-2, ta_value=-2, ta_cmd=29
+2026-11-18T16:04:50.539056 [MAC    ] [I] [  420] SCHED: Timing Advance Command for rnti=0x47 needs to be scheduled
+2026-11-18T16:04:50.539074 [MAC    ] [I] [  420] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 1), n_rtx=0, cfi=1, tbs=28, buffer=2/0, tti_tx_dl=424
+2026-11-18T16:04:50.539076 [MAC    ] [I] [  420] SCHED: DL MAC CEs cc=0: rnti=0x47: [CE "TA_CMD"]
+2026-11-18T16:04:50.539079 [MAC    ] [I] [  420] 0x47 DL TA: ta=29
+2026-11-18T16:04:50.541105 [MAC    ] [I] [  422] SCHED: UL tx rnti=0x47, cc=0, pid=6, dci=(0,7), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=430
+2026-11-18T16:04:50.547268 [MAC    ] [I] [  428] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.006000
+2026-11-18T16:04:50.549331 [MAC    ] [I] [  430] SCHED: UL adaptive link: rnti=0x47, snr_estim=107.22, last_mcs=22, snr_offset=0.004000
+2026-11-18T16:04:50.549332 [MAC    ] [I] [  430] Pushing PDU rnti=0x47, tti_rx=430, nof_bytes=517
+2026-11-18T16:04:50.549368 [MAC    ] [I] [  430] 0x47 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=21 PAD: len=485
+2026-11-18T16:04:50.550336 [MAC    ] [I] [  431] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 5), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=435
+2026-11-18T16:04:50.550346 [MAC    ] [I] [  431] 0x47 DL LCID=1 len=2
+2026-11-18T16:04:50.551344 [MAC    ] [I] [  432] SCHED: DL tx rnti=0x47, cc=0, pid=1, mask=0x1c000, dci=(0, 7), n_rtx=0, cfi=1, tbs=28, buffer=28/0, tti_tx_dl=436
+2026-11-18T16:04:50.551352 [MAC    ] [I] [  432] 0x47 DL LCID=1 len=23
+2026-11-18T16:04:50.558565 [MAC    ] [I] [  439] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.007000
+2026-11-18T16:04:50.559591 [MAC    ] [I] [  440] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.008000
+2026-11-18T16:04:50.561644 [MAC    ] [I] [  442] SCHED: UL tx rnti=0x47, cc=0, pid=2, dci=(0,7), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=450
+2026-11-18T16:04:50.569872 [MAC    ] [I] [  450] Added TA CMD: rnti=0x47, ta=-6, ta_value=-6, ta_cmd=25
+2026-11-18T16:04:50.569873 [MAC    ] [I] [  450] SCHED: Timing Advance Command for rnti=0x47 needs to be scheduled
+2026-11-18T16:04:50.569875 [MAC    ] [I] [  450] SCHED: UL adaptive link: rnti=0x47, snr_estim=109.92, last_mcs=22, snr_offset=0.005000
+2026-11-18T16:04:50.569876 [MAC    ] [I] [  450] Pushing PDU rnti=0x47, tti_rx=450, nof_bytes=517
+2026-11-18T16:04:50.569899 [MAC    ] [I] [  450] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 1), n_rtx=0, cfi=1, tbs=28, buffer=2/0, tti_tx_dl=454
+2026-11-18T16:04:50.569900 [MAC    ] [I] [  450] SCHED: DL MAC CEs cc=0: rnti=0x47: [CE "TA_CMD"]
+2026-11-18T16:04:50.569905 [MAC    ] [I] [  450] 0x47 DL TA: ta=25
+2026-11-18T16:04:50.569994 [MAC    ] [I] [  450] 0x47 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=18 PAD: len=486
+2026-11-18T16:04:50.570840 [MAC    ] [I] [  451] SCHED: DL tx rnti=0x47, cc=0, pid=1, mask=0x1c000, dci=(0, 5), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=455
+2026-11-18T16:04:50.570850 [MAC    ] [I] [  451] 0x47 DL LCID=1 len=2
+2026-11-18T16:04:50.571858 [MAC    ] [I] [  452] SCHED: DL tx rnti=0x47, cc=0, pid=2, mask=0x1c000, dci=(0, 7), n_rtx=0, cfi=1, tbs=28, buffer=15/0, tti_tx_dl=456
+2026-11-18T16:04:50.571866 [MAC    ] [I] [  452] 0x47 DL LCID=1 len=10
+2026-11-18T16:04:50.578083 [MAC    ] [I] [  458] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.009000
+2026-11-18T16:04:50.579101 [MAC    ] [I] [  459] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.010000
+2026-11-18T16:04:50.580121 [MAC    ] [I] [  460] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.011000
+2026-11-18T16:04:50.582191 [MAC    ] [I] [  462] SCHED: UL tx rnti=0x47, cc=0, pid=6, dci=(0,7), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=470
+2026-11-18T16:04:50.590374 [MAC    ] [I] [  470] SCHED: UL adaptive link: rnti=0x47, snr_estim=110.89, last_mcs=22, snr_offset=0.006000
+2026-11-18T16:04:50.590375 [MAC    ] [I] [  470] Pushing PDU rnti=0x47, tti_rx=470, nof_bytes=517
+2026-11-18T16:04:50.590418 [MAC    ] [I] [  470] 0x47 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=9 PAD: len=497
+2026-11-18T16:04:50.591369 [MAC    ] [I] [  471] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 5), n_rtx=0, cfi=1, tbs=28, buffer=22/0, tti_tx_dl=475
+2026-11-18T16:04:50.591394 [MAC    ] [I] [  471] 0x47 DL LCID=1 len=2 LCID=1 len=10
+2026-11-18T16:04:50.599590 [MAC    ] [I] [  479] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.012000
+2026-11-18T16:04:50.602669 [MAC    ] [I] [  482] SCHED: UL tx rnti=0x47, cc=0, pid=2, dci=(0,7), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=490
+2026-11-18T16:04:50.610898 [MAC    ] [I] [  490] SCHED: UL adaptive link: rnti=0x47, snr_estim=111.24, last_mcs=22, snr_offset=0.007000
+2026-11-18T16:04:50.610899 [MAC    ] [I] [  490] Pushing PDU rnti=0x47, tti_rx=490, nof_bytes=517
+2026-11-18T16:04:50.610997 [MAC    ] [I] [  490] 0x47 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=22 PAD: len=484
+2026-11-18T16:04:50.611903 [MAC    ] [I] [  491] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 5), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=495
+2026-11-18T16:04:50.611915 [MAC    ] [I] [  491] 0x47 DL LCID=1 len=2
+2026-11-18T16:04:50.612929 [MAC    ] [I] [  492] SCHED: DL tx rnti=0x47, cc=0, pid=1, mask=0x1c000, dci=(0, 7), n_rtx=0, cfi=1, tbs=137, buffer=119/0, tti_tx_dl=496
+2026-11-18T16:04:50.612939 [MAC    ] [I] [  492] 0x47 DL LCID=1 len=114
+2026-11-18T16:04:50.620196 [MAC    ] [I] [  499] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.013000
+2026-11-18T16:04:50.621184 [MAC    ] [I] [  500] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=7, cqi_offset=0.014000
+2026-11-18T16:04:50.621186 [MAC    ] [I] [  500] Added TA CMD: rnti=0x47, ta=-3, ta_value=-3, ta_cmd=28
+2026-11-18T16:04:50.621187 [MAC    ] [I] [  500] SCHED: Timing Advance Command for rnti=0x47 needs to be scheduled
+2026-11-18T16:04:50.621209 [MAC    ] [I] [  500] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 1), n_rtx=0, cfi=1, tbs=28, buffer=2/0, tti_tx_dl=504
+2026-11-18T16:04:50.621211 [MAC    ] [I] [  500] SCHED: DL MAC CEs cc=0: rnti=0x47: [CE "TA_CMD"]
+2026-11-18T16:04:50.621215 [MAC    ] [I] [  500] 0x47 DL TA: ta=28
+2026-11-18T16:04:50.629375 [MAC    ] [I] [  508] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.015000
+2026-11-18T16:04:50.643665 [MAC    ] [I] [  522] SCHED: UL tx rnti=0x47, cc=0, pid=2, dci=(0,7), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=530
+2026-11-18T16:04:50.651864 [MAC    ] [I] [  530] SCHED: UL adaptive link: rnti=0x47, snr_estim=111.36, last_mcs=22, snr_offset=0.008000
+2026-11-18T16:04:50.651866 [MAC    ] [I] [  530] Pushing PDU rnti=0x47, tti_rx=530, nof_bytes=517
+2026-11-18T16:04:50.651969 [MAC    ] [I] [  530] 0x47 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=9 LCID=2 len=23 PAD: len=470
+2026-11-18T16:04:50.652872 [MAC    ] [I] [  531] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 5), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=535
+2026-11-18T16:04:50.652882 [MAC    ] [I] [  531] SCHED: rnti=0x47, new lcid configuration: [{lcid=2, mode=bi-dir, prio=3, lcg=0}, {lcid=3, mode=bi-dir, prio=13, lcg=2}]
+2026-11-18T16:04:50.652895 [MAC    ] [I] [  531] 0x47 DL LCID=1 len=2
+2026-11-18T16:04:50.653855 [MAC    ] [I] [  532] SCHED: DL tx rnti=0x47, cc=0, pid=1, mask=0x1c000, dci=(0, 7), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=536
+2026-11-18T16:04:50.653866 [MAC    ] [I] [  532] 0x47 DL LCID=2 len=2
+2026-11-18T16:04:50.661261 [MAC    ] [I] [  539] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.016000
+2026-11-18T16:04:50.662304 [MAC    ] [I] [  540] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.017000
+2026-11-18T16:04:50.662307 [MAC    ] [I] [  540] Added TA CMD: rnti=0x47, ta=-5, ta_value=-5, ta_cmd=26
+2026-11-18T16:04:50.662309 [MAC    ] [I] [  540] SCHED: Timing Advance Command for rnti=0x47 needs to be scheduled
+2026-11-18T16:04:50.662339 [MAC    ] [I] [  540] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 1), n_rtx=0, cfi=1, tbs=28, buffer=2/0, tti_tx_dl=544
+2026-11-18T16:04:50.662342 [MAC    ] [I] [  540] SCHED: DL MAC CEs cc=0: rnti=0x47: [CE "TA_CMD"]
+2026-11-18T16:04:50.662347 [MAC    ] [I] [  540] 0x47 DL TA: ta=26
+2026-11-18T16:04:50.670663 [MAC    ] [I] [  548] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=0, cqi_offset=0.018000
+2026-11-18T16:04:50.816760 [MAC    ] [I] [  688] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x1c000, dci=(0, 0), n_rtx=0, cfi=1, tbs=79, buffer=66/0, tti_tx_dl=692
+2026-11-18T16:04:50.816773 [MAC    ] [I] [  688] 0x47 DL LCID=2 len=61
+2026-11-18T16:04:50.825156 [MAC    ] [I] [  696] SCHED: DL adaptive link: rnti=0x47, cqi=15, last_mcs=4, cqi_offset=0.019000
+2026-11-18T16:04:50.831372 [MAC    ] [I] [  702] SCHED: UL tx rnti=0x47, cc=0, pid=6, dci=(0,7), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=710
+2026-11-18T16:04:50.839801 [MAC    ] [I] [  710] SCHED: UL adaptive link: rnti=0x47, snr_estim=111.43, last_mcs=22, snr_offset=0.009000
+2026-11-18T16:04:50.839803 [MAC    ] [I] [  710] Pushing PDU rnti=0x47, tti_rx=710, nof_bytes=517
+2026-11-18T16:04:50.839848 [MAC    ] [I] [  710] 0x47 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=2 len=2 PAD: len=506
+2026-11-18T16:04:51.837641 [MAC    ] [I] [ 1661] SCHED: Added user rnti=0x48
+2026-11-18T16:04:51.837645 [MAC    ] [I] [ 1661] SCHED: rnti=0x48, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:51.837647 [MAC    ] [I] [ 1661] SCHED: Resetting rnti=0x48, cc=0 HARQs and feedback state
+2026-11-18T16:04:51.837647 [MAC    ] [I] [ 1661] SCHED: rnti=0x48 PCell is now enb_cc_idx=0
+2026-11-18T16:04:51.837721 [MAC    ] [I] [ 1661] SCHED: New PRACH tti=1661, preamble=5, temp_crnti=0x48, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:51.837722 [MAC    ] [I] [ 1661] RACH:  tti=1661, cc=0, pci=1, preamble=5, offset=0, temp_crnti=0x48
+2026-11-18T16:04:51.837745 [MAC    ] [I] [ 1661] rach_tprof: {mean, max, min}={5436.2, 15617, 293} usec, nof_samples=3
+2026-11-18T16:04:51.838305 [MAC    ] [I] [ 1662] SCHED90: nouvel UE rnti=0x48, il devient prioritaire
+2026-11-18T16:04:51.838311 [MAC    ] [I] [ 1662] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x48, rba=102, mcs=0}]
+2026-11-18T16:04:51.840331 [MAC    ] [I] [ 1664] SCHED: Msg3 tx rnti=0x48, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=1672
+2026-11-18T16:04:51.848536 [MAC    ] [I] [ 1672] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:51.848537 [MAC    ] [I] [ 1672] Pushing PDU rnti=0x48, tti_rx=1672, nof_bytes=7
+2026-11-18T16:04:51.848614 [MAC    ] [I] [ 1672] 0x48 UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:51.848615 [MAC    ] [W] [ 1672] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:51.848616 [MAC    ] [I] [ 1672] SCHED: rnti=0x48, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:51.849539 [MAC    ] [I] [ 1673] SCHED: UL tx rnti=0x48, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1681
+2026-11-18T16:04:51.857831 [MAC    ] [I] [ 1681] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:51.857859 [MAC    ] [I] [ 1681] SCHED: UL retx rnti=0x48, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1689
+2026-11-18T16:04:51.866013 [MAC    ] [I] [ 1689] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:51.866015 [MAC    ] [I] [ 1689] Pushing PDU rnti=0x48, tti_rx=1689, nof_bytes=53
+2026-11-18T16:04:51.866036 [MAC    ] [I] [ 1689] SCHED: UL tx rnti=0x48, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1697
+2026-11-18T16:04:51.866060 [MAC    ] [I] [ 1689] 0x48 UL LCID=0 len=52
+2026-11-18T16:04:51.874262 [MAC    ] [I] [ 1697] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:51.874281 [MAC    ] [I] [ 1697] SCHED: UL retx rnti=0x48, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1705
+2026-11-18T16:04:51.882483 [MAC    ] [I] [ 1705] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:51.882484 [MAC    ] [I] [ 1705] Pushing PDU rnti=0x48, tti_rx=1705, nof_bytes=53
+2026-11-18T16:04:51.882511 [MAC    ] [I] [ 1705] 0x48 UL LCID=0 len=52
+2026-11-18T16:04:51.882512 [MAC    ] [I] [ 1705] SCHED: UL tx rnti=0x48, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1713
+2026-11-18T16:04:51.890689 [MAC    ] [I] [ 1713] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:51.890712 [MAC    ] [I] [ 1713] SCHED: UL retx rnti=0x48, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1721
+2026-11-18T16:04:51.898893 [MAC    ] [I] [ 1721] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:51.898895 [MAC    ] [I] [ 1721] Pushing PDU rnti=0x48, tti_rx=1721, nof_bytes=53
+2026-11-18T16:04:51.898913 [MAC    ] [I] [ 1721] SCHED90: pas de place PDCCH pour rnti=0x48 en UL
+2026-11-18T16:04:51.898963 [MAC    ] [I] [ 1721] 0x48 UL LCID=0 len=52
+2026-11-18T16:04:51.899863 [MAC    ] [I] [ 1722] SCHED: UL tx rnti=0x48, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1730
+2026-11-18T16:04:51.908117 [MAC    ] [I] [ 1730] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:51.908142 [MAC    ] [I] [ 1730] SCHED: UL retx rnti=0x48, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1738
+2026-11-18T16:04:51.919009 [MAC    ] [I] [ 1738] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:51.919012 [MAC    ] [I] [ 1738] Pushing PDU rnti=0x48, tti_rx=1738, nof_bytes=53
+2026-11-18T16:04:51.919043 [MAC    ] [I] [ 1738] SCHED: UL tx rnti=0x48, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1746
+2026-11-18T16:04:51.919085 [MAC    ] [I] [ 1738] 0x48 UL LCID=0 len=52
+2026-11-18T16:04:51.922503 [MAC    ] [I] [ 1741] SCHED: Added user rnti=0x49
+2026-11-18T16:04:51.922507 [MAC    ] [I] [ 1741] SCHED: rnti=0x49, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:51.922508 [MAC    ] [I] [ 1741] SCHED: Resetting rnti=0x49, cc=0 HARQs and feedback state
+2026-11-18T16:04:51.922508 [MAC    ] [I] [ 1741] SCHED: rnti=0x49 PCell is now enb_cc_idx=0
+2026-11-18T16:04:51.922559 [MAC    ] [I] [ 1741] SCHED: New PRACH tti=1741, preamble=48, temp_crnti=0x49, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:51.922561 [MAC    ] [I] [ 1741] RACH:  tti=1741, cc=0, pci=1, preamble=48, offset=0, temp_crnti=0x49
+2026-11-18T16:04:51.922573 [MAC    ] [I] [ 1741] rach_tprof: {mean, max, min}={4179.0, 15617, 293} usec, nof_samples=4
+2026-11-18T16:04:51.923070 [MAC    ] [I] [ 1742] SCHED90: nouvel UE rnti=0x49, il devient prioritaire
+2026-11-18T16:04:51.923077 [MAC    ] [I] [ 1742] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x49, rba=102, mcs=0}]
+2026-11-18T16:04:51.925097 [MAC    ] [I] [ 1744] SCHED: Msg3 tx rnti=0x49, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=1752
+2026-11-18T16:04:51.932289 [MAC    ] [W] [ 1751] UE buffers: Removing old buffer tti=1746, interval=13
+2026-11-18T16:04:51.932665 [MAC    ] [I] [ 1751] User rnti=0x48 removed from MAC/PHY
+2026-11-18T16:04:51.933829 [MAC    ] [I] [ 1752] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:51.933831 [MAC    ] [I] [ 1752] Pushing PDU rnti=0x49, tti_rx=1752, nof_bytes=7
+2026-11-18T16:04:51.933850 [MAC    ] [I] [ 1752] 0x49 UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:51.933860 [MAC    ] [W] [ 1752] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:51.933861 [MAC    ] [I] [ 1752] SCHED: rnti=0x49, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:51.934848 [MAC    ] [I] [ 1753] SCHED: UL tx rnti=0x49, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1761
+2026-11-18T16:04:51.943155 [MAC    ] [I] [ 1761] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:51.943190 [MAC    ] [I] [ 1761] SCHED: UL retx rnti=0x49, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1769
+2026-11-18T16:04:51.951317 [MAC    ] [I] [ 1769] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:51.951318 [MAC    ] [I] [ 1769] Pushing PDU rnti=0x49, tti_rx=1769, nof_bytes=53
+2026-11-18T16:04:51.951346 [MAC    ] [I] [ 1769] SCHED: UL tx rnti=0x49, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1777
+2026-11-18T16:04:51.951357 [MAC    ] [I] [ 1769] 0x49 UL LCID=0 len=52
+2026-11-18T16:04:51.959503 [MAC    ] [I] [ 1777] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:51.959525 [MAC    ] [I] [ 1777] SCHED: UL retx rnti=0x49, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1785
+2026-11-18T16:04:51.967703 [MAC    ] [I] [ 1785] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:51.967704 [MAC    ] [I] [ 1785] Pushing PDU rnti=0x49, tti_rx=1785, nof_bytes=53
+2026-11-18T16:04:51.967727 [MAC    ] [I] [ 1785] SCHED: UL tx rnti=0x49, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1793
+2026-11-18T16:04:51.967748 [MAC    ] [I] [ 1785] 0x49 UL LCID=0 len=52
+2026-11-18T16:04:51.975912 [MAC    ] [I] [ 1793] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:51.975934 [MAC    ] [I] [ 1793] SCHED: UL retx rnti=0x49, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1801
+2026-11-18T16:04:51.984182 [MAC    ] [I] [ 1801] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:51.984184 [MAC    ] [I] [ 1801] Pushing PDU rnti=0x49, tti_rx=1801, nof_bytes=53
+2026-11-18T16:04:51.984210 [MAC    ] [I] [ 1801] SCHED90: pas de place PDCCH pour rnti=0x49 en UL
+2026-11-18T16:04:51.984247 [MAC    ] [I] [ 1801] 0x49 UL LCID=0 len=52
+2026-11-18T16:04:51.985178 [MAC    ] [I] [ 1802] SCHED: UL tx rnti=0x49, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1810
+2026-11-18T16:04:51.993363 [MAC    ] [I] [ 1810] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:51.993383 [MAC    ] [I] [ 1810] SCHED: UL retx rnti=0x49, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1818
+2026-11-18T16:04:52.003571 [MAC    ] [I] [ 1818] SCHED: UL adaptive link: rnti=0x49, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.003572 [MAC    ] [I] [ 1818] Pushing PDU rnti=0x49, tti_rx=1818, nof_bytes=53
+2026-11-18T16:04:52.003597 [MAC    ] [I] [ 1818] SCHED: UL tx rnti=0x49, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1826
+2026-11-18T16:04:52.003655 [MAC    ] [I] [ 1818] 0x49 UL LCID=0 len=52
+2026-11-18T16:04:52.006883 [MAC    ] [I] [ 1821] SCHED: Added user rnti=0x4a
+2026-11-18T16:04:52.006886 [MAC    ] [I] [ 1821] SCHED: rnti=0x4a, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.006887 [MAC    ] [I] [ 1821] SCHED: Resetting rnti=0x4a, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.006887 [MAC    ] [I] [ 1821] SCHED: rnti=0x4a PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.006912 [MAC    ] [I] [ 1821] SCHED: New PRACH tti=1821, preamble=5, temp_crnti=0x4a, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.006913 [MAC    ] [I] [ 1821] RACH:  tti=1821, cc=0, pci=1, preamble=5, offset=0, temp_crnti=0x4a
+2026-11-18T16:04:52.006925 [MAC    ] [I] [ 1821] rach_tprof: {mean, max, min}={3405.5, 15617, 293} usec, nof_samples=5
+2026-11-18T16:04:52.007637 [MAC    ] [I] [ 1822] SCHED90: nouvel UE rnti=0x4a, il devient prioritaire
+2026-11-18T16:04:52.007644 [MAC    ] [I] [ 1822] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x4a, rba=102, mcs=0}]
+2026-11-18T16:04:52.009654 [MAC    ] [I] [ 1824] SCHED: Msg3 tx rnti=0x4a, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=1832
+2026-11-18T16:04:52.016835 [MAC    ] [W] [ 1831] UE buffers: Removing old buffer tti=1826, interval=13
+2026-11-18T16:04:52.017134 [MAC    ] [I] [ 1831] User rnti=0x49 removed from MAC/PHY
+2026-11-18T16:04:52.018269 [MAC    ] [I] [ 1832] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.018271 [MAC    ] [I] [ 1832] Pushing PDU rnti=0x4a, tti_rx=1832, nof_bytes=7
+2026-11-18T16:04:52.018316 [MAC    ] [I] [ 1832] 0x4a UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.018317 [MAC    ] [W] [ 1832] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.018318 [MAC    ] [I] [ 1832] SCHED: rnti=0x4a, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.019288 [MAC    ] [I] [ 1833] SCHED: UL tx rnti=0x4a, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1841
+2026-11-18T16:04:52.027512 [MAC    ] [I] [ 1841] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.027535 [MAC    ] [I] [ 1841] SCHED: UL retx rnti=0x4a, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1849
+2026-11-18T16:04:52.035707 [MAC    ] [I] [ 1849] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.035708 [MAC    ] [I] [ 1849] Pushing PDU rnti=0x4a, tti_rx=1849, nof_bytes=53
+2026-11-18T16:04:52.035731 [MAC    ] [I] [ 1849] SCHED: UL tx rnti=0x4a, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1857
+2026-11-18T16:04:52.035738 [MAC    ] [I] [ 1849] 0x4a UL LCID=0 len=52
+2026-11-18T16:04:52.043925 [MAC    ] [I] [ 1857] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.043944 [MAC    ] [I] [ 1857] SCHED: UL retx rnti=0x4a, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1865
+2026-11-18T16:04:52.052148 [MAC    ] [I] [ 1865] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.052150 [MAC    ] [I] [ 1865] Pushing PDU rnti=0x4a, tti_rx=1865, nof_bytes=53
+2026-11-18T16:04:52.052173 [MAC    ] [I] [ 1865] SCHED: UL tx rnti=0x4a, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1873
+2026-11-18T16:04:52.052203 [MAC    ] [I] [ 1865] 0x4a UL LCID=0 len=52
+2026-11-18T16:04:52.060353 [MAC    ] [I] [ 1873] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.060376 [MAC    ] [I] [ 1873] SCHED: UL retx rnti=0x4a, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1881
+2026-11-18T16:04:52.068584 [MAC    ] [I] [ 1881] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.068585 [MAC    ] [I] [ 1881] Pushing PDU rnti=0x4a, tti_rx=1881, nof_bytes=53
+2026-11-18T16:04:52.068605 [MAC    ] [I] [ 1881] SCHED90: pas de place PDCCH pour rnti=0x4a en UL
+2026-11-18T16:04:52.068631 [MAC    ] [I] [ 1881] 0x4a UL LCID=0 len=52
+2026-11-18T16:04:52.069540 [MAC    ] [I] [ 1882] SCHED: UL tx rnti=0x4a, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1890
+2026-11-18T16:04:52.077735 [MAC    ] [I] [ 1890] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.077753 [MAC    ] [I] [ 1890] SCHED: UL retx rnti=0x4a, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1898
+2026-11-18T16:04:52.088437 [MAC    ] [I] [ 1898] SCHED: UL adaptive link: rnti=0x4a, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.088439 [MAC    ] [I] [ 1898] Pushing PDU rnti=0x4a, tti_rx=1898, nof_bytes=53
+2026-11-18T16:04:52.088468 [MAC    ] [I] [ 1898] SCHED: UL tx rnti=0x4a, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1906
+2026-11-18T16:04:52.088490 [MAC    ] [I] [ 1898] 0x4a UL LCID=0 len=52
+2026-11-18T16:04:52.091739 [MAC    ] [I] [ 1901] SCHED: Added user rnti=0x4b
+2026-11-18T16:04:52.091744 [MAC    ] [I] [ 1901] SCHED: rnti=0x4b, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.091745 [MAC    ] [I] [ 1901] SCHED: Resetting rnti=0x4b, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.091745 [MAC    ] [I] [ 1901] SCHED: rnti=0x4b PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.091777 [MAC    ] [I] [ 1901] SCHED: New PRACH tti=1901, preamble=50, temp_crnti=0x4b, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.091778 [MAC    ] [I] [ 1901] RACH:  tti=1901, cc=0, pci=1, preamble=50, offset=0, temp_crnti=0x4b
+2026-11-18T16:04:52.091788 [MAC    ] [I] [ 1901] rach_tprof: {mean, max, min}={2880.0, 15617, 252} usec, nof_samples=6
+2026-11-18T16:04:52.092504 [MAC    ] [I] [ 1902] SCHED90: nouvel UE rnti=0x4b, il devient prioritaire
+2026-11-18T16:04:52.092512 [MAC    ] [I] [ 1902] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x4b, rba=102, mcs=0}]
+2026-11-18T16:04:52.094521 [MAC    ] [I] [ 1904] SCHED: Msg3 tx rnti=0x4b, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=1912
+2026-11-18T16:04:52.101713 [MAC    ] [W] [ 1911] UE buffers: Removing old buffer tti=1906, interval=13
+2026-11-18T16:04:52.102082 [MAC    ] [I] [ 1911] User rnti=0x4a removed from MAC/PHY
+2026-11-18T16:04:52.103254 [MAC    ] [I] [ 1912] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.103255 [MAC    ] [I] [ 1912] Pushing PDU rnti=0x4b, tti_rx=1912, nof_bytes=7
+2026-11-18T16:04:52.103267 [MAC    ] [I] [ 1912] 0x4b UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.103282 [MAC    ] [W] [ 1912] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.103284 [MAC    ] [I] [ 1912] SCHED: rnti=0x4b, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.104232 [MAC    ] [I] [ 1913] SCHED: UL tx rnti=0x4b, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1921
+2026-11-18T16:04:52.112538 [MAC    ] [I] [ 1921] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.112565 [MAC    ] [I] [ 1921] SCHED: UL retx rnti=0x4b, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1929
+2026-11-18T16:04:52.120665 [MAC    ] [I] [ 1929] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.120667 [MAC    ] [I] [ 1929] Pushing PDU rnti=0x4b, tti_rx=1929, nof_bytes=53
+2026-11-18T16:04:52.120689 [MAC    ] [I] [ 1929] SCHED: UL tx rnti=0x4b, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1937
+2026-11-18T16:04:52.120710 [MAC    ] [I] [ 1929] 0x4b UL LCID=0 len=52
+2026-11-18T16:04:52.128879 [MAC    ] [I] [ 1937] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.128899 [MAC    ] [I] [ 1937] SCHED: UL retx rnti=0x4b, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1945
+2026-11-18T16:04:52.137139 [MAC    ] [I] [ 1945] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.137140 [MAC    ] [I] [ 1945] Pushing PDU rnti=0x4b, tti_rx=1945, nof_bytes=53
+2026-11-18T16:04:52.137163 [MAC    ] [I] [ 1945] SCHED: UL tx rnti=0x4b, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1953
+2026-11-18T16:04:52.137180 [MAC    ] [I] [ 1945] 0x4b UL LCID=0 len=52
+2026-11-18T16:04:52.145362 [MAC    ] [I] [ 1953] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.145386 [MAC    ] [I] [ 1953] SCHED: UL retx rnti=0x4b, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1961
+2026-11-18T16:04:52.153601 [MAC    ] [I] [ 1961] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.153602 [MAC    ] [I] [ 1961] Pushing PDU rnti=0x4b, tti_rx=1961, nof_bytes=53
+2026-11-18T16:04:52.153623 [MAC    ] [I] [ 1961] 0x4b UL LCID=0 len=52
+2026-11-18T16:04:52.153623 [MAC    ] [I] [ 1961] SCHED90: pas de place PDCCH pour rnti=0x4b en UL
+2026-11-18T16:04:52.154565 [MAC    ] [I] [ 1962] SCHED: UL tx rnti=0x4b, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1970
+2026-11-18T16:04:52.162791 [MAC    ] [I] [ 1970] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.162813 [MAC    ] [I] [ 1970] SCHED: UL retx rnti=0x4b, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1978
+2026-11-18T16:04:52.173121 [MAC    ] [I] [ 1978] SCHED: UL adaptive link: rnti=0x4b, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.173123 [MAC    ] [I] [ 1978] Pushing PDU rnti=0x4b, tti_rx=1978, nof_bytes=53
+2026-11-18T16:04:52.173147 [MAC    ] [I] [ 1978] SCHED: UL tx rnti=0x4b, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=1986
+2026-11-18T16:04:52.173227 [MAC    ] [I] [ 1978] 0x4b UL LCID=0 len=52
+2026-11-18T16:04:52.176495 [MAC    ] [I] [ 1981] SCHED: Added user rnti=0x4c
+2026-11-18T16:04:52.176498 [MAC    ] [I] [ 1981] SCHED: rnti=0x4c, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.176499 [MAC    ] [I] [ 1981] SCHED: Resetting rnti=0x4c, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.176500 [MAC    ] [I] [ 1981] SCHED: rnti=0x4c PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.176537 [MAC    ] [I] [ 1981] SCHED: New PRACH tti=1981, preamble=48, temp_crnti=0x4c, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.176539 [MAC    ] [I] [ 1981] RACH:  tti=1981, cc=0, pci=1, preamble=48, offset=0, temp_crnti=0x4c
+2026-11-18T16:04:52.176555 [MAC    ] [I] [ 1981] rach_tprof: {mean, max, min}={2510.1, 15617, 252} usec, nof_samples=7
+2026-11-18T16:04:52.177164 [MAC    ] [I] [ 1982] SCHED90: nouvel UE rnti=0x4c, il devient prioritaire
+2026-11-18T16:04:52.177174 [MAC    ] [I] [ 1982] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x4c, rba=102, mcs=0}]
+2026-11-18T16:04:52.179193 [MAC    ] [I] [ 1984] SCHED: Msg3 tx rnti=0x4c, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=1992
+2026-11-18T16:04:52.186394 [MAC    ] [W] [ 1991] UE buffers: Removing old buffer tti=1986, interval=13
+2026-11-18T16:04:52.186727 [MAC    ] [I] [ 1991] User rnti=0x4b removed from MAC/PHY
+2026-11-18T16:04:52.187879 [MAC    ] [I] [ 1992] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.187880 [MAC    ] [I] [ 1992] Pushing PDU rnti=0x4c, tti_rx=1992, nof_bytes=7
+2026-11-18T16:04:52.187920 [MAC    ] [I] [ 1992] 0x4c UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.187921 [MAC    ] [W] [ 1992] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.187924 [MAC    ] [I] [ 1992] SCHED: rnti=0x4c, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.188880 [MAC    ] [I] [ 1993] SCHED: UL tx rnti=0x4c, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2001
+2026-11-18T16:04:52.197167 [MAC    ] [I] [ 2001] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.197195 [MAC    ] [I] [ 2001] SCHED: UL retx rnti=0x4c, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2009
+2026-11-18T16:04:52.205281 [MAC    ] [I] [ 2009] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.205283 [MAC    ] [I] [ 2009] Pushing PDU rnti=0x4c, tti_rx=2009, nof_bytes=53
+2026-11-18T16:04:52.205307 [MAC    ] [I] [ 2009] SCHED: UL tx rnti=0x4c, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2017
+2026-11-18T16:04:52.205365 [MAC    ] [I] [ 2009] 0x4c UL LCID=0 len=52
+2026-11-18T16:04:52.213507 [MAC    ] [I] [ 2017] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.213528 [MAC    ] [I] [ 2017] SCHED: UL retx rnti=0x4c, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2025
+2026-11-18T16:04:52.221704 [MAC    ] [I] [ 2025] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.221705 [MAC    ] [I] [ 2025] Pushing PDU rnti=0x4c, tti_rx=2025, nof_bytes=53
+2026-11-18T16:04:52.221727 [MAC    ] [I] [ 2025] SCHED: UL tx rnti=0x4c, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2033
+2026-11-18T16:04:52.221782 [MAC    ] [I] [ 2025] 0x4c UL LCID=0 len=52
+2026-11-18T16:04:52.229955 [MAC    ] [I] [ 2033] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.229991 [MAC    ] [I] [ 2033] SCHED: UL retx rnti=0x4c, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2041
+2026-11-18T16:04:52.238161 [MAC    ] [I] [ 2041] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.238163 [MAC    ] [I] [ 2041] Pushing PDU rnti=0x4c, tti_rx=2041, nof_bytes=53
+2026-11-18T16:04:52.238188 [MAC    ] [I] [ 2041] SCHED90: pas de place PDCCH pour rnti=0x4c en UL
+2026-11-18T16:04:52.238249 [MAC    ] [I] [ 2041] 0x4c UL LCID=0 len=52
+2026-11-18T16:04:52.239123 [MAC    ] [I] [ 2042] SCHED: UL tx rnti=0x4c, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2050
+2026-11-18T16:04:52.247315 [MAC    ] [I] [ 2050] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.247334 [MAC    ] [I] [ 2050] SCHED: UL retx rnti=0x4c, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2058
+2026-11-18T16:04:52.257831 [MAC    ] [I] [ 2058] SCHED: UL adaptive link: rnti=0x4c, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.257832 [MAC    ] [I] [ 2058] Pushing PDU rnti=0x4c, tti_rx=2058, nof_bytes=53
+2026-11-18T16:04:52.257858 [MAC    ] [I] [ 2058] SCHED: UL tx rnti=0x4c, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2066
+2026-11-18T16:04:52.257884 [MAC    ] [I] [ 2058] 0x4c UL LCID=0 len=52
+2026-11-18T16:04:52.261144 [MAC    ] [I] [ 2061] SCHED: Added user rnti=0x4d
+2026-11-18T16:04:52.261148 [MAC    ] [I] [ 2061] SCHED: rnti=0x4d, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.261149 [MAC    ] [I] [ 2061] SCHED: Resetting rnti=0x4d, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.261150 [MAC    ] [I] [ 2061] SCHED: rnti=0x4d PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.261177 [MAC    ] [I] [ 2061] SCHED: New PRACH tti=2061, preamble=20, temp_crnti=0x4d, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.261178 [MAC    ] [I] [ 2061] RACH:  tti=2061, cc=0, pci=1, preamble=20, offset=0, temp_crnti=0x4d
+2026-11-18T16:04:52.261188 [MAC    ] [I] [ 2061] rach_tprof: {mean, max, min}={2231.7, 15617, 252} usec, nof_samples=8
+2026-11-18T16:04:52.261876 [MAC    ] [I] [ 2062] SCHED90: nouvel UE rnti=0x4d, il devient prioritaire
+2026-11-18T16:04:52.261882 [MAC    ] [I] [ 2062] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x4d, rba=102, mcs=0}]
+2026-11-18T16:04:52.263907 [MAC    ] [I] [ 2064] SCHED: Msg3 tx rnti=0x4d, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=2072
+2026-11-18T16:04:52.271118 [MAC    ] [W] [ 2071] UE buffers: Removing old buffer tti=2066, interval=13
+2026-11-18T16:04:52.271445 [MAC    ] [I] [ 2071] User rnti=0x4c removed from MAC/PHY
+2026-11-18T16:04:52.272599 [MAC    ] [I] [ 2072] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.272601 [MAC    ] [I] [ 2072] Pushing PDU rnti=0x4d, tti_rx=2072, nof_bytes=7
+2026-11-18T16:04:52.272633 [MAC    ] [I] [ 2072] 0x4d UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.272634 [MAC    ] [W] [ 2072] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.272636 [MAC    ] [I] [ 2072] SCHED: rnti=0x4d, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.273613 [MAC    ] [I] [ 2073] SCHED: UL tx rnti=0x4d, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2081
+2026-11-18T16:04:52.281880 [MAC    ] [I] [ 2081] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.281904 [MAC    ] [I] [ 2081] SCHED: UL retx rnti=0x4d, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2089
+2026-11-18T16:04:52.290024 [MAC    ] [I] [ 2089] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.290026 [MAC    ] [I] [ 2089] Pushing PDU rnti=0x4d, tti_rx=2089, nof_bytes=53
+2026-11-18T16:04:52.290047 [MAC    ] [I] [ 2089] SCHED: UL tx rnti=0x4d, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2097
+2026-11-18T16:04:52.290100 [MAC    ] [I] [ 2089] 0x4d UL LCID=0 len=52
+2026-11-18T16:04:52.298264 [MAC    ] [I] [ 2097] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.298282 [MAC    ] [I] [ 2097] SCHED: UL retx rnti=0x4d, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2105
+2026-11-18T16:04:52.306457 [MAC    ] [I] [ 2105] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.306458 [MAC    ] [I] [ 2105] Pushing PDU rnti=0x4d, tti_rx=2105, nof_bytes=53
+2026-11-18T16:04:52.306481 [MAC    ] [I] [ 2105] SCHED: UL tx rnti=0x4d, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2113
+2026-11-18T16:04:52.306568 [MAC    ] [I] [ 2105] 0x4d UL LCID=0 len=52
+2026-11-18T16:04:52.314756 [MAC    ] [I] [ 2113] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.314784 [MAC    ] [I] [ 2113] SCHED: UL retx rnti=0x4d, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2121
+2026-11-18T16:04:52.322942 [MAC    ] [I] [ 2121] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.322944 [MAC    ] [I] [ 2121] Pushing PDU rnti=0x4d, tti_rx=2121, nof_bytes=53
+2026-11-18T16:04:52.322965 [MAC    ] [I] [ 2121] SCHED90: pas de place PDCCH pour rnti=0x4d en UL
+2026-11-18T16:04:52.323020 [MAC    ] [I] [ 2121] 0x4d UL LCID=0 len=52
+2026-11-18T16:04:52.323892 [MAC    ] [I] [ 2122] SCHED: UL tx rnti=0x4d, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2130
+2026-11-18T16:04:52.332093 [MAC    ] [I] [ 2130] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.332113 [MAC    ] [I] [ 2130] SCHED: UL retx rnti=0x4d, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2138
+2026-11-18T16:04:52.342625 [MAC    ] [I] [ 2138] SCHED: UL adaptive link: rnti=0x4d, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.342626 [MAC    ] [I] [ 2138] Pushing PDU rnti=0x4d, tti_rx=2138, nof_bytes=53
+2026-11-18T16:04:52.342651 [MAC    ] [I] [ 2138] SCHED: UL tx rnti=0x4d, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2146
+2026-11-18T16:04:52.342712 [MAC    ] [I] [ 2138] 0x4d UL LCID=0 len=52
+2026-11-18T16:04:52.345967 [MAC    ] [I] [ 2141] SCHED: Added user rnti=0x4e
+2026-11-18T16:04:52.345971 [MAC    ] [I] [ 2141] SCHED: rnti=0x4e, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.345973 [MAC    ] [I] [ 2141] SCHED: Resetting rnti=0x4e, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.345974 [MAC    ] [I] [ 2141] SCHED: rnti=0x4e PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.346015 [MAC    ] [I] [ 2141] SCHED: New PRACH tti=2141, preamble=42, temp_crnti=0x4e, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.346017 [MAC    ] [I] [ 2141] RACH:  tti=2141, cc=0, pci=1, preamble=42, offset=0, temp_crnti=0x4e
+2026-11-18T16:04:52.346031 [MAC    ] [I] [ 2141] rach_tprof: {mean, max, min}={2014.9, 15617, 252} usec, nof_samples=9
+2026-11-18T16:04:52.346700 [MAC    ] [I] [ 2142] SCHED90: nouvel UE rnti=0x4e, il devient prioritaire
+2026-11-18T16:04:52.346708 [MAC    ] [I] [ 2142] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x4e, rba=102, mcs=0}]
+2026-11-18T16:04:52.348709 [MAC    ] [I] [ 2144] SCHED: Msg3 tx rnti=0x4e, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=2152
+2026-11-18T16:04:52.355893 [MAC    ] [W] [ 2151] UE buffers: Removing old buffer tti=2146, interval=13
+2026-11-18T16:04:52.356288 [MAC    ] [I] [ 2151] User rnti=0x4d removed from MAC/PHY
+2026-11-18T16:04:52.357461 [MAC    ] [I] [ 2152] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.357463 [MAC    ] [I] [ 2152] Pushing PDU rnti=0x4e, tti_rx=2152, nof_bytes=7
+2026-11-18T16:04:52.357474 [MAC    ] [I] [ 2152] 0x4e UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.357494 [MAC    ] [W] [ 2152] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.357496 [MAC    ] [I] [ 2152] SCHED: rnti=0x4e, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.358460 [MAC    ] [I] [ 2153] SCHED: UL tx rnti=0x4e, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2161
+2026-11-18T16:04:52.366780 [MAC    ] [I] [ 2161] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.366811 [MAC    ] [I] [ 2161] SCHED: UL retx rnti=0x4e, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2169
+2026-11-18T16:04:52.374890 [MAC    ] [I] [ 2169] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.374891 [MAC    ] [I] [ 2169] Pushing PDU rnti=0x4e, tti_rx=2169, nof_bytes=53
+2026-11-18T16:04:52.374916 [MAC    ] [I] [ 2169] SCHED: UL tx rnti=0x4e, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2177
+2026-11-18T16:04:52.374978 [MAC    ] [I] [ 2169] 0x4e UL LCID=0 len=52
+2026-11-18T16:04:52.383094 [MAC    ] [I] [ 2177] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.383113 [MAC    ] [I] [ 2177] SCHED: UL retx rnti=0x4e, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2185
+2026-11-18T16:04:52.391304 [MAC    ] [I] [ 2185] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.391305 [MAC    ] [I] [ 2185] Pushing PDU rnti=0x4e, tti_rx=2185, nof_bytes=53
+2026-11-18T16:04:52.391327 [MAC    ] [I] [ 2185] SCHED: UL tx rnti=0x4e, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2193
+2026-11-18T16:04:52.391340 [MAC    ] [I] [ 2185] 0x4e UL LCID=0 len=52
+2026-11-18T16:04:52.399516 [MAC    ] [I] [ 2193] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.399538 [MAC    ] [I] [ 2193] SCHED: UL retx rnti=0x4e, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2201
+2026-11-18T16:04:52.407788 [MAC    ] [I] [ 2201] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.407790 [MAC    ] [I] [ 2201] Pushing PDU rnti=0x4e, tti_rx=2201, nof_bytes=53
+2026-11-18T16:04:52.407809 [MAC    ] [I] [ 2201] SCHED90: pas de place PDCCH pour rnti=0x4e en UL
+2026-11-18T16:04:52.407814 [MAC    ] [I] [ 2201] 0x4e UL LCID=0 len=52
+2026-11-18T16:04:52.408765 [MAC    ] [I] [ 2202] SCHED: UL tx rnti=0x4e, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2210
+2026-11-18T16:04:52.416989 [MAC    ] [I] [ 2210] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.417009 [MAC    ] [I] [ 2210] SCHED: UL retx rnti=0x4e, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2218
+2026-11-18T16:04:52.427208 [MAC    ] [I] [ 2218] SCHED: UL adaptive link: rnti=0x4e, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.427210 [MAC    ] [I] [ 2218] Pushing PDU rnti=0x4e, tti_rx=2218, nof_bytes=53
+2026-11-18T16:04:52.427227 [MAC    ] [I] [ 2218] 0x4e UL LCID=0 len=52
+2026-11-18T16:04:52.427233 [MAC    ] [I] [ 2218] SCHED: UL tx rnti=0x4e, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2226
+2026-11-18T16:04:52.430598 [MAC    ] [I] [ 2221] SCHED: Added user rnti=0x4f
+2026-11-18T16:04:52.430603 [MAC    ] [I] [ 2221] SCHED: rnti=0x4f, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.430603 [MAC    ] [I] [ 2221] SCHED: Resetting rnti=0x4f, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.430604 [MAC    ] [I] [ 2221] SCHED: rnti=0x4f PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.430631 [MAC    ] [I] [ 2221] SCHED: New PRACH tti=2221, preamble=17, temp_crnti=0x4f, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.430634 [MAC    ] [I] [ 2221] RACH:  tti=2221, cc=0, pci=1, preamble=17, offset=0, temp_crnti=0x4f
+2026-11-18T16:04:52.430643 [MAC    ] [I] [ 2221] rach_tprof: {mean, max, min}={1848.2, 15617, 252} usec, nof_samples=10
+2026-11-18T16:04:52.431245 [MAC    ] [I] [ 2222] SCHED90: nouvel UE rnti=0x4f, il devient prioritaire
+2026-11-18T16:04:52.431252 [MAC    ] [I] [ 2222] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x4f, rba=102, mcs=0}]
+2026-11-18T16:04:52.433278 [MAC    ] [I] [ 2224] SCHED: Msg3 tx rnti=0x4f, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=2232
+2026-11-18T16:04:52.440477 [MAC    ] [W] [ 2231] UE buffers: Removing old buffer tti=2226, interval=13
+2026-11-18T16:04:52.440821 [MAC    ] [I] [ 2231] User rnti=0x4e removed from MAC/PHY
+2026-11-18T16:04:52.441980 [MAC    ] [I] [ 2232] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.441987 [MAC    ] [I] [ 2232] Pushing PDU rnti=0x4f, tti_rx=2232, nof_bytes=7
+2026-11-18T16:04:52.442019 [MAC    ] [I] [ 2232] 0x4f UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.442020 [MAC    ] [W] [ 2232] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.442022 [MAC    ] [I] [ 2232] SCHED: rnti=0x4f, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.442991 [MAC    ] [I] [ 2233] SCHED: UL tx rnti=0x4f, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2241
+2026-11-18T16:04:52.451245 [MAC    ] [I] [ 2241] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.451273 [MAC    ] [I] [ 2241] SCHED: UL retx rnti=0x4f, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2249
+2026-11-18T16:04:52.459379 [MAC    ] [I] [ 2249] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.459380 [MAC    ] [I] [ 2249] Pushing PDU rnti=0x4f, tti_rx=2249, nof_bytes=53
+2026-11-18T16:04:52.459402 [MAC    ] [I] [ 2249] SCHED: UL tx rnti=0x4f, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2257
+2026-11-18T16:04:52.459472 [MAC    ] [I] [ 2249] 0x4f UL LCID=0 len=52
+2026-11-18T16:04:52.467597 [MAC    ] [I] [ 2257] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.467617 [MAC    ] [I] [ 2257] SCHED: UL retx rnti=0x4f, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2265
+2026-11-18T16:04:52.475808 [MAC    ] [I] [ 2265] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.475809 [MAC    ] [I] [ 2265] Pushing PDU rnti=0x4f, tti_rx=2265, nof_bytes=53
+2026-11-18T16:04:52.475831 [MAC    ] [I] [ 2265] SCHED: UL tx rnti=0x4f, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2273
+2026-11-18T16:04:52.475916 [MAC    ] [I] [ 2265] 0x4f UL LCID=0 len=52
+2026-11-18T16:04:52.484064 [MAC    ] [I] [ 2273] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.484085 [MAC    ] [I] [ 2273] SCHED: UL retx rnti=0x4f, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2281
+2026-11-18T16:04:52.492265 [MAC    ] [I] [ 2281] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.492267 [MAC    ] [I] [ 2281] Pushing PDU rnti=0x4f, tti_rx=2281, nof_bytes=53
+2026-11-18T16:04:52.492286 [MAC    ] [I] [ 2281] SCHED90: pas de place PDCCH pour rnti=0x4f en UL
+2026-11-18T16:04:52.492360 [MAC    ] [I] [ 2281] 0x4f UL LCID=0 len=52
+2026-11-18T16:04:52.493221 [MAC    ] [I] [ 2282] SCHED: UL tx rnti=0x4f, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2290
+2026-11-18T16:04:52.501424 [MAC    ] [I] [ 2290] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.501445 [MAC    ] [I] [ 2290] SCHED: UL retx rnti=0x4f, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2298
+2026-11-18T16:04:52.512029 [MAC    ] [I] [ 2298] SCHED: UL adaptive link: rnti=0x4f, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.512031 [MAC    ] [I] [ 2298] Pushing PDU rnti=0x4f, tti_rx=2298, nof_bytes=53
+2026-11-18T16:04:52.512055 [MAC    ] [I] [ 2298] SCHED: UL tx rnti=0x4f, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2306
+2026-11-18T16:04:52.512071 [MAC    ] [I] [ 2298] 0x4f UL LCID=0 len=52
+2026-11-18T16:04:52.515435 [MAC    ] [I] [ 2301] SCHED: Added user rnti=0x50
+2026-11-18T16:04:52.515438 [MAC    ] [I] [ 2301] SCHED: rnti=0x50, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.515439 [MAC    ] [I] [ 2301] SCHED: Resetting rnti=0x50, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.515439 [MAC    ] [I] [ 2301] SCHED: rnti=0x50 PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.515466 [MAC    ] [I] [ 2301] SCHED: New PRACH tti=2301, preamble=31, temp_crnti=0x50, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.515467 [MAC    ] [I] [ 2301] RACH:  tti=2301, cc=0, pci=1, preamble=31, offset=0, temp_crnti=0x50
+2026-11-18T16:04:52.515478 [MAC    ] [I] [ 2301] rach_tprof: {mean, max, min}={1707.8, 15617, 252} usec, nof_samples=11
+2026-11-18T16:04:52.516071 [MAC    ] [I] [ 2302] SCHED90: nouvel UE rnti=0x50, il devient prioritaire
+2026-11-18T16:04:52.516077 [MAC    ] [I] [ 2302] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x50, rba=102, mcs=0}]
+2026-11-18T16:04:52.518094 [MAC    ] [I] [ 2304] SCHED: Msg3 tx rnti=0x50, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=2312
+2026-11-18T16:04:52.525304 [MAC    ] [W] [ 2311] UE buffers: Removing old buffer tti=2306, interval=13
+2026-11-18T16:04:52.525700 [MAC    ] [I] [ 2311] User rnti=0x4f removed from MAC/PHY
+2026-11-18T16:04:52.526871 [MAC    ] [I] [ 2312] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.526872 [MAC    ] [I] [ 2312] Pushing PDU rnti=0x50, tti_rx=2312, nof_bytes=7
+2026-11-18T16:04:52.526885 [MAC    ] [I] [ 2312] 0x50 UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.526901 [MAC    ] [W] [ 2312] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.526902 [MAC    ] [I] [ 2312] SCHED: rnti=0x50, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.527871 [MAC    ] [I] [ 2313] SCHED: UL tx rnti=0x50, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2321
+2026-11-18T16:04:52.536171 [MAC    ] [I] [ 2321] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.536203 [MAC    ] [I] [ 2321] SCHED: UL retx rnti=0x50, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2329
+2026-11-18T16:04:52.544288 [MAC    ] [I] [ 2329] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.544289 [MAC    ] [I] [ 2329] Pushing PDU rnti=0x50, tti_rx=2329, nof_bytes=53
+2026-11-18T16:04:52.544314 [MAC    ] [I] [ 2329] SCHED: UL tx rnti=0x50, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2337
+2026-11-18T16:04:52.544344 [MAC    ] [I] [ 2329] 0x50 UL LCID=0 len=52
+2026-11-18T16:04:52.552515 [MAC    ] [I] [ 2337] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.552534 [MAC    ] [I] [ 2337] SCHED: UL retx rnti=0x50, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2345
+2026-11-18T16:04:52.560748 [MAC    ] [I] [ 2345] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.560750 [MAC    ] [I] [ 2345] Pushing PDU rnti=0x50, tti_rx=2345, nof_bytes=53
+2026-11-18T16:04:52.560772 [MAC    ] [I] [ 2345] SCHED: UL tx rnti=0x50, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2353
+2026-11-18T16:04:52.560856 [MAC    ] [I] [ 2345] 0x50 UL LCID=0 len=52
+2026-11-18T16:04:52.568985 [MAC    ] [I] [ 2353] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.569009 [MAC    ] [I] [ 2353] SCHED: UL retx rnti=0x50, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2361
+2026-11-18T16:04:52.577240 [MAC    ] [I] [ 2361] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.577241 [MAC    ] [I] [ 2361] Pushing PDU rnti=0x50, tti_rx=2361, nof_bytes=53
+2026-11-18T16:04:52.577265 [MAC    ] [I] [ 2361] SCHED90: pas de place PDCCH pour rnti=0x50 en UL
+2026-11-18T16:04:52.577346 [MAC    ] [I] [ 2361] 0x50 UL LCID=0 len=52
+2026-11-18T16:04:52.578217 [MAC    ] [I] [ 2362] SCHED: UL tx rnti=0x50, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2370
+2026-11-18T16:04:52.586490 [MAC    ] [I] [ 2370] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.586519 [MAC    ] [I] [ 2370] SCHED: UL retx rnti=0x50, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2378
+2026-11-18T16:04:52.596815 [MAC    ] [I] [ 2378] SCHED: UL adaptive link: rnti=0x50, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.596817 [MAC    ] [I] [ 2378] Pushing PDU rnti=0x50, tti_rx=2378, nof_bytes=53
+2026-11-18T16:04:52.596840 [MAC    ] [I] [ 2378] SCHED: UL tx rnti=0x50, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2386
+2026-11-18T16:04:52.596857 [MAC    ] [I] [ 2378] 0x50 UL LCID=0 len=52
+2026-11-18T16:04:52.600246 [MAC    ] [I] [ 2381] SCHED: Added user rnti=0x51
+2026-11-18T16:04:52.600254 [MAC    ] [I] [ 2381] SCHED: rnti=0x51, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.600255 [MAC    ] [I] [ 2381] SCHED: Resetting rnti=0x51, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.600256 [MAC    ] [I] [ 2381] SCHED: rnti=0x51 PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.600286 [MAC    ] [I] [ 2381] SCHED: New PRACH tti=2381, preamble=31, temp_crnti=0x51, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.600287 [MAC    ] [I] [ 2381] RACH:  tti=2381, cc=0, pci=1, preamble=31, offset=0, temp_crnti=0x51
+2026-11-18T16:04:52.600303 [MAC    ] [I] [ 2381] rach_tprof: {mean, max, min}={1596.7, 15617, 252} usec, nof_samples=12
+2026-11-18T16:04:52.600895 [MAC    ] [I] [ 2382] SCHED90: nouvel UE rnti=0x51, il devient prioritaire
+2026-11-18T16:04:52.600902 [MAC    ] [I] [ 2382] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x51, rba=102, mcs=0}]
+2026-11-18T16:04:52.602903 [MAC    ] [I] [ 2384] SCHED: Msg3 tx rnti=0x51, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=2392
+2026-11-18T16:04:52.610098 [MAC    ] [W] [ 2391] UE buffers: Removing old buffer tti=2386, interval=13
+2026-11-18T16:04:52.610432 [MAC    ] [I] [ 2391] User rnti=0x50 removed from MAC/PHY
+2026-11-18T16:04:52.611613 [MAC    ] [I] [ 2392] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.611615 [MAC    ] [I] [ 2392] Pushing PDU rnti=0x51, tti_rx=2392, nof_bytes=7
+2026-11-18T16:04:52.611630 [MAC    ] [I] [ 2392] 0x51 UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.611643 [MAC    ] [W] [ 2392] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.611645 [MAC    ] [I] [ 2392] SCHED: rnti=0x51, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.612607 [MAC    ] [I] [ 2393] SCHED: UL tx rnti=0x51, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2401
+2026-11-18T16:04:52.620906 [MAC    ] [I] [ 2401] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.620931 [MAC    ] [I] [ 2401] SCHED: UL retx rnti=0x51, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2409
+2026-11-18T16:04:52.629059 [MAC    ] [I] [ 2409] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.629061 [MAC    ] [I] [ 2409] Pushing PDU rnti=0x51, tti_rx=2409, nof_bytes=53
+2026-11-18T16:04:52.629082 [MAC    ] [I] [ 2409] 0x51 UL LCID=0 len=52
+2026-11-18T16:04:52.629093 [MAC    ] [I] [ 2409] SCHED: UL tx rnti=0x51, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2417
+2026-11-18T16:04:52.637284 [MAC    ] [I] [ 2417] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.637306 [MAC    ] [I] [ 2417] SCHED: UL retx rnti=0x51, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2425
+2026-11-18T16:04:52.645484 [MAC    ] [I] [ 2425] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.645485 [MAC    ] [I] [ 2425] Pushing PDU rnti=0x51, tti_rx=2425, nof_bytes=53
+2026-11-18T16:04:52.645514 [MAC    ] [I] [ 2425] SCHED: UL tx rnti=0x51, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2433
+2026-11-18T16:04:52.645546 [MAC    ] [I] [ 2425] 0x51 UL LCID=0 len=52
+2026-11-18T16:04:52.653704 [MAC    ] [I] [ 2433] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.653726 [MAC    ] [I] [ 2433] SCHED: UL retx rnti=0x51, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2441
+2026-11-18T16:04:52.661937 [MAC    ] [I] [ 2441] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.661938 [MAC    ] [I] [ 2441] Pushing PDU rnti=0x51, tti_rx=2441, nof_bytes=53
+2026-11-18T16:04:52.661958 [MAC    ] [I] [ 2441] SCHED90: pas de place PDCCH pour rnti=0x51 en UL
+2026-11-18T16:04:52.661992 [MAC    ] [I] [ 2441] 0x51 UL LCID=0 len=52
+2026-11-18T16:04:52.662925 [MAC    ] [I] [ 2442] SCHED: UL tx rnti=0x51, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2450
+2026-11-18T16:04:52.671154 [MAC    ] [I] [ 2450] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.671173 [MAC    ] [I] [ 2450] SCHED: UL retx rnti=0x51, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2458
+2026-11-18T16:04:52.681523 [MAC    ] [I] [ 2458] SCHED: UL adaptive link: rnti=0x51, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.681525 [MAC    ] [I] [ 2458] Pushing PDU rnti=0x51, tti_rx=2458, nof_bytes=53
+2026-11-18T16:04:52.681547 [MAC    ] [I] [ 2458] SCHED: UL tx rnti=0x51, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2466
+2026-11-18T16:04:52.681595 [MAC    ] [I] [ 2458] 0x51 UL LCID=0 len=52
+2026-11-18T16:04:52.684947 [MAC    ] [I] [ 2461] SCHED: Added user rnti=0x52
+2026-11-18T16:04:52.684952 [MAC    ] [I] [ 2461] SCHED: rnti=0x52, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:04:52.684953 [MAC    ] [I] [ 2461] SCHED: Resetting rnti=0x52, cc=0 HARQs and feedback state
+2026-11-18T16:04:52.684954 [MAC    ] [I] [ 2461] SCHED: rnti=0x52 PCell is now enb_cc_idx=0
+2026-11-18T16:04:52.684992 [MAC    ] [I] [ 2461] SCHED: New PRACH tti=2461, preamble=10, temp_crnti=0x52, ta_cmd=0, msg3_size=7
+2026-11-18T16:04:52.684993 [MAC    ] [I] [ 2461] RACH:  tti=2461, cc=0, pci=1, preamble=10, offset=0, temp_crnti=0x52
+2026-11-18T16:04:52.685006 [MAC    ] [I] [ 2461] rach_tprof: {mean, max, min}={1501.5, 15617, 252} usec, nof_samples=13
+2026-11-18T16:04:52.685598 [MAC    ] [I] [ 2462] SCHED90: nouvel UE rnti=0x52, il devient prioritaire
+2026-11-18T16:04:52.685605 [MAC    ] [I] [ 2462] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x52, rba=102, mcs=0}]
+2026-11-18T16:04:52.687603 [MAC    ] [I] [ 2464] SCHED: Msg3 tx rnti=0x52, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=2472
+2026-11-18T16:04:52.694809 [MAC    ] [W] [ 2471] UE buffers: Removing old buffer tti=2466, interval=13
+2026-11-18T16:04:52.695219 [MAC    ] [I] [ 2471] User rnti=0x51 removed from MAC/PHY
+2026-11-18T16:04:52.696404 [MAC    ] [I] [ 2472] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.696406 [MAC    ] [I] [ 2472] Pushing PDU rnti=0x52, tti_rx=2472, nof_bytes=7
+2026-11-18T16:04:52.696432 [MAC    ] [I] [ 2472] 0x52 UL CRNTI: rnti=0x46 SBSR: lcg=0 b=10 PHR: ph=30.0
+2026-11-18T16:04:52.696433 [MAC    ] [W] [ 2472] Updating user C-RNTI: rnti=0x46 already released.
+2026-11-18T16:04:52.696435 [MAC    ] [I] [ 2472] SCHED: rnti=0x52, lcid=0 configured: mode=idle, prio=1, lcg=0
+2026-11-18T16:04:52.697391 [MAC    ] [I] [ 2473] SCHED: UL tx rnti=0x52, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2481
+2026-11-18T16:04:52.705782 [MAC    ] [I] [ 2481] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:04:52.705810 [MAC    ] [I] [ 2481] SCHED: UL retx rnti=0x52, cc=0, pid=1, dci=(0,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2489
+2026-11-18T16:04:52.713933 [MAC    ] [I] [ 2489] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.713935 [MAC    ] [I] [ 2489] Pushing PDU rnti=0x52, tti_rx=2489, nof_bytes=53
+2026-11-18T16:04:52.713961 [MAC    ] [I] [ 2489] SCHED: UL tx rnti=0x52, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2497
+2026-11-18T16:04:52.713998 [MAC    ] [I] [ 2489] 0x52 UL LCID=0 len=52
+2026-11-18T16:04:52.722128 [MAC    ] [I] [ 2497] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:04:52.722148 [MAC    ] [I] [ 2497] SCHED: UL retx rnti=0x52, cc=0, pid=1, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2505
+2026-11-18T16:04:52.730341 [MAC    ] [I] [ 2505] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.730342 [MAC    ] [I] [ 2505] Pushing PDU rnti=0x52, tti_rx=2505, nof_bytes=53
+2026-11-18T16:04:52.730371 [MAC    ] [I] [ 2505] SCHED: UL tx rnti=0x52, cc=0, pid=1, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2513
+2026-11-18T16:04:52.730379 [MAC    ] [I] [ 2505] 0x52 UL LCID=0 len=52
+2026-11-18T16:04:52.738604 [MAC    ] [I] [ 2513] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.003000
+2026-11-18T16:04:52.738626 [MAC    ] [I] [ 2513] SCHED: UL retx rnti=0x52, cc=0, pid=1, dci=(3,0), prb=[10, 26), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2521
+2026-11-18T16:04:52.746813 [MAC    ] [I] [ 2521] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.746815 [MAC    ] [I] [ 2521] Pushing PDU rnti=0x52, tti_rx=2521, nof_bytes=53
+2026-11-18T16:04:52.746833 [MAC    ] [I] [ 2521] SCHED90: pas de place PDCCH pour rnti=0x52 en UL
+2026-11-18T16:04:52.746883 [MAC    ] [I] [ 2521] 0x52 UL LCID=0 len=52
+2026-11-18T16:04:52.747784 [MAC    ] [I] [ 2522] SCHED: UL tx rnti=0x52, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2530
+2026-11-18T16:04:52.756038 [MAC    ] [I] [ 2530] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.004000
+2026-11-18T16:04:52.756057 [MAC    ] [I] [ 2530] SCHED: UL retx rnti=0x52, cc=0, pid=2, dci=(0,0), prb=[2, 18), n_rtx=1, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2538
+2026-11-18T16:04:52.764179 [MAC    ] [I] [ 2538] SCHED: UL adaptive link: rnti=0x52, snr_estim=5.00, last_mcs=0, snr_offset=0.005000
+2026-11-18T16:04:52.764181 [MAC    ] [I] [ 2538] Pushing PDU rnti=0x52, tti_rx=2538, nof_bytes=53
+2026-11-18T16:04:52.764207 [MAC    ] [I] [ 2538] SCHED: UL tx rnti=0x52, cc=0, pid=2, dci=(3,0), prb=[2, 18), n_rtx=0, cfi=1, tbs=53, bsr=0 (46-53), tti_tx_ul=2546
+2026-11-18T16:04:52.764265 [MAC    ] [I] [ 2538] 0x52 UL LCID=0 len=52
+2026-11-18T16:04:52.777484 [MAC    ] [W] [ 2551] UE buffers: Removing old buffer tti=2546, interval=13
+2026-11-18T16:04:52.777782 [MAC    ] [I] [ 2551] User rnti=0x52 removed from MAC/PHY
+2026-11-18T16:05:16.766972 [MAC    ] [I] [ 4981] SCHED: Added user rnti=0x53
+2026-11-18T16:05:16.766977 [MAC    ] [I] [ 4981] SCHED: rnti=0x53, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:05:16.766978 [MAC    ] [I] [ 4981] SCHED: Resetting rnti=0x53, cc=0 HARQs and feedback state
+2026-11-18T16:05:16.766978 [MAC    ] [I] [ 4981] SCHED: rnti=0x53 PCell is now enb_cc_idx=0
+2026-11-18T16:05:16.767023 [MAC    ] [I] [ 4981] SCHED: New PRACH tti=4981, preamble=15, temp_crnti=0x53, ta_cmd=0, msg3_size=7
+2026-11-18T16:05:16.767024 [MAC    ] [I] [ 4981] RACH:  tti=4981, cc=0, pci=1, preamble=15, offset=0, temp_crnti=0x53
+2026-11-18T16:05:16.767052 [MAC    ] [I] [ 4981] rach_tprof: {mean, max, min}={1418.7, 15617, 252} usec, nof_samples=14
+2026-11-18T16:05:16.767731 [MAC    ] [I] [ 4982] SCHED90: nouvel UE rnti=0x53, il devient prioritaire
+2026-11-18T16:05:16.767739 [MAC    ] [I] [ 4982] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x53, rba=102, mcs=0}]
+2026-11-18T16:05:16.769763 [MAC    ] [I] [ 4984] SCHED: Msg3 tx rnti=0x53, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=4992
+2026-11-18T16:05:16.778042 [MAC    ] [I] [ 4992] SCHED: UL adaptive link: rnti=0x53, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2026-11-18T16:05:16.778044 [MAC    ] [I] [ 4992] Pushing PDU rnti=0x53, tti_rx=4992, nof_bytes=7
+2026-11-18T16:05:16.778134 [MAC    ] [I] [ 4992] 0x53 UL LCID=0 len=6
+2026-11-18T16:05:16.779105 [MAC    ] [I] [ 4993] SCHED: UE Contention Resolution Identity for rnti=0x53 needs to be scheduled
+2026-11-18T16:05:16.779109 [MAC    ] [I] [ 4993] SCHED: rnti=0x53, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}, {lcid=1, mode=bi-dir, prio=1, lcg=0}]
+2026-11-18T16:05:16.781162 [MAC    ] [I] [ 4995] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(3, 0), n_rtx=0, cfi=1, tbs=41, buffer=29/0, tti_tx_dl=4999
+2026-11-18T16:05:16.781165 [MAC    ] [I] [ 4995] SCHED: DL MAC CEs cc=0: rnti=0x53: [CE "ConResId"]
+2026-11-18T16:05:16.781176 [MAC    ] [I] [ 4995] 0x53 DL CON_RES: id=0x41a1acf20a48 LCID=0 len=20
+2026-11-18T16:05:16.789518 [MAC    ] [I] [ 5003] SCHED: DL adaptive link: rnti=0x53, cqi=5, last_mcs=1, cqi_offset=0.001000
+2026-11-18T16:05:16.789917 [MAC    ] [I] [ 5003] User rnti=0x47 removed from MAC/PHY
+2026-11-18T16:05:16.806965 [MAC    ] [I] [ 5020] SCHED: UL tx rnti=0x53, cc=0, pid=4, dci=(3,0), prb=[2, 47), n_rtx=0, cfi=1, tbs=157, bsr=0 (512-157), tti_tx_ul=5028
+2026-11-18T16:05:16.815257 [MAC    ] [I] [ 5028] SCHED: UL adaptive link: rnti=0x53, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2026-11-18T16:05:16.815259 [MAC    ] [I] [ 5028] Pushing PDU rnti=0x53, tti_rx=5028, nof_bytes=157
+2026-11-18T16:05:16.815300 [MAC    ] [I] [ 5028] 0x53 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=1 len=43 PAD: len=105
+2026-11-18T16:05:16.816138 [MAC    ] [I] [ 5029] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(3, 0), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=5033
+2026-11-18T16:05:16.816153 [MAC    ] [I] [ 5029] 0x53 DL LCID=1 len=2
+2026-11-18T16:05:16.824428 [MAC    ] [I] [ 5037] SCHED: DL adaptive link: rnti=0x53, cqi=5, last_mcs=0, cqi_offset=0.002000
+2026-11-18T16:05:16.984463 [MAC    ] [I] [ 5189] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=18/0, tti_tx_dl=5193
+2026-11-18T16:05:16.984475 [MAC    ] [I] [ 5189] 0x53 DL LCID=1 len=13
+2026-11-18T16:05:16.992930 [MAC    ] [I] [ 5197] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.003000
+2026-11-18T16:05:16.996107 [MAC    ] [I] [ 5200] SCHED: UL tx rnti=0x53, cc=0, pid=0, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5208
+2026-11-18T16:05:17.004636 [MAC    ] [I] [ 5208] SCHED: UL adaptive link: rnti=0x53, snr_estim=99.69, last_mcs=22, snr_offset=0.003000
+2026-11-18T16:05:17.004638 [MAC    ] [I] [ 5208] Pushing PDU rnti=0x53, tti_rx=5208, nof_bytes=517
+2026-11-18T16:05:17.004654 [MAC    ] [I] [ 5208] 0x53 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=21 PAD: len=483
+2026-11-18T16:05:17.005575 [MAC    ] [I] [ 5209] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=5213
+2026-11-18T16:05:17.005588 [MAC    ] [I] [ 5209] 0x53 DL LCID=1 len=2
+2026-11-18T16:05:17.006605 [MAC    ] [I] [ 5210] SCHED: DL tx rnti=0x53, cc=0, pid=1, mask=0x1c000, dci=(0, 3), n_rtx=0, cfi=1, tbs=63, buffer=51/0, tti_tx_dl=5214
+2026-11-18T16:05:17.006615 [MAC    ] [I] [ 5210] 0x53 DL LCID=1 len=46
+2026-11-18T16:05:17.014004 [MAC    ] [I] [ 5217] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.004000
+2026-11-18T16:05:17.015094 [MAC    ] [I] [ 5218] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=3, cqi_offset=0.005000
+2026-11-18T16:05:17.017161 [MAC    ] [I] [ 5220] SCHED: UL tx rnti=0x53, cc=0, pid=4, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5228
+2026-11-18T16:05:17.025778 [MAC    ] [I] [ 5228] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.004000
+2026-11-18T16:05:17.025780 [MAC    ] [I] [ 5228] Pushing PDU rnti=0x53, tti_rx=5228, nof_bytes=517
+2026-11-18T16:05:17.025833 [MAC    ] [I] [ 5228] 0x53 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=21 PAD: len=485
+2026-11-18T16:05:17.026727 [MAC    ] [I] [ 5229] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=5233
+2026-11-18T16:05:17.026741 [MAC    ] [I] [ 5229] 0x53 DL LCID=1 len=2
+2026-11-18T16:05:17.027740 [MAC    ] [I] [ 5230] SCHED: DL tx rnti=0x53, cc=0, pid=1, mask=0x1c000, dci=(0, 3), n_rtx=0, cfi=1, tbs=28, buffer=28/0, tti_tx_dl=5234
+2026-11-18T16:05:17.027750 [MAC    ] [I] [ 5230] 0x53 DL LCID=1 len=23
+2026-11-18T16:05:17.035102 [MAC    ] [I] [ 5237] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.006000
+2026-11-18T16:05:17.036192 [MAC    ] [I] [ 5238] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.007000
+2026-11-18T16:05:17.038263 [MAC    ] [I] [ 5240] SCHED: UL tx rnti=0x53, cc=0, pid=0, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5248
+2026-11-18T16:05:17.046898 [MAC    ] [I] [ 5248] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.005000
+2026-11-18T16:05:17.046900 [MAC    ] [I] [ 5248] Pushing PDU rnti=0x53, tti_rx=5248, nof_bytes=517
+2026-11-18T16:05:17.046929 [MAC    ] [I] [ 5248] 0x53 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=18 PAD: len=488
+2026-11-18T16:05:17.047822 [MAC    ] [I] [ 5249] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=5253
+2026-11-18T16:05:17.047833 [MAC    ] [I] [ 5249] 0x53 DL LCID=1 len=2
+2026-11-18T16:05:17.048855 [MAC    ] [I] [ 5250] SCHED: DL tx rnti=0x53, cc=0, pid=1, mask=0x1c000, dci=(0, 3), n_rtx=0, cfi=1, tbs=28, buffer=15/0, tti_tx_dl=5254
+2026-11-18T16:05:17.048864 [MAC    ] [I] [ 5250] 0x53 DL LCID=1 len=10
+2026-11-18T16:05:17.056267 [MAC    ] [I] [ 5257] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.008000
+2026-11-18T16:05:17.057293 [MAC    ] [I] [ 5258] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.009000
+2026-11-18T16:05:17.059435 [MAC    ] [I] [ 5260] SCHED: UL tx rnti=0x53, cc=0, pid=4, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5268
+2026-11-18T16:05:17.067988 [MAC    ] [I] [ 5268] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.006000
+2026-11-18T16:05:17.067990 [MAC    ] [I] [ 5268] Pushing PDU rnti=0x53, tti_rx=5268, nof_bytes=517
+2026-11-18T16:05:17.068015 [MAC    ] [I] [ 5268] 0x53 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=9 PAD: len=495
+2026-11-18T16:05:17.068936 [MAC    ] [I] [ 5269] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=5273
+2026-11-18T16:05:17.068956 [MAC    ] [I] [ 5269] 0x53 DL LCID=1 len=2
+2026-11-18T16:05:17.069966 [MAC    ] [I] [ 5270] SCHED: DL tx rnti=0x53, cc=0, pid=1, mask=0x1c000, dci=(0, 3), n_rtx=0, cfi=1, tbs=28, buffer=15/0, tti_tx_dl=5274
+2026-11-18T16:05:17.069975 [MAC    ] [I] [ 5270] 0x53 DL LCID=1 len=10
+2026-11-18T16:05:17.077337 [MAC    ] [I] [ 5277] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.010000
+2026-11-18T16:05:17.078406 [MAC    ] [I] [ 5278] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.011000
+2026-11-18T16:05:17.080501 [MAC    ] [I] [ 5280] SCHED: UL tx rnti=0x53, cc=0, pid=0, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5288
+2026-11-18T16:05:17.089117 [MAC    ] [I] [ 5288] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.007000
+2026-11-18T16:05:17.089119 [MAC    ] [I] [ 5288] Pushing PDU rnti=0x53, tti_rx=5288, nof_bytes=517
+2026-11-18T16:05:17.089198 [MAC    ] [I] [ 5288] 0x53 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=22 PAD: len=484
+2026-11-18T16:05:17.090058 [MAC    ] [I] [ 5289] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=5293
+2026-11-18T16:05:17.090066 [MAC    ] [I] [ 5289] 0x53 DL LCID=1 len=2
+2026-11-18T16:05:17.091115 [MAC    ] [I] [ 5290] SCHED: DL tx rnti=0x53, cc=0, pid=1, mask=0x1c000, dci=(0, 3), n_rtx=0, cfi=1, tbs=137, buffer=119/0, tti_tx_dl=5294
+2026-11-18T16:05:17.091141 [MAC    ] [I] [ 5290] 0x53 DL LCID=1 len=114
+2026-11-18T16:05:17.099057 [MAC    ] [I] [ 5297] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.012000
+2026-11-18T16:05:17.100071 [MAC    ] [I] [ 5298] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=7, cqi_offset=0.013000
+2026-11-18T16:05:17.104459 [MAC    ] [I] [ 5300] SCHED: UL tx rnti=0x53, cc=0, pid=4, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5308
+2026-11-18T16:05:17.113168 [MAC    ] [I] [ 5308] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.008000
+2026-11-18T16:05:17.113170 [MAC    ] [I] [ 5308] Pushing PDU rnti=0x53, tti_rx=5308, nof_bytes=517
+2026-11-18T16:05:17.113231 [MAC    ] [I] [ 5308] 0x53 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=9 LCID=2 len=23 PAD: len=470
+2026-11-18T16:05:17.114099 [MAC    ] [I] [ 5309] SCHED: rnti=0x53, new lcid configuration: [{lcid=2, mode=bi-dir, prio=3, lcg=0}, {lcid=3, mode=bi-dir, prio=13, lcg=2}]
+2026-11-18T16:05:17.114137 [MAC    ] [I] [ 5309] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=14/0, tti_tx_dl=5313
+2026-11-18T16:05:17.114173 [MAC    ] [I] [ 5309] 0x53 DL LCID=1 len=2 LCID=1 len=3 LCID=2 len=2
+2026-11-18T16:05:17.115166 [MAC    ] [I] [ 5310] SCHED: DL tx rnti=0x53, cc=0, pid=1, mask=0x1c000, dci=(0, 3), n_rtx=0, cfi=1, tbs=28, buffer=13/0, tti_tx_dl=5314
+2026-11-18T16:05:17.115180 [MAC    ] [I] [ 5310] 0x53 DL LCID=1 len=8
+2026-11-18T16:05:17.122596 [MAC    ] [I] [ 5317] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.014000
+2026-11-18T16:05:17.123613 [MAC    ] [I] [ 5318] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.015000
+2026-11-18T16:05:17.125680 [MAC    ] [I] [ 5320] SCHED: UL tx rnti=0x53, cc=0, pid=0, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5328
+2026-11-18T16:05:17.134190 [MAC    ] [I] [ 5328] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.009000
+2026-11-18T16:05:17.134192 [MAC    ] [I] [ 5328] Pushing PDU rnti=0x53, tti_rx=5328, nof_bytes=517
+2026-11-18T16:05:17.134272 [MAC    ] [I] [ 5328] 0x53 UL LBSR: b=0 0 0 0  LCID=1 len=2 LCID=1 len=21 PAD: len=485
+2026-11-18T16:05:17.135141 [MAC    ] [I] [ 5329] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=5333
+2026-11-18T16:05:17.135155 [MAC    ] [I] [ 5329] 0x53 DL LCID=1 len=2
+2026-11-18T16:05:17.143712 [MAC    ] [I] [ 5337] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.016000
+2026-11-18T16:05:17.297563 [MAC    ] [I] [ 5483] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 8), n_rtx=0, cfi=1, tbs=79, buffer=66/0, tti_tx_dl=5487
+2026-11-18T16:05:17.297577 [MAC    ] [I] [ 5483] 0x53 DL LCID=2 len=61
+2026-11-18T16:05:17.306105 [MAC    ] [I] [ 5491] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=4, cqi_offset=0.017000
+2026-11-18T16:05:17.315513 [MAC    ] [I] [ 5500] SCHED: UL tx rnti=0x53, cc=0, pid=4, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5508
+2026-11-18T16:05:17.324069 [MAC    ] [I] [ 5508] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.010000
+2026-11-18T16:05:17.324071 [MAC    ] [I] [ 5508] Pushing PDU rnti=0x53, tti_rx=5508, nof_bytes=517
+2026-11-18T16:05:17.324091 [MAC    ] [I] [ 5508] 0x53 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=2 len=2 PAD: len=506
+2026-11-18T16:05:27.161038 [MAC    ] [I] [ 4662] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 7), n_rtx=0, cfi=1, tbs=97, buffer=94/0, tti_tx_dl=4666
+2026-11-18T16:05:27.161050 [MAC    ] [I] [ 4662] 0x53 DL LCID=3 len=88
+2026-11-18T16:05:27.169489 [MAC    ] [I] [ 4670] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=5, cqi_offset=0.018000
+2026-11-18T16:05:27.179858 [MAC    ] [I] [ 4680] SCHED: UL tx rnti=0x53, cc=0, pid=0, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=4688
+2026-11-18T16:05:27.188333 [MAC    ] [I] [ 4688] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.011000
+2026-11-18T16:05:27.188335 [MAC    ] [I] [ 4688] Pushing PDU rnti=0x53, tti_rx=4688, nof_bytes=517
+2026-11-18T16:05:27.188389 [MAC    ] [I] [ 4688] 0x53 UL PHR: ph=30.0 LBSR: b=0 0 1 0  LCID=3 len=88 PAD: len=420
+2026-11-18T16:05:27.189315 [MAC    ] [I] [ 4689] SCHED: UL tx rnti=0x53, cc=0, pid=1, dci=(0,9), prb=[2, 3), n_rtx=0, cfi=1, tbs=15, bsr=0 (14-15), tti_tx_ul=4697
+2026-11-18T16:05:27.197639 [MAC    ] [I] [ 4697] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=8, snr_offset=0.012000
+2026-11-18T16:05:27.197641 [MAC    ] [I] [ 4697] Pushing PDU rnti=0x53, tti_rx=4697, nof_bytes=15
+2026-11-18T16:05:27.197666 [MAC    ] [I] [ 4697] SCHED: UL tx rnti=0x53, cc=0, pid=1, dci=(0,5), prb=[2, 3), n_rtx=0, cfi=1, tbs=15, bsr=0 (14-15), tti_tx_ul=4705
+2026-11-18T16:05:27.197723 [MAC    ] [I] [ 4697] 0x53 UL LBSR: b=0 0 0 0  PAD: len=10
+2026-11-18T16:05:27.206044 [MAC    ] [I] [ 4705] SCHED: UL adaptive link: rnti=0x53, snr_estim=113.76, last_mcs=8, snr_offset=0.013000
+2026-11-18T16:05:27.206046 [MAC    ] [I] [ 4705] Pushing PDU rnti=0x53, tti_rx=4705, nof_bytes=15
+2026-11-18T16:05:27.206065 [MAC    ] [I] [ 4705] 0x53 UL LBSR: b=0 0 0 0  PAD: len=10
+2026-11-18T16:05:27.435894 [MAC    ] [I] [ 4925] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:29.460758 [MAC    ] [I] [ 6845] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:31.466920 [MAC    ] [I] [ 8765] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:33.473629 [MAC    ] [I] [  445] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:35.479805 [MAC    ] [I] [ 2365] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:37.533884 [MAC    ] [I] [ 4285] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:39.540523 [MAC    ] [I] [ 6205] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:41.546842 [MAC    ] [I] [ 8125] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:43.553204 [MAC    ] [I] [10045] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:45.894106 [MAC    ] [I] [ 2045] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:47.900492 [MAC    ] [I] [ 3965] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:49.907283 [MAC    ] [I] [ 5885] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:51.915337 [MAC    ] [I] [ 7805] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:53.921969 [MAC    ] [I] [ 9725] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:55.928558 [MAC    ] [I] [ 1405] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:57.935253 [MAC    ] [I] [ 3325] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:05:59.945913 [MAC    ] [I] [ 5245] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:02.309155 [MAC    ] [I] [ 7485] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:04.327134 [MAC    ] [I] [ 9405] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:06.337918 [MAC    ] [I] [ 1085] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:08.348620 [MAC    ] [I] [ 3005] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:10.366076 [MAC    ] [I] [ 4925] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:12.382224 [MAC    ] [I] [ 6845] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:14.405429 [MAC    ] [I] [ 8765] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:16.425112 [MAC    ] [I] [  445] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:18.439830 [MAC    ] [I] [ 2365] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:20.454492 [MAC    ] [I] [ 4285] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:22.794503 [MAC    ] [I] [ 6525] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:24.801211 [MAC    ] [I] [ 8445] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:26.807731 [MAC    ] [I] [  125] SCHED: PCH, cc=0, rbgs=[0, 1), dci=(2,0), tbs=7, mcs=0
+2026-11-18T16:06:28.203504 [MAC    ] [I] [ 1460] SCHED: UL tx rnti=0x53, cc=0, pid=4, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=1468
+2026-11-18T16:06:28.212004 [MAC    ] [I] [ 1468] SCHED: UL adaptive link: rnti=0x53, snr_estim=115.09, last_mcs=22, snr_offset=0.014000
+2026-11-18T16:06:28.212006 [MAC    ] [I] [ 1468] Pushing PDU rnti=0x53, tti_rx=1468, nof_bytes=517
+2026-11-18T16:06:28.212018 [MAC    ] [I] [ 1468] 0x53 UL PHR: ph=30.0 LBSR: b=0 0 0 0  LCID=2 len=31 PAD: len=477
+2026-11-18T16:06:28.212989 [MAC    ] [I] [ 1469] SCHED: DL tx rnti=0x53, cc=0, pid=0, mask=0x1c000, dci=(0, 9), n_rtx=0, cfi=1, tbs=28, buffer=7/0, tti_tx_dl=1473
+2026-11-18T16:06:28.213004 [MAC    ] [I] [ 1469] 0x53 DL LCID=2 len=2
+2026-11-18T16:06:28.215051 [MAC    ] [I] [ 1471] SCHED: DL tx rnti=0x53, cc=0, pid=1, mask=0x1c000, dci=(0, 3), n_rtx=0, cfi=1, tbs=28, buffer=14/0, tti_tx_dl=1475
+2026-11-18T16:06:28.215065 [MAC    ] [I] [ 1471] 0x53 DL LCID=1 len=9
+2026-11-18T16:06:28.221480 [MAC    ] [I] [ 1477] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.019000
+2026-11-18T16:06:28.223622 [MAC    ] [I] [ 1479] SCHED: DL adaptive link: rnti=0x53, cqi=15, last_mcs=0, cqi_offset=0.020000
+2026-11-18T16:06:28.245559 [MAC    ] [I] [ 1500] SCHED: UL tx rnti=0x53, cc=0, pid=4, dci=(0,3), prb=[2, 11), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=1508
+2026-11-18T16:06:28.254011 [MAC    ] [I] [ 1508] SCHED: UL adaptive link: rnti=0x53, snr_estim=111.42, last_mcs=22, snr_offset=0.015000
+2026-11-18T16:06:28.254012 [MAC    ] [I] [ 1508] Pushing PDU rnti=0x53, tti_rx=1508, nof_bytes=517
+2026-11-18T16:06:28.254065 [MAC    ] [I] [ 1508] 0x53 UL LBSR: b=0 0 0 0  LCID=1 len=2 PAD: len=508
+2026-11-18T16:06:28.276135 [MAC    ] [I] [ 1529] User rnti=0x53 removed from MAC/PHY
+2026-11-18T16:06:37.398397 [COMN   ] [D] [    0] RxSockets: Closing rx socket handler thread
+2026-11-18T16:06:37.399314 [COMN   ] [D] [    0] RxSockets: closed.
+2026-11-18T16:06:37.399352 [COMN   ] [D] [    0] Socket=7 was closed.
+2026-11-18T16:06:37.402101 [COMN   ] [D] [    0] Socket=-1 could not be closed.
+2026-11-18T16:06:37.402728 [COMN   ] [D] [    0] Socket=-1 could not be closed.

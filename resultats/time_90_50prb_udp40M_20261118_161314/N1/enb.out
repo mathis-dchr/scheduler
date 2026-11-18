@@ -1,0 +1,31 @@
+Active RF plugins: libsrsran_rf_uhd.so libsrsran_rf_zmq.so
+Inactive RF plugins: 
+---  Software Radio Systems LTE eNodeB  ---
+
+Reading configuration file /home/ubuntu/scheduler/config/enb.conf...
+Couldn't open sib.conf, trying /root/.config/srsran/sib.conf
+Couldn't open rr.conf, trying /root/.config/srsran/rr.conf
+Couldn't open rb.conf, trying /root/.config/srsran/rb.conf
+
+Built in Release mode using commit eb66a95 on branch main.
+
+Opening 1 channels in RF device=zmq with args=fail_on_disconnect=true,tx_port=tcp://*:2000,rx_port=tcp://localhost:2001,id=enb,base_srate=11.52e6
+Supported RF device list: UHD zmq file
+CHx base_srate=11.52e6
+CHx id=enb
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+CH0 rx_port=tcp://localhost:2001
+CH0 tx_port=tcp://*:2000
+CH0 fail_on_disconnect=true
+
+==== eNodeB started ===
+Type <t> to view trace
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Setting frequency: DL=2680.0 Mhz, UL=2560.0 MHz for cc_idx=0 nof_prb=50
+Closing stdin thread.
+RACH:  tti=341, cc=0, pci=1, preamble=3, offset=0, temp_crnti=0x46
+User 0x46 connected
+Disconnecting rnti=0x46.
+Stopping ..
+---  exiting  ---

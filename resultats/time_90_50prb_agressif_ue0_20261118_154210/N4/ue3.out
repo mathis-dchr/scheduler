@@ -1,0 +1,57 @@
+Active RF plugins: libsrsran_rf_uhd.so libsrsran_rf_zmq.so
+Inactive RF plugins: 
+Reading configuration file /home/ubuntu/scheduler/config/ue.conf...
+
+Built in Release mode using commit eb66a95 on branch main.
+
+Opening 1 channels in RF device=zmq with args=tx_port=tcp://*:2301,rx_port=tcp://localhost:2300,id=ue3,base_srate=11.52e6
+Supported RF device list: UHD zmq file
+CHx base_srate=11.52e6
+CHx id=ue3
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+CH0 rx_port=tcp://localhost:2300
+CH0 tx_port=tcp://*:2301
+Waiting PHY to initialize ... done!
+Attaching UE...
+Closing stdin thread.
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+.
+Found Cell:  Mode=FDD, PCI=1, PRB=50, Ports=1, CP=Normal, CFO=-0.2 KHz
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Found PLMN:  Id=00101, TAC=7
+Random Access Transmission: seq=4, tti=341, ra-rnti=0x2
+RRC Connected
+Random Access Complete.     c-rnti=0x46, ta=0
+Scheduling request failed: releasing RRC connection...
+Random Access Transmission: seq=9, tti=1661, ra-rnti=0x2
+Random Access Transmission: seq=18, tti=1741, ra-rnti=0x2
+Random Access Transmission: seq=34, tti=1821, ra-rnti=0x2
+Random Access Transmission: seq=5, tti=1901, ra-rnti=0x2
+Random Access Transmission: seq=8, tti=1981, ra-rnti=0x2
+Random Access Transmission: seq=14, tti=2061, ra-rnti=0x2
+Random Access Transmission: seq=18, tti=2141, ra-rnti=0x2
+Random Access Transmission: seq=5, tti=2221, ra-rnti=0x2
+Random Access Transmission: seq=25, tti=2301, ra-rnti=0x2
+Random Access Transmission: seq=34, tti=2381, ra-rnti=0x2
+Warning: Detected Radio-Link Failure
+Random Access Transmission: seq=19, tti=2461, ra-rnti=0x2
+RRC IDLE
+Attach failed (attempt 1/5)
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+.
+Found Cell:  Mode=FDD, PCI=1, PRB=50, Ports=1, CP=Normal, CFO=-0.2 KHz
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Found PLMN:  Id=00101, TAC=7
+Random Access Transmission: seq=6, tti=4981, ra-rnti=0x2
+RRC Connected
+Random Access Complete.     c-rnti=0x6b, ta=0
+Network attach successful. IP: 172.16.0.4
+Software Radio Systems RAN (srsRAN) 18/11/2026 15:47:37 TZ:0
+Stopping ..
+Received RRC Connection Release (releaseCause: other)
+RRC IDLE
+Couldn't stop after 5s. Forcing exit.

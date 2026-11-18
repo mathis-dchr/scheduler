@@ -1,0 +1,3 @@
+n_ue_lancees;n_ue_mesurees;ue_exclues;debit_total_mbps;debit_moyen_mbps;debit_min_mbps;debit_max_mbps;part_ue_max_pct;jain;rss_srsue_max_mo;debit_ue_agressive_mbps
+1;1;;31.25;31.25;31.25;31.25;100.0;1.000;961;
+2;1;UE2;31.02;31.02;31.02;31.02;100.0;1.000;1923;

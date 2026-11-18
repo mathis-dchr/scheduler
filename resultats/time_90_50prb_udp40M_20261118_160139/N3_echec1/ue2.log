@@ -1,0 +1,5 @@
+2026-11-18T16:09:16.034675 [UE     ] [I] Using binary srsue with arguments: /home/ubuntu/scheduler/config/ue.conf --rf.device_name=zmq --rf.device_args=tx_port=tcp://*:2201,rx_port=tcp://localhost:2200,id=ue2,base_srate=11.52e6 --usim.imsi=001010123456781 --gw.netns=ue2 --log.filename=/home/ubuntu/scheduler/resultats/time_90_50prb_udp40M_20261118_160139/N3/ue2.log --phy.nof_phy_threads=3 
+2026-11-18T16:09:16.069696 [UE     ] [I] Built in Release mode using commit eb66a95 on branch main.
+2026-11-18T16:09:21.118898 [MAC    ] [E] [ 2452] RA:    ConRes:  Maximum number of transmissions reached (10)
+2026-11-18T16:09:21.118899 [RRC    ] [W] MAC indicated RA problem. Starting RLF
+2026-11-18T16:09:34.602725 [NAS    ] [W] Timer T3410 expired after attach attempt 1/5: starting T3411
